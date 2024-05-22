@@ -1,6 +1,7 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome,
+Welcome, Mick here
+
 
 <<<<<<< HEAD
 This is Terry!
