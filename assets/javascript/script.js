@@ -52,6 +52,7 @@ window.onclick = function (event) {
   }
 };
 
+// Change at your will just placeholder
 const quizData = [
   {
     question: "Who is Luke Skywalker's father?",
