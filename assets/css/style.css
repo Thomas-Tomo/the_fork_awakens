@@ -73,6 +73,112 @@ footer {
   height: 200px;
 }
 
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  position: relative;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  background-color: #262626;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation to drop in rules */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Styling for the close button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #e4e405;
+  text-decoration: none;
+  cursor: pointer;
+=======
+}
+
+#header img {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#header h2 {
+  font-size: 1.25rem;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 80%;
+  margin: 150px auto;
+}
+
+#movie-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: auto;
+}
+
+#movie-container button {
+  text-transform: uppercase;
+  margin: 5px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #e4e405;
+  color: #e4e405;
+  background-color: transparent;
+  margin-bottom: 30px;
+}
+
+#movie-container button:hover {
+  background-color: #e4e405;
+  color: #262626;
+  cursor: pointer;
+  border: 3px solid #262626;
+  box-shadow: 0 0 10px #e4e405;
+}
+
+footer {
+  color: #262626;
+  background-color: #e4e405;
+  height: 200px;
+}
+
 /* Styling for the background stars */
 /* 
 .stars {
