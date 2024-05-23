@@ -1,0 +1,444 @@
+{
+  "questions": [
+    {
+      "id": "001",
+      "question": "Who directed \"Return of the Jedi\"?",
+      "options": [
+        "Steven Spielberg",
+        "George Lucas",
+        "Irvin Kershner",
+        "Richard Marquand"
+      ],
+      "answer": "Richard Marquand"
+    },
+    {
+      "id": "002",
+      "question": "What is the name of the forest moon where the second Death Star's shield generator is located?",
+      "options": [
+        "Endor",
+        "Hoth",
+        "Yavin 4",
+        "Dagobah"
+      ],
+      "answer": "Endor"
+    },
+    {
+      "id": "003",
+      "question": "Who is the leader of the Ewoks?",
+      "options": [
+        "Logray",
+        "Wicket",
+        "Chief Chirpa",
+        "Paploo"
+      ],
+      "answer": "Chief Chirpa"
+    },
+    {
+      "id": "004",
+      "question": "Who rescues Han Solo from Jabba the Hutt's palace?",
+      "options": [
+        "Luke Skywalker",
+        "Leia Organa",
+        "Lando Calrissian",
+        "Chewbacca"
+      ],
+      "answer": "Leia Organa"
+    },
+    {
+      "id": "005",
+      "question": "What disguise does Leia use to infiltrate Jabba's palace?",
+      "options": [
+        "Stormtrooper",
+        "Bounty Hunter",
+        "Jawa",
+        "Imperial Officer"
+      ],
+      "answer": "Bounty Hunter"
+    },
+    {
+      "id": "006",
+      "question": "Who kills Jabba the Hutt?",
+      "options": [
+        "Luke Skywalker",
+        "Leia Organa",
+        "Han Solo",
+        "Chewbacca"
+      ],
+      "answer": "Leia Organa"
+    },
+    {
+      "id": "007",
+      "question": "What is the name of the creature in Jabba's palace that tries to eat Luke Skywalker?",
+      "options": [
+        "Rancor",
+        "Sarlacc",
+        "Wampa",
+        "Dewback"
+      ],
+      "answer": "Rancor"
+    },
+    {
+      "id": "008",
+      "question": "Who is the commander of the Rebel fleet during the Battle of Endor?",
+      "options": [
+        "Admiral Ackbar",
+        "General Madine",
+        "General Dodonna",
+        "Admiral Raddus"
+      ],
+      "answer": "Admiral Ackbar"
+    },
+    {
+      "id": "009",
+      "question": "What is the name of the Emperor's royal guards?",
+      "options": [
+        "Shadow Troopers",
+        "Crimson Guards",
+        "Royal Guards",
+        "Sith Troopers"
+      ],
+      "answer": "Royal Guards"
+    },
+    {
+      "id": "010",
+      "question": "Who is the pilot that flies the Millennium Falcon during the attack on the second Death Star?",
+      "options": [
+        "Han Solo",
+        "Lando Calrissian",
+        "Chewbacca",
+        "Nien Nunb"
+      ],
+      "answer": "Lando Calrissian"
+    },
+    {
+      "id": "011",
+      "question": "What is the name of the Ewok that helps Princess Leia?",
+      "options": [
+        "Logray",
+        "Wicket",
+        "Paploo",
+        "Chief Chirpa"
+      ],
+      "answer": "Wicket"
+    },
+    {
+      "id": "012",
+      "question": "Who says, \"It's a trap!\"?",
+      "options": [
+        "Han Solo",
+        "Lando Calrissian",
+        "Admiral Ackbar",
+        "Luke Skywalker"
+      ],
+      "answer": "Admiral Ackbar"
+    },
+    {
+      "id": "013",
+      "question": "Who is the Sith Lord that Luke Skywalker confronts on the second Death Star?",
+      "options": [
+        "Darth Maul",
+        "Darth Sidious",
+        "Darth Vader",
+        "Darth Tyranus"
+      ],
+      "answer": "Darth Sidious"
+    },
+    {
+      "id": "014",
+      "question": "What is the name of Boba Fett's ship?",
+      "options": [
+        "Slave I",
+        "Razor Crest",
+        "Millennium Falcon",
+        "Ghost"
+      ],
+      "answer": "Slave I"
+    },
+    {
+      "id": "015",
+      "question": "Who is Luke and Leia's mother?",
+      "options": [
+        "Shmi Skywalker",
+        "Padmé Amidala",
+        "Breha Organa",
+        "Mon Mothma"
+      ],
+      "answer": "Padmé Amidala"
+    },
+    {
+      "id": "016",
+      "question": "Who is the father of Luke Skywalker and Princess Leia?",
+      "options": [
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Yoda",
+        "Bail Organa"
+      ],
+      "answer": "Anakin Skywalker"
+    },
+    {
+      "id": "017",
+      "question": "What type of speeder is used in the chase scene on Endor?",
+      "options": [
+        "Landspeeder",
+        "Snowspeeder",
+        "Speeder Bike",
+        "Podracer"
+      ],
+      "answer": "Speeder Bike"
+    },
+    {
+      "id": "018",
+      "question": "Who says, \"I am a Jedi, like my father before me.\"?",
+      "options": [
+        "Obi-Wan Kenobi",
+        "Yoda",
+        "Luke Skywalker",
+        "Anakin Skywalker"
+      ],
+      "answer": "Luke Skywalker"
+    },
+    {
+      "id": "019",
+      "question": "What type of creature is Jabba the Hutt?",
+      "options": [
+        "Twi'lek",
+        "Rodian",
+        "Hutt",
+        "Mon Calamari"
+      ],
+      "answer": "Hutt"
+    },
+    {
+      "id": "020",
+      "question": "Who is the Ewok that steals an Imperial speeder bike to create a diversion?",
+      "options": [
+        "Wicket",
+        "Logray",
+        "Paploo",
+        "Chief Chirpa"
+      ],
+      "answer": "Paploo"
+    },
+    {
+      "id": "021",
+      "question": "What is the name of the Rebel pilot who is Lando Calrissian's co-pilot on the Millennium Falcon?",
+      "options": [
+        "Nien Nunb",
+        "Wedge Antilles",
+        "Biggs Darklighter",
+        "Hobbie Klivian"
+      ],
+      "answer": "Nien Nunb"
+    },
+    {
+      "id": "022",
+      "question": "Who is the last character to speak in \"Return of the Jedi\"?",
+      "options": [
+        "Luke Skywalker",
+        "Leia Organa",
+        "Han Solo",
+        "Lando Calrissian"
+      ],
+      "answer": "Lando Calrissian"
+    },
+    {
+      "id": "023",
+      "question": "Who is the Rebel leader who presents the plan to attack the second Death Star?",
+      "options": [
+        "Mon Mothma",
+        "Admiral Ackbar",
+        "General Madine",
+        "General Dodonna"
+      ],
+      "answer": "Mon Mothma"
+    },
+    {
+      "id": "024",
+      "question": "What is the color of the Emperor's lightsaber?",
+      "options": [
+        "Blue",
+        "Green",
+        "Red",
+        "Purple"
+      ],
+      "answer": "Red"
+    },
+    {
+      "id": "025",
+      "question": "What is the name of the Emperor in \"Return of the Jedi\"?",
+      "options": [
+        "Darth Vader",
+        "Darth Maul",
+        "Palpatine",
+        "Snoke"
+      ],
+      "answer": "Palpatine"
+    },
+    {
+      "id": "026",
+      "question": "Who disables the shield generator on Endor?",
+      "options": [
+        "Han Solo",
+        "Leia Organa",
+        "Chewbacca",
+        "R2-D2"
+      ],
+      "answer": "Han Solo"
+    },
+    {
+      "id": "027",
+      "question": "What type of starfighter does the Rebel Alliance use in the attack on the second Death Star?",
+      "options": [
+        "X-wing",
+        "Y-wing",
+        "A-wing",
+        "B-wing"
+      ],
+      "answer": "X-wing"
+    },
+    {
+      "id": "028",
+      "question": "Who says, \"The Force is strong in my family.\"?",
+      "options": [
+        "Anakin Skywalker",
+        "Luke Skywalker",
+        "Leia Organa",
+        "Han Solo"
+      ],
+      "answer": "Luke Skywalker"
+    },
+    {
+      "id": "029",
+      "question": "Who is the last character to die in \"Return of the Jedi\"?",
+      "options": [
+        "Darth Vader",
+        "Emperor Palpatine",
+        "Yoda",
+        "Jabba the Hutt"
+      ],
+      "answer": "Darth Vader"
+    },
+    {
+      "id": "030",
+      "question": "Who is the primary villain in \"Return of the Jedi\"?",
+      "options": [
+        "Darth Vader",
+        "Emperor Palpatine",
+        "Grand Moff Tarkin",
+        "Jabba the Hutt"
+      ],
+      "answer": "Emperor Palpatine"
+    },
+    {
+      "id": "031",
+      "question": "What is the name of the second Death Star's primary weapon?",
+      "options": [
+        "Ion Cannon",
+        "Turbo Laser",
+        "Superlaser",
+        "Proton Torpedo"
+      ],
+      "answer": "Superlaser"
+    },
+    {
+      "id": "032",
+      "question": "Who says, \"I have you now.\"?",
+      "options": [
+        "Darth Vader",
+        "Emperor Palpatine",
+        "Luke Skywalker",
+        "Lando Calrissian"
+      ],
+      "answer": "Darth Vader"
+    },
+    {
+      "id": "033",
+      "question": "Who is the first character to speak in \"Return of the Jedi\"?",
+      "options": [
+        "Darth Vader",
+        "Luke Skywalker",
+        "C-3PO",
+        "Leia Organa"
+      ],
+      "answer": "C-3PO"
+    },
+    {
+      "id": "034",
+      "question": "What type of ship is the Tydirium?",
+      "options": [
+        "Star Destroyer",
+        "Imperial Shuttle",
+        "Rebel Transport",
+        "Mon Calamari Cruiser"
+      ],
+      "answer": "Imperial Shuttle"
+    },
+    {
+      "id": "035",
+      "question": "Who is the first character to draw a lightsaber in \"Return of the Jedi\"?",
+      "options": [
+        "Luke Skywalker",
+        "Darth Vader",
+        "Leia Organa",
+        "Emperor Palpatine"
+      ],
+      "answer": "Luke Skywalker"
+    },
+    {
+      "id": "036",
+      "question": "What is the primary color of the Emperor's throne room?",
+      "options": [
+        "Black",
+        "White",
+        "Red",
+        "Grey"
+      ],
+      "answer": "Black"
+    },
+    {
+      "id": "037",
+      "question": "Who is the Rebel pilot who leads the attack on the second Death Star?",
+      "options": [
+        "Luke Skywalker",
+        "Wedge Antilles",
+        "Poe Dameron",
+        "Biggs Darklighter"
+      ],
+      "answer": "Wedge Antilles"
+    },
+    {
+      "id": "038",
+      "question": "What is the name of the Rebel starfighter that has an A-shaped frame?",
+      "options": [
+        "X-wing",
+        "Y-wing",
+        "A-wing",
+        "B-wing"
+      ],
+      "answer": "A-wing"
+    },
+    {
+      "id": "039",
+      "question": "Who says, \"Now, young Skywalker, you will die.\"?",
+      "options": [
+        "Darth Vader",
+        "Emperor Palpatine",
+        "Luke Skywalker",
+        "Han Solo"
+      ],
+      "answer": "Emperor Palpatine"
+    },
+    {
+      "id": "040",
+      "question": "Who is the Ewok medicine man?",
+      "options": [
+        "Chief Chirpa",
+        "Paploo",
+        "Logray",
+        "Wicket"
+      ],
+      "answer": "Logray"
+    }
+  ]
+}
