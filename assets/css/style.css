@@ -77,12 +77,6 @@ main {
   box-shadow: 0 0 10px #e4e405;
 }
 
-footer {
-  color: #262626;
-  background-color: #e4e405;
-  height: 200px;
-}
-
 /* Modal Styling */
 .modal {
   display: none;
@@ -139,52 +133,6 @@ p {
   color: rgba(0, 0, 0, 0.885);
   text-decoration: none;
   cursor: pointer;
-}
-
-#header img {
-  width: 300px;
-  margin: 0 auto;
-}
-
-#header h2 {
-  font-size: 1.25rem;
-}
-
-main {
-  display: flex;
-  height: 100vh;
-  flex: 1 0 auto;
-}
-
-.container {
-  width: 80%;
-  margin: 150px auto;
-}
-
-#movie-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 80%;
-  margin: auto;
-}
-
-#movie-container button {
-  text-transform: uppercase;
-  margin: 5px;
-  font-size: 1rem;
-  border-radius: 10px;
-  border: 2px solid #e4e405;
-  color: #e4e405;
-  background-color: transparent;
-  margin-bottom: 30px;
-}
-
-#movie-container button:hover {
-  background-color: #e4e405;
-  color: #262626;
-  cursor: pointer;
-  border: 3px solid #262626;
-  box-shadow: 0 0 10px #e4e405;
 }
 
 footer {
