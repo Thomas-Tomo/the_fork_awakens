@@ -1,8 +1,6 @@
 'use strict';
-
 // This is amount of divs/ stars being created in the background
 const stars = 350;
-
 // Function to generate random x & y coordinates for the stars
 function addStars() {
   // Loop through the number of stars specified
@@ -14,7 +12,6 @@ function addStars() {
     return [x, y];
   }
 }
-
 // Loop through the number of stars specified
 for (let i = 0; i < stars; i++) {
   // Create a new div element to represent a star
