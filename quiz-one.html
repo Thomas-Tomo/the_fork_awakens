@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <style>
+        :root {
+            --main-text: #ffc107;
+            --secondary-color: #252525;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Press Start 2P', cursive;
+            letter-spacing: 2px;
+            line-height: 1.5;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+            color: var(--main-text);
+            background: url('../images/starbg.jpg') center center/cover no-repeat;
+        }
+
+        #quiz-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .question {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .answer {
+            text-align: center;
+            margin: 5px;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 10px;
+            border: 2px solid var(--main-text);
+            color: var(--main-text);
+            background: rgba(37, 37, 37, 0.6);
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .answer:hover {
+            background-color: var(--main-text);
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="question" class="question">Question Here</div>
+        <div id="answers" class="answers">
+            <div class="answer">Option 1</div>
+            <div class="answer">Option 2</div>
+            <div class="answer">Option 3</div>
+            <div class="answer">Option 4</div>
+        </div>
+    </div>
+    <script src="assets/javascript/quiz.js"></script>
+</body>
+</html>
