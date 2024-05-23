@@ -12,7 +12,17 @@
 body {
   background-color: #262626;
   color: #e4e405;
+  background: url('../images/starbg.jpg') center center/cover no-repeat;
 }
+/* Styling for the background stars */
+
+/* .stars {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #f0f8ff;
+  z-index: 10;
+} */
 
 #header {
   display: flex;
@@ -55,8 +65,8 @@ main {
   border-radius: 10px;
   border: 2px solid #e4e405;
   color: #e4e405;
-  background-color: transparent;
   margin-bottom: 30px;
+  background: transparent;
 }
 
 #movie-container button:hover {
@@ -87,7 +97,8 @@ footer {
   backdrop-filter: blur(5px);
 }
 
-.modal-content h2 {
+.modal-content h2,
+p {
   text-align: center;
 }
 
@@ -125,7 +136,7 @@ footer {
 
 .close:hover,
 .close:focus {
-  color: #e4e405;
+  color: rgba(0, 0, 0, 0.885);
   text-decoration: none;
   cursor: pointer;
 }
@@ -181,16 +192,6 @@ footer {
   background-color: #e4e405;
   height: 200px;
 }
-
-/* Styling for the background stars */
-/* 
-.stars {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background-color: #f0f8ff;
-  z-index: 2;
-} */
 
 @media screen and (min-width: 768px) {
   #header {
