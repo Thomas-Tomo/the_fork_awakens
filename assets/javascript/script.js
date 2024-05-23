@@ -85,3 +85,22 @@ const populateQuiz = () => {
       </div>
   `).join('');
 };
+
+// Function to calculate score
+const calculateScore = () =>
+  quizData.reduce((score, { answer }, index) =>
+    document.querySelector(`input[name="question${index}"]:checked`)?.value === answer
+      ? score + 1
+      : score, 0);
+
+// Event listener for submitting quiz
+document.getElementById('submit-quiz').addEventListener('click', () => {
+  const score = calculateScore();
+  alert(`Your score is: ${score} out of ${quizData.length}`);
+  // Save the score to localStorage and redirect to the results page
+  localStorage.setItem('latestScore', score);
+  window.location.href = 'results.html';
+})
+
+// Populate the quiz on page load
+document.addEventListener('DOMContentLoaded', populateQuiz);
