@@ -1,0 +1,319 @@
+{
+  "questions": [
+    {
+      "id": "001",
+      "question": "Who directed \"The Empire Strikes Back\"?",
+      "options": [
+        "Steven Spielberg",
+        "George Lucas",
+        "Irvin Kershner",
+        "Richard Marquand"
+      ],
+      "answer": "Irvin Kershner"
+    },
+    {
+      "id": "002",
+      "question": "What is the name of the ice planet where the Rebel Alliance sets up a base?",
+      "options": ["Hoth", "Tatooine", "Endor", "Dagobah"],
+      "answer": "Hoth"
+    },
+    {
+      "id": "003",
+      "question": "Who is the Jedi Master that trains Luke Skywalker?",
+      "options": ["Obi-Wan Kenobi", "Yoda", "Darth Vader", "Qui-Gon Jinn"],
+      "answer": "Yoda"
+    },
+    {
+      "id": "004",
+      "question": "What is the name of the bounty hunter who captures Han Solo?",
+      "options": ["Boba Fett", "IG-88", "Bossk", "Dengar"],
+      "answer": "Boba Fett"
+    },
+    {
+      "id": "005",
+      "question": "Who says, \"Do or do not. There is no try.\"?",
+      "options": ["Luke Skywalker", "Obi-Wan Kenobi", "Yoda", "Darth Vader"],
+      "answer": "Yoda"
+    },
+    {
+      "id": "006",
+      "question": "What is the name of the city where Lando Calrissian is the administrator?",
+      "options": ["Mos Eisley", "Cloud City", "Coruscant", "Naboo"],
+      "answer": "Cloud City"
+    },
+    {
+      "id": "007",
+      "question": "Who says, \"I love you.\"?",
+      "options": ["Han Solo", "Leia Organa", "C-3PO", "Chewbacca"],
+      "answer": "Han Solo"
+    },
+    {
+      "id": "008",
+      "question": "Who responds with, \"I know.\"?",
+      "options": ["Leia Organa", "Han Solo", "C-3PO", "Chewbacca"],
+      "answer": "Han Solo"
+    },
+    {
+      "id": "009",
+      "question": "What type of creature is used by the Empire to attack the Rebel base on Hoth?",
+      "options": ["AT-AT", "AT-ST", "Imperial Shuttle", "TIE Fighter"],
+      "answer": "AT-AT"
+    },
+    {
+      "id": "010",
+      "question": "What is the name of Darth Vader's flagship?",
+      "options": ["Executor", "Devastator", "Tyrant", "Avenger"],
+      "answer": "Executor"
+    },
+    {
+      "id": "011",
+      "question": "Who is the commander of the Rebel base on Hoth?",
+      "options": [
+        "Princess Leia",
+        "Han Solo",
+        "General Madine",
+        "General Rieekan"
+      ],
+      "answer": "General Rieekan"
+    },
+    {
+      "id": "012",
+      "question": "What is the name of Han Solo's ship?",
+      "options": ["Millennium Falcon", "Slave I", "X-wing", "TIE Fighter"],
+      "answer": "Millennium Falcon"
+    },
+    {
+      "id": "013",
+      "question": "Who says, \"I find your lack of faith disturbing.\"?",
+      "options": [
+        "Darth Vader",
+        "Emperor Palpatine",
+        "Grand Moff Tarkin",
+        "Count Dooku"
+      ],
+      "answer": "Darth Vader"
+    },
+    {
+      "id": "014",
+      "question": "What is the name of the creature that attacks Luke Skywalker on Hoth?",
+      "options": ["Wampa", "Rancor", "Sarlacc", "Dewback"],
+      "answer": "Wampa"
+    },
+    {
+      "id": "015",
+      "question": "Who says, \"I'm altering the deal. Pray I don't alter it any further.\"?",
+      "options": [
+        "Darth Vader",
+        "Emperor Palpatine",
+        "Boba Fett",
+        "Lando Calrissian"
+      ],
+      "answer": "Darth Vader"
+    },
+    {
+      "id": "016",
+      "question": "What does Luke Skywalker lose during his battle with Darth Vader on Cloud City?",
+      "options": ["His lightsaber", "His hand", "His blaster", "His comlink"],
+      "answer": "His hand"
+    },
+    {
+      "id": "017",
+      "question": "Who says, \"There is no escape. Don't make me destroy you.\"?",
+      "options": [
+        "Darth Vader",
+        "Emperor Palpatine",
+        "Luke Skywalker",
+        "Obi-Wan Kenobi"
+      ],
+      "answer": "Darth Vader"
+    },
+    {
+      "id": "018",
+      "question": "What is the name of the gas giant where Cloud City is located?",
+      "options": ["Endor", "Dagobah", "Bespin", "Alderaan"],
+      "answer": "Bespin"
+    },
+    {
+      "id": "019",
+      "question": "Who is the Rebel pilot who leads the attack on the AT-AT walkers on Hoth?",
+      "options": [
+        "Luke Skywalker",
+        "Wedge Antilles",
+        "Poe Dameron",
+        "Biggs Darklighter"
+      ],
+      "answer": "Luke Skywalker"
+    },
+    {
+      "id": "020",
+      "question": "What is the name of the asteroid field where the Millennium Falcon seeks refuge?",
+      "options": [
+        "Hoth Asteroid Field",
+        "Kessel Run",
+        "Bespin Asteroid Field",
+        "Dagobah Asteroid Field"
+      ],
+      "answer": "Hoth Asteroid Field"
+    },
+    {
+      "id": "021",
+      "question": "Who is Darth Vader's master?",
+      "options": [
+        "Darth Sidious",
+        "Darth Plagueis",
+        "Darth Maul",
+        "Darth Tyranus"
+      ],
+      "answer": "Darth Sidious"
+    },
+    {
+      "id": "022",
+      "question": "What is the name of the gas giant where Cloud City is located?",
+      "options": ["Endor", "Dagobah", "Bespin", "Alderaan"],
+      "answer": "Bespin"
+    },
+    {
+      "id": "023",
+      "question": "Who is the Rebel pilot who leads the attack on the AT-AT walkers on Hoth?",
+      "options": [
+        "Luke Skywalker",
+        "Wedge Antilles",
+        "Poe Dameron",
+        "Biggs Darklighter"
+      ],
+      "answer": "Luke Skywalker"
+    },
+    {
+      "id": "024",
+      "question": "What is the name of the asteroid field where the Millennium Falcon seeks refuge?",
+      "options": [
+        "Hoth Asteroid Field",
+        "Kessel Run",
+        "Bespin Asteroid Field",
+        "Dagobah Asteroid Field"
+      ],
+      "answer": "Hoth Asteroid Field"
+    },
+    {
+      "id": "025",
+      "question": "Who is Darth Vader's master?",
+      "options": [
+        "Darth Sidious",
+        "Darth Plagueis",
+        "Darth Maul",
+        "Darth Tyranus"
+      ],
+      "answer": "Darth Sidious"
+    },
+    {
+      "id": "026",
+      "question": "Who is the Wookiee co-pilot of the Millennium Falcon?",
+      "options": ["Chewbacca", "Lando Calrissian", "Nien Nunb", "Wicket"],
+      "answer": "Chewbacca"
+    },
+    {
+      "id": "027",
+      "question": "What is the name of the bounty hunter who hands Han Solo over to Jabba the Hutt?",
+      "options": ["Boba Fett", "IG-88", "Bossk", "Dengar"],
+      "answer": "Boba Fett"
+    },
+    {
+      "id": "028",
+      "question": "Who says, \"I am your father.\"?",
+      "options": ["Darth Sidious", "Darth Vader", "Obi-Wan Kenobi", "Yoda"],
+      "answer": "Darth Vader"
+    },
+    {
+      "id": "029",
+      "question": "What is the name of the creature that Han Solo slices open to keep Luke Skywalker warm on Hoth?",
+      "options": ["Wampa", "Tauntaun", "Rancor", "Dewback"],
+      "answer": "Tauntaun"
+    },
+    {
+      "id": "030",
+      "question": "Who is the Imperial officer in charge of the AT-AT walkers on Hoth?",
+      "options": [
+        "General Veers",
+        "Admiral Piett",
+        "Grand Moff Tarkin",
+        "Captain Needa"
+      ],
+      "answer": "General Veers"
+    },
+    {
+      "id": "031",
+      "question": "What is the name of the creature that inhabits the swamps of Dagobah and confronts Luke Skywalker?",
+      "options": ["Wampa", "Tauntaun", "Rancor", "Dewback"],
+      "answer": "Yoda"
+    },
+    {
+      "id": "032",
+      "question": "Who says, \"I have a bad feeling about this.\"?",
+      "options": ["Han Solo", "Leia Organa", "C-3PO", "Luke Skywalker"],
+      "answer": "Han Solo"
+    },
+    {
+      "id": "033",
+      "question": "What is the name of Lando Calrissian's assistant in Cloud City?",
+      "options": ["Bib Fortuna", "Salacious B. Crumb", "Max Rebo", "Lobot"],
+      "answer": "Lobot"
+    },
+    {
+      "id": "034",
+      "question": "Who says, \"I'd just as soon kiss a Wookiee.\"?",
+      "options": ["Princess Leia", "Luke Skywalker", "Han Solo", "C-3PO"],
+      "answer": "Princess Leia"
+    },
+    {
+      "id": "035",
+      "question": "What is the name of the Rebel commander on Hoth who leads the ground troops?",
+      "options": [
+        "General Veers",
+        "Admiral Piett",
+        "General Rieekan",
+        "Captain Needa"
+      ],
+      "answer": "General Rieekan"
+    },
+    {
+      "id": "036",
+      "question": "Who says, \"Why, you stuck-up, half-witted, scruffy-looking nerf herder!\"?",
+      "options": ["Princess Leia", "Han Solo", "C-3PO", "Lando Calrissian"],
+      "answer": "Princess Leia"
+    },
+    {
+      "id": "037",
+      "question": "What is the name of the gas giant where Lando Calrissian's Cloud City is located?",
+      "options": ["Endor", "Dagobah", "Bespin", "Alderaan"],
+      "answer": "Bespin"
+    },
+    {
+      "id": "038",
+      "question": "Who is the commander of Darth Vader's flagship, the Executor?",
+      "options": [
+        "Admiral Piett",
+        "General Veers",
+        "Admiral Ozzel",
+        "Captain Needa"
+      ],
+      "answer": "Admiral Piett"
+    },
+    {
+      "id": "039",
+      "question": "What is the name of the Rebel pilot who crashes his snowspeeder during the Battle of Hoth?",
+      "options": [
+        "Luke Skywalker",
+        "Wedge Antilles",
+        "Zev Senesca",
+        "Dak Ralter"
+      ],
+      "answer": "Dak Ralter"
+    },
+    {
+      "id": "040",
+      "question": "Who says, \"The Force is with you, young Skywalker, but you are not a Jedi yet.\"?",
+      "options": ["Darth Sidious", "Darth Vader", "Emperor Palpatine", "Yoda"],
+      "answer": "Darth Vader"
+    }
+  ]
+}
