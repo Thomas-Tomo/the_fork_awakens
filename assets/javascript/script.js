@@ -51,3 +51,37 @@ window.onclick = function (event) {
     modal.style.display = 'none';
   }
 };
+
+const quizData = [
+  {
+    question: "Who is Luke Skywalker's father?",
+    options: ["Darth Vader", "Obi-Wan Kenobi", "Yoda", "Han Solo"],
+    answer: "Darth Vader"
+  },
+  {
+    question: "What is the name of Han Solo's ship?",
+    options: ["Millennium Falcon", "Star Destroyer", "X-Wing", "TIE Fighter"],
+    answer: "Millennium Falcon"
+  },
+  {
+    question: "Who trained Yoda?",
+    options: ["Darth Bane", "Count Dooku", "Qui-Gon Jinn", "N'Kata Del Gormo"],
+    answer: "N'Kata Del Gormo"
+  }
+];
+
+// Function to populate Quiz
+const populateQuiz = () => {
+  const quizContainer = document.getElementById('quiz-container');
+  quizContainer.innerHTML = quizData.map((questionData, index) => `
+      <div class="question">
+          <h3>${index + 1}. ${questionData.question}</h3>
+          ${questionData.options.map(option => `
+              <label>
+                  <input type="radio" name="question${index}" value="${option}">
+                  ${option}
+              </label><br>
+          `).join('')}
+      </div>
+  `).join('');
+};
