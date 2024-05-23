@@ -9,19 +9,26 @@
   <body>
     <header id="header">
       <h2>Classic</h2>
-      <img src="assets/images/Star_Wars_Logo..png" alt="Star_Wars_Logo" />
+      <img src="assets/images/Star_Wars_Logo.png" alt="Star_Wars_Logo" />
       <h2>Quiz!</h2>
     </header>
     <main>
       <section class="container">
         <div id="movie-container">
           <button href="#">start</button>
-          <button href="#">rules</button>
-          <button href="#">team</button>
+          <button id="rulesBtn">Rules</button>
+          <button href="team.html">team</button>
         </div>
       </section>
+      <!-- Modal HTML -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Here are the rules...</p>
+        </div>
+      </div>
     </main>
     <footer>This is a footer</footer>
-    <!-- <script src="assets/javascript/script.js"></script> -->
+    <script src="assets/javascript/script.js"></script>
   </body>
 </html>
