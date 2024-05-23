@@ -24,6 +24,7 @@ for (let i = 0; i < stars; i++) {
   star.style.right = xy[0] + 'px';
   star.style.left = xy[0] + 'px';
   star.style.top = xy[1] + 'px';
+
   // Add the star to the document body
   document.body.append(star);
 }
