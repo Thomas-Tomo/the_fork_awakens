@@ -33,8 +33,13 @@ var modal = document.getElementById('myModal');
 var btn = document.getElementById('rulesBtn');
 var span = document.getElementsByClassName('close')[0];
 
+const audio = new Audio('assets/audio/do_or_do_not.mp3');
+
 btn.onclick = function () {
   modal.style.display = 'block';
+
+  // Play the audio when the modal is opened
+  audio.play();
 };
 
 span.onclick = function () {
