@@ -1,7 +1,7 @@
 console.log('Script start');
 console.log ('hello');
 // URL of the SWAPI endpoint for people
-const apiUrl = 'https://swapi.dev/api/people/1/';
+const apiUrl = 'https://swapi.dev/api/films/1/';
 
 console.log('Starting the fetch request');
 
