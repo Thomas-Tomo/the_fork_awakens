@@ -15,7 +15,7 @@ async function fetchQuizData() {
     }
 }
 
-// Function to shuffle an array
+// Function to shuffle questions so they are displayed randomly
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
