@@ -18,11 +18,8 @@
 body {
   background-color: var(--secondary-color);
   color: var(--main-text);
-  background: url('../images/starbg.jpg') center center/cover no-repeat;
-  margin: 0;
+  /* background: url('../images/starbg.jpg') center; */
   height: 100vh;
-  width: 100vw;
-  overflow: hidden;
 }
 
 #header {
@@ -30,7 +27,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  position: relative;
 }
 
 #header img {
@@ -45,6 +42,7 @@ body {
 main {
   display: flex;
   flex: 1 0 auto;
+  position: relative;
 }
 
 .container {
@@ -247,26 +245,45 @@ p {
 footer {
   color: var(--secondary-color);
   background-color: transparent;
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.75rem;
 }
 
+/* star background + warp effect  */
+#space {
+  width: 100%;
+}
+.stars-bg {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
 @media screen and (min-width: 768px) {
   #header {
     flex-direction: row;
-    margin: 30px auto;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 1;
   }
 
   #header img {
-    margin: 0 auto;
+    margin: 30px auto;
   }
 
   #header h2 {
     font-size: 1.75rem;
     padding: 40px;
+  }
+
+  #titleQuiz {
+    width: 290px;
   }
 
   /* buttons styling */

@@ -30,9 +30,9 @@ for (let i = 0; i < stars; i++) {
 }
 
 // Get the modal
-var modal = document.getElementById('myModal');
-var btn = document.getElementById('rulesBtn');
-var span = document.getElementsByClassName('close')[0];
+const modal = document.getElementById('myModal');
+const btn = document.getElementById('rulesBtn');
+const span = document.getElementsByClassName('close')[0];
 
 const audio = new Audio('assets/audio/do_or_do_not.mp3');
 
