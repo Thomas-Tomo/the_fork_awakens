@@ -3,6 +3,7 @@
 :root {
   --main-text: #ffc107;
   --secondary-color: #252525;
+  --third-color: #888;
 }
 
 * {
@@ -40,6 +41,7 @@ body {
 #header img {
   width: 300px;
   margin: 0 auto;
+  fill: var(--main-text);
 }
 
 #header h2 {
@@ -48,7 +50,6 @@ body {
 
 main {
   display: flex;
-  height: 100vh;
   flex: 1 0 auto;
 }
 
@@ -63,6 +64,7 @@ main {
   max-width: 80%;
   margin: auto;
   transition: opacity 1s ease-out;
+  display: none;
 }
 
 #movie-container button {
@@ -76,12 +78,48 @@ main {
   background: rgba(37, 37, 37, 0.6);
 }
 
-#movie-container button:hover {
+#movie-container button:hover,
+#question button:hover {
   background-color: var(--main-text);
   color: var(--secondary-color);
   cursor: pointer;
-  border: 3px solid #262626;
+  border: 3px solid var(--secondary-color);
   box-shadow: 0 0 10px var(--main-text);
+}
+
+/* Film choices styling */
+#quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#question button {
+  text-transform: uppercase;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  border-radius: 10px;
+  border: 2px solid var(--main-text);
+  color: var(--main-text);
+  margin-bottom: 30px;
+  background: rgba(37, 37, 37, 0.6);
+}
+
+.btn-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(37, 37, 37, 0.5);
+  border-radius: 10px;
+  padding: 30px;
+}
+.btn img {
+  display: flex;
+  height: 200px;
+  width: 150px;
+  cursor: pointer;
 }
 
 /* Light Side */
@@ -96,6 +134,7 @@ main {
 #ligth-side {
   color: azure;
 }
+
 
 /* Modal Styling */
 .modal {
@@ -124,9 +163,9 @@ p {
   position: relative;
   margin: 5% auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid var(--third-color);
   width: 70%;
-  background-color: #262626;
+  background-color: var(--secondary-color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   animation-name: animatetop;
   animation-duration: 0.4s;
@@ -146,7 +185,7 @@ p {
 
 /* Styling for the close button */
 .close {
-  color: #aaaaaa;
+  color: var(--third-color);
   float: right;
   font-size: 30px;
   font-weight: bold;
@@ -177,5 +216,20 @@ footer {
   #header h2 {
     font-size: 1.5rem;
     padding: 20px;
+  }
+
+  /* Film choices styling */
+  .btn-grid {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    margin-bottom: 50px;
+    padding: 30px;
+  }
+  .btn img {
+    display: flex;
+    height: 300px;
+    width: 200px;
+    cursor: pointer;
   }
 }
