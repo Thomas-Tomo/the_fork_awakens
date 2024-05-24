@@ -50,6 +50,9 @@ function displayQuiz(questionData) {
                 missElement.textContent = miss;
                 wrongElement.style.backgroundColor = "red";
             }
+
+            // Compare score and miss values to set body background color
+            compareScoreAndMiss();
         });
 
         answersElement.appendChild(answerElement);
@@ -67,6 +70,19 @@ async function loadNewQuestion() {
     }
 }
 
+// Function to compare score and miss values and update body background color
+function compareScoreAndMiss() {
+    const score = parseInt(document.getElementById('score').textContent);
+    const miss = parseInt(document.getElementById('miss').textContent);
+    const body = document.body;
+
+    if (miss > score) {
+        body.style.backgroundColor = 'black';
+    } else {
+        body.style.backgroundColor = 'white';
+    }
+}
+
 // Main function to initialize the quiz
 async function initializeQuiz() {
     // Load the first question when the page loads
@@ -74,7 +90,10 @@ async function initializeQuiz() {
 
     // Add event listener to the "Next" button
     const nextButton = document.querySelector('.btn--play');
-    nextButton.addEventListener('click', loadNewQuestion);
+    nextButton.addEventListener('click', () => {
+        loadNewQuestion();
+        compareScoreAndMiss(); // Ensure background color is updated when loading a new question
+    });
 }
 
 // Call the initialize function when the page loads
