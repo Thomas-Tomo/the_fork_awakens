@@ -5,6 +5,92 @@
 
 Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge of the Star Wars universe through a series of challenging and entertaining questions. Whether you're a casual fan or a die-hard enthusiast, this game is designed to engage and entertain you.
 
+## **TABLE OF CONTENTS**
+
+- [**Team Goal**](#the-team)
+- [**Design**](#design)
+   * [Colours](#colours)
+   * [Typography](#typography)
+   * [Wireframes](#wireframes)
+- [**Features**](#features)
+  * [Footer](#footer)
+  * [Home Page](#home-page)
+  * [Team Page](#team-page)
+  * [Game Flow](#game-flow)
+  * [Tech Stack](#tech-stack)
+- [**Testing**](#testing)
+- [**Bugs**](#bugs)
+- [**Credits**](#credits)
+- [**The Team**](#the-team)
+
+<hr>
+
+## **Design**
+
+### **Colours**
+- Research led to most commonly found colours related to Star Wars.
+- We selected a palette of complimentary colours with a galactic theme.
+- Colours were selected using the coolors color palette generator.
+- An image incorporating [enter feature] was used as the background<br><br>
+
+![Coolors Palette](/assets/images/starwars-colors.png)
+
+<hr>
+
+### **Typography**
+- All fonts were sourced through [Google fonts](https://fonts.google.com/).
+- Fonts were selected for their srelation to Star Wars and 8bit styles.
+- Press Start 2P & cursive were selected.
+
+![Fonts](#)
+![Title Font](#)
+
+<hr>
+
+### **Media**
+- [Figma](https://figma.com/) was used for the design of wireframes.
+- [Fontawesome](https://fontawesome.com/) was used for the icons on various buttons.
+- [Pexels](https://www.pexels.com/) was used to source the background image.
+
+<hr>
+
+### **Wireframes**
+Wireframes for different views are linked here:
+
+![Mobile Wireframe](#)
+![Mobile Wireframe](#)
+
+![Desktop Wireframe](#)
+![Desktop Wireframe](#)
+
+<hr>
+
+### **Team Page**
+- The team page displays cards for each member.
+- Team member main roles in the project are provided.
+- Each member has a space to record their own 'Happy Hack'.
+- Links are provided for team members' Github and LinkedIn profiles.
+
+![Team Page](#)
+
+<hr>
+
+## **TESTING**
+
+- Testing and results can be found [here](add testing link here)
+- Manual tests were carried out throughout the process.
+- Responsiveness has been checked and adjusted in Chrome Dev Tools and the site has been viewed on mobiles and an mac without issues.
+
+<hr>
+
+## **Bugs**
+
+* Issue - [name issues here]
+* Cause - [name causes here]
+* Resolution - [resolution here]
+
+<hr>
+
 ## Game Flow
 
 1. **Main Screen**
@@ -61,10 +147,34 @@ The Star Wars Quiz Game is developed using the following tools and technologies:
 - **JavaScript**: For implementing the game logic and interactivity.
 - **Bootstrap**: For responsive design and pre-built UI components to ensure the game looks great on all devices.
 
-## The Teams
+## The Team
 
 ### Tulio Minini
 
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/t-minini)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tulio-minini/)
 [![portfolio](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://tuliominini.com/)
+
+### Michael Kavanagh
+
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MickKav)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/michael-kavanagh-software-dev/)
+
+### Fill your name
+
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](#)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![portfolio](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](#)
+
+### Fill your name
+
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](#)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![portfolio](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](#)
+
+
+### Fill your name
+
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](#)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![portfolio](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](#)
