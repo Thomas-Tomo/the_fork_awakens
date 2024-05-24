@@ -1,5 +1,14 @@
 // RequestAnimationFrame Polyfill for smoother animation
-window.requestAnimFrame = (() => window.requestAnimationFrame)();
+window.requestAnimFrame = (function () {
+  return (
+    window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    function (callback) {
+      window.setTimeout(callback, 1000 / 60);
+    }
+  );
+})();
 
 // Get canvas element and its 2D rendering context
 const canvas = document.getElementById('space');
@@ -9,10 +18,10 @@ const c = canvas.getContext('2d');
 const numStars = 1900;
 
 // Radius of stars' glow effect
-const radius = '0.' + Math.floor(Math.random() * 9) + 1;
+let radius = '0.' + Math.floor(Math.random() * 9) + 1;
 
 // Focal length for perspective effect
-const focalLength = canvas.width * 2;
+let focalLength = canvas.width * 2;
 
 // Initial warp state (0 for off, 1 for on)
 let warp = 0;
@@ -47,8 +56,8 @@ function initializeStars() {
 
   // Generate stars with random positions and properties
   stars = [];
-  for (i = 0; i < numStars; i++) {
-    star = {
+  for (let i = 0; i < numStars; i++) {
+    let star = {
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       z: Math.random() * canvas.width,
@@ -60,8 +69,8 @@ function initializeStars() {
 
 function moveStars() {
   // Move stars closer to the viewer (simulate depth)
-  for (i = 0; i < numStars; i++) {
-    star = stars[i];
+  for (let i = 0; i < numStars; i++) {
+    let star = stars[i];
     star.z--;
 
     if (star.z <= 0) {
@@ -74,7 +83,10 @@ function drawStars() {
   let pixelX, pixelY, pixelRadius;
 
   // Resize canvas if window size changes
-  if (canvas.width != window.innerWidth || canvas.width != window.innerWidth) {
+  if (
+    canvas.width !== window.innerWidth ||
+    canvas.height !== window.innerHeight
+  ) {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     initializeStars();
@@ -83,9 +95,6 @@ function drawStars() {
   // Calculate the maximum canvas dimension (width or height)
   const maxCanvasDimension = Math.max(canvas.width, canvas.height);
 
-  // Calculate a relative pixel radius based on the maximum canvas dimension
-  const relativePixelRadius = maxCanvasDimension / 300; // Adjust this value for desired star size
-
   // Draw background or clear canvas based on warp state
   if (warp == 0) {
     c.fillStyle = 'rgba(0,10,20,1)';
@@ -93,7 +102,7 @@ function drawStars() {
   }
 
   // Draw stars with perspective effect
-  c.fillStyle = 'rgba(209, 255, 255, ' + radius + ')';
+  c.fillStyle = 'rgba(254, 254, 254, ' + radius + ')';
   for (i = 0; i < numStars; i++) {
     star = stars[i];
 
@@ -109,8 +118,14 @@ function drawStars() {
     c.arc(pixelX, pixelY, pixelRadius, 0, Math.PI * 2); // Create a circle path
     c.fill();
     c.closePath();
-    c.fillStyle = 'rgba(209, 255, 255, ' + star.o + ')'; // Adjust opacity for each star
+    c.fillStyle = 'rgba(254, 254, 254, ' + star.o + ')'; // Adjust opacity for each star
   }
 }
+
+document.getElementById('startBtn').addEventListener('click', function () {
+  warp = warp === 1 ? 0 : 1;
+  c.clearRect(0, 0, canvas.width, canvas.height);
+  executeFrame();
+});
 
 executeFrame();

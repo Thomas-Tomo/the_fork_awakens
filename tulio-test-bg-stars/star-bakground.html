@@ -4,38 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classic Star Wars Quiz</title>
-    <link rel="stylesheet" href="/tulio-test/style copy.css" />
-    <style>
-      .stars-bg {
-        position: absolute;
-        top: 0;
-        z-index: 0;
-        height: 100vh;
-        max-width: 100%;
-        margin: 0;
-        overflow: hidden;
-        background-size: cover;
-        image-rendering: pixelated;
-        font-family: sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="stars-bg">
       <canvas id="space"></canvas>
     </div>
-    <header id="header">
-      <h2>Classic</h2>
-      <img src="/assets/images/star_wars_logo.png" alt="Star_Wars_Logo" />
-      <h2>Quiz!</h2>
-    </header>
     <main>
+      <header id="header">
+        <h2>Classic</h2>
+        <img src="./../assets/images/star-wars-logo.svg" alt="Star_Wars_Logo" />
+        <h2>Quiz!</h2>
+      </header>
       <section class="container">
-        <!-- <div id="movie-container"> -->
+        <div id="movie-container">
           <button id="startBtn">start</button>
           <button id="rulesBtn">Rules</button>
           <button href="#">team</button>
-        <!-- </div> -->
+        </div>
       </section>
       <!-- Modal HTML -->
       <div id="myModal" class="modal">
@@ -50,8 +36,7 @@
         </div>
       </div>
     </main>
-    <!-- <footer>This is a footer</footer> -->
-    <script src="/tulio-test/background-test.js"></script>
-    <script src="/tulio-test/script copy.js"></script>
+    <script src="./star-background.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
