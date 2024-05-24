@@ -163,3 +163,4 @@ start.onclick = function () {
 document.getElementById('teamBtn').addEventListener('click', function() {
   window.location.href = 'team.html';
 });
+
