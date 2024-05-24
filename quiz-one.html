@@ -28,17 +28,27 @@
         }
 
         body {
-            /* background-color: var(--secondary-color); */
+            background-color: var(--secondary-color);
             color: var(--main-text);
             background: url('../images/starbg.jpg') center center/cover no-repeat;
         }
 
-        #quiz-container {
+        main {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            /* height: 100vh; */
+            min-height: 60vh;
+            width: 60%;
+            margin: auto;
+        }
+
+        #quiz-container {
+            display: block;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
         }
 
         .question {
@@ -64,6 +74,12 @@
             background-color: var(--main-text);
             color: var(--secondary-color);
         }
+
+        #score-container {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 
@@ -74,22 +90,23 @@
         <h2>Quiz!</h2>
     </header>
     <main>
-        <section class="container">
-            <div id="quiz-container">
-                <div id="question" class="question">Question Here</div>
-                <div id="answers" class="answers">
-                    <div class="answer">Option 1</div>
-                    <div class="answer">Option 2</div>
-                    <div class="answer">Option 3</div>
-                    <div class="answer">Option 4</div>
-                </div>
+        <div id="quiz-container">
+            <div id="question" class="question">Question Here</div>
+            <div id="answers" class="answers">
+                <div class="answer">Option 1</div>
+                <div class="answer">Option 2</div>
+                <div class="answer">Option 3</div>
+                <div class="answer">Option 4</div>
             </div>
-        </section>
-        <!-- Modal HTML -->
-
+        </div>
+        <div id="score-container">
+            Correct: <span id="score">0</span>
+            Wrong: <span id="miss">0</span>
+        </div>
     </main>
     <footer>This is a footer</footer>
-    <script src="assets/javascript/quiz.js"></script>
+    <!-- <script src="assets/javascript/quiz.js"></script> -->
+    <script src="assets/javascript/score.js"></script>
 </body>
 
 </html>
