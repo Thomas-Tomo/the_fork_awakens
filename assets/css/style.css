@@ -35,26 +35,6 @@ body {
   z-index: -1;
 }
 
-/* Background image styling */
-#backgroundImg {
-  opacity: 0;
-  background-size: cover; /* Ensures the image covers the entire container */
-  background-position: center; /* Centers the image */
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
-  width: 100vw; /* Ensures the container is full width */
-  height: 100%; /* Sets the container height to full viewport height */
-  animation: fadeIn 1s ease-in forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /* Header Styling */
 #header {
   display: flex;
@@ -166,7 +146,7 @@ main {
   border: 2px solid var(--main-text);
   color: var(--main-text);
   margin-bottom: 30px;
-  background: rgba(37, 37, 37, 0.6);
+  background: rgba(183, 183, 183, 0.4);
 }
 
 .btn-grid {
@@ -175,7 +155,7 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: rgba(37, 37, 37, 0.8);
+  background: rgba(183, 183, 183, 0.4);
   border-radius: 20px;
   padding: 30px;
   margin-top: 30px;
@@ -292,6 +272,12 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 0.75rem;
+}
+
+@media screen and (min-width: 320px) {
+  #header img {
+    width: 200px;
+  }
 }
 
 @media screen and (min-width: 768px) {
