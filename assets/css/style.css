@@ -129,14 +129,38 @@ main {
   flex-direction: column;
   align-items: center;
   background: rgba(37, 37, 37, 0.5);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 30px;
+  margin-top: 30px;
 }
-.btn img {
+
+.btnImg {
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.btnImg img {
   display: flex;
   height: 200px;
   width: 150px;
   cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.8);
+  border-radius: 10px;
+  /* rotateY: 360deg of images */
+  transition: transform 2s ease-in-out;
+}
+
+.btnImg .esb {
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.btnImg .jedi {
+  box-shadow: 0 0 20px rgba(46, 4, 255, 0.6);
+}
+/* hover activation for images */
+.btnImg img:hover {
+  transform: rotateY(360deg);
 }
 
 /* Light Side */
@@ -223,26 +247,27 @@ footer {
 @media screen and (min-width: 768px) {
   #header {
     flex-direction: row;
+    margin: 30px auto;
   }
 
   #header img {
-    margin: 0;
+    margin: 0 auto;
   }
 
   #header h2 {
-    font-size: 1.5rem;
-    padding: 20px;
+    font-size: 1.75rem;
+    padding: 40px;
   }
 
   /* Film choices styling */
   .btn-grid {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     flex-direction: row;
     margin-bottom: 50px;
-    padding: 30px;
+    padding: 50px;
   }
-  .btn img {
+  .btnImg img {
     display: flex;
     height: 300px;
     width: 200px;
