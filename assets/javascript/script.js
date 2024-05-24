@@ -120,16 +120,16 @@ const audio = new Audio('assets/audio/do_or_do_not.mp3');
 // };
 
 // Start button
-const start = document.getElementById('startBtn');
-const movies = document.getElementById('movie-container');
+// const start = document.getElementById('startBtn');
+// const movies = document.getElementById('movie-container');
 
-start.onclick = function () {
-  movies.style.opacity = '0';
-  // Start the animation to fade slowly
-  setTimeout(function () {
-    movies.style.display = 'none';
-  }, 1000); // match this with the duration of your transition
-};
+// start.onclick = function () {
+//   movies.style.opacity = '0';
+//   // Start the animation to fade slowly
+//   setTimeout(function () {
+//     movies.style.display = 'none';
+//   }, 1000); // match this with the duration of your transition
+// };
 
 
 
