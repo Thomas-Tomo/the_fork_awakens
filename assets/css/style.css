@@ -55,10 +55,9 @@ main {
   max-width: 80%;
   margin: auto;
   transition: opacity 1s ease-out;
-  display: none;
 }
 
-#movie-container button {
+#movie-container .btn {
   text-transform: uppercase;
   margin: 5px;
   font-size: 1rem;
@@ -69,8 +68,8 @@ main {
   background: rgba(37, 37, 37, 0.6);
 }
 
-#movie-container button:hover,
-#return-home button:hover {
+#movie-container .btn:hover,
+#return-home .btn:hover {
   background-color: var(--main-text);
   color: var(--secondary-color);
   cursor: pointer;
@@ -128,7 +127,6 @@ main {
 #ligth-side {
   color: azure;
 }
-
 
 /* Modal Styling */
 .modal {
