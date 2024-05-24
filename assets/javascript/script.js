@@ -87,10 +87,8 @@ start.onclick = function () {
   addBg.style.opacity = '1';
   // Start the animation to fade slowly
   setTimeout(function () {
-    addBg.style.display = 'block';
+    addBg.style.display = 'flex';
   }, 500); // match this with the duration of your transition
   /// Play sound effect
   audio1.play();
 };
-
-const pickFilm = document.getElementById('');

@@ -38,10 +38,21 @@ body {
 /* Background image styling */
 #backgroundImg {
   opacity: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.5s ease-in;
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  width: 100vw; /* Ensures the container is full width */
+  height: 100%; /* Sets the container height to full viewport height */
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Header Styling */
@@ -133,9 +144,18 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   display: none;
   transition: opacity 1s ease-in;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #return-home button {
