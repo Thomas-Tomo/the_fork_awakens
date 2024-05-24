@@ -81,3 +81,57 @@ start.onclick = function () {
 };
 
 const pickFilm = document.getElementById('');
+
+// Change at your will just placeholder
+const quizData = [
+  {
+    question: "Who is Luke Skywalker's father?",
+    options: ["Darth Vader", "Obi-Wan Kenobi", "Yoda", "Han Solo"],
+    answer: "Darth Vader"
+  },
+  {
+    question: "What is the name of Han Solo's ship?",
+    options: ["Millennium Falcon", "Star Destroyer", "X-Wing", "TIE Fighter"],
+    answer: "Millennium Falcon"
+  },
+  {
+    question: "Who trained Yoda?",
+    options: ["Darth Bane", "Count Dooku", "Qui-Gon Jinn", "N'Kata Del Gormo"],
+    answer: "N'Kata Del Gormo"
+  }
+];
+
+// Function to populate Quiz
+const populateQuiz = () => {
+  const quizContainer = document.getElementById('quiz-container');
+  quizContainer.innerHTML = quizData.map((questionData, index) => `
+      <div class="question">
+          <h3>${index + 1}. ${questionData.question}</h3>
+          ${questionData.options.map(option => `
+              <label>
+                  <input type="radio" name="question${index}" value="${option}">
+                  ${option}
+              </label><br>
+          `).join('')}
+      </div>
+  `).join('');
+};
+
+// Function to calculate score
+const calculateScore = () =>
+  quizData.reduce((score, { answer }, index) =>
+    document.querySelector(`input[name="question${index}"]:checked`)?.value === answer
+      ? score + 1
+      : score, 0);
+
+// Event listener for submitting quiz
+document.getElementById('submit-quiz').addEventListener('click', () => {
+  const score = calculateScore();
+  alert(`Your score is: ${score} out of ${quizData.length}`);
+  // Save the score to localStorage and redirect to the results page
+  localStorage.setItem('latestScore', score);
+  window.location.href = 'results.html';
+})
+
+// Populate the quiz on page load
+document.addEventListener('DOMContentLoaded', populateQuiz);
