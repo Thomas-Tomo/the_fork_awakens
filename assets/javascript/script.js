@@ -1,4 +1,5 @@
 'use strict';
+
 // This is amount of divs/ stars being created in the background
 const stars = 350;
 // Function to generate random x & y coordinates for the stars
@@ -30,9 +31,9 @@ for (let i = 0; i < stars; i++) {
 }
 
 // Get the modal
-var modal = document.getElementById('myModal');
-var btn = document.getElementById('rulesBtn');
-var span = document.getElementsByClassName('close')[0];
+const modal = document.getElementById('myModal');
+const btn = document.getElementById('rulesBtn');
+const span = document.getElementsByClassName('close')[0];
 
 const audio = new Audio('assets/audio/do_or_do_not.mp3');
 
@@ -53,9 +54,14 @@ window.onclick = function (event) {
   }
 };
 
-// Start button
+
+//Start button
 const start = document.getElementById('startBtn');
 const movies = document.getElementById('movie-container');
+const quizFilms = document.getElementById('quiz-container');
+const home = document.getElementById('return-home');
+
+const audio1 = new Audio('assets/audio/force.mp3');
 
 start.onclick = function () {
   movies.style.opacity = '0';
@@ -63,4 +69,23 @@ start.onclick = function () {
   setTimeout(function () {
     movies.style.display = 'none';
   }, 1000); // match this with the duration of your transition
+};
+
+
+
+// This is an event listener for the btn Team Page
+
+document.getElementById('teamBtn').addEventListener('click', function() {
+  window.location.href = 'team.html';
+});
+
+  // match this with the duration of your transition
+  quizFilms.style.opacity = '1';
+  // Start the animation to fade slowly
+  setTimeout(function () {
+    // match this with the duration of your transition
+    quizFilms.style.display = 'flex';
+  }, 1000);
+  /// Play sound effect
+  audio1.play();
 };
