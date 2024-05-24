@@ -2,7 +2,7 @@
 
 :root {
   --main-text: #ffc107;
-  --secondary-color: #252525;
+  --secondary-color: #000a14; /* tm-updated */
 }
 
 * {
@@ -14,53 +14,46 @@
   line-height: 4rem;
 }
 
+/* tm-updated */
 body {
-  /* z-index: 200; */
   background-color: var(--secondary-color);
   color: var(--main-text);
   height: 100vh;
-  /* background: url('../images/starbg.jpg') center center/cover no-repeat; */
 }
-/* Styling for the background stars */
 
-/* .stars {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background-color: #f0f8ff;
-  z-index: 10;
-} */
-
+/* tm-updated */
 #header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
-  z-index: 20;
+  margin: 0 auto;
+  /* padding-top: 100px; */
   position: relative;
-  width: 100%;
   padding-right: 55px;
 }
 
+/* tm-updated */
 #header img {
-  width: 400px;
-  /* margin: 0 auto; */
+  width: 350px;
 }
 
+/* tm-updated */
 #header h2 {
   font-size: 3rem;
+}
+
+/* tm-updated */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 auto;
+  position: relative;
+  height: 100vh;
   /* background-color: red; */
 }
 
-main {
-  display: flex;
-  /* height: 100vh; */
-  flex: 1 0 auto;
-  z-index: 20;
-  position: relative;
-}
-
+/* tm-updated */
 .container {
   display: flex;
   flex-direction: column;
@@ -69,21 +62,31 @@ main {
   gap: 10px;
   width: 100%;
   transition: opacity 1s ease-out;
-  height: 400px;
+  height: 350px;
 }
 
-.container button {
+/* tm-updated */
+#movie-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* tm-updated */
+#movie-container button {
   text-transform: uppercase;
   margin: 5px;
   width: 500px;
   font-size: 1rem;
   border-radius: 20px;
-  border: 2px solid var(--main-text);
+  border: 3px solid var(--main-text);
   color: var(--main-text);
   background: rgba(37, 37, 37, 0.6);
 }
 
-.container button:hover {
+/* tm-updated */
+#movie-container button:hover {
   background-color: var(--main-text);
   color: var(--secondary-color);
   cursor: pointer;
@@ -91,11 +94,21 @@ main {
   box-shadow: 0 0 10px var(--main-text);
 }
 
+/* star background + warp effect  */
+#space {
+  width: 100%;
+}
+.stars-bg {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+}
+
 /* Modal Styling */
 .modal {
   display: none;
   position: fixed;
-  /* z-index: 60; */
   left: 0;
   top: 0;
   width: 100%;
@@ -103,6 +116,7 @@ main {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
+  z-index: 100;
 }
 
 .modal-content h2,
@@ -118,12 +132,12 @@ p {
   position: relative;
   margin: 5% auto;
   padding: 20px;
-  /* border: 1px solid #888; */
-  width: 70%;
+  width: 40%;
   background-color: #262626;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   animation-name: animatetop;
   animation-duration: 0.4s;
+  border-radius: 20px;
 }
 
 /* Add Animation to drop in rules */
@@ -148,7 +162,7 @@ p {
 
 .close:hover,
 .close:focus {
-  color: rgba(0, 0, 0, 0.885);
+  color: var(--main-text);
   text-decoration: none;
   cursor: pointer;
 }
