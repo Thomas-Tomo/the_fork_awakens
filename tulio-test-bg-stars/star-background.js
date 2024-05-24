@@ -122,10 +122,13 @@ function drawStars() {
   }
 }
 
-document.getElementById('startBtn').addEventListener('click', function () {
-  warp = warp === 1 ? 0 : 1;
-  c.clearRect(0, 0, canvas.width, canvas.height);
-  executeFrame();
+const elements = document.querySelectorAll('#startBtn');
+elements.forEach(element => {
+  element.addEventListener('click', function () {
+    warp = warp === 1 ? 0 : 1;
+    c.clearRect(0, 0, canvas.width, canvas.height);
+    executeFrame();
+  });
 });
 
 executeFrame();
