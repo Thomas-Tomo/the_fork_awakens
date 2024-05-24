@@ -1,5 +1,3 @@
-// quiz.js
-
 // Function to fetch the quiz data
 async function fetchQuizData() {
     try {
@@ -11,24 +9,14 @@ async function fetchQuizData() {
     }
 }
 
-
-// Main function to initialize the quiz
-async function initializeQuiz() {
-    const questions = await fetchQuizData();
-    if (questions && questions.length > 0) {
-        // Get a random index within the range of questions array length
-        const randomIndex = Math.floor(Math.random() * questions.length);
-        // Display the randomly selected question
-        displayQuiz(questions[randomIndex]);
-    }
-}
-
 // Function to display a question and its answers
 function displayQuiz(questionData) {
     const questionElement = document.getElementById('question');
     const answersElement = document.getElementById('answers');
     const scoreElement = document.getElementById('score');
     const missElement = document.getElementById('miss');
+    const correctElement = document.getElementById('correct');
+    const wrongElement = document.getElementById('wrong');
 
     // Set the question text
     questionElement.textContent = questionData.question;
@@ -54,13 +42,13 @@ function displayQuiz(questionData) {
                 let score = parseInt(scoreElement.textContent);
                 score++;
                 scoreElement.textContent = score;
-                alert(`You selected: ${selectedOption}\n\nCorrect!`);
+                correctElement.style.backgroundColor = "green";
             } else {
                 // Update miss if incorrect
                 let miss = parseInt(missElement.textContent);
                 miss++;
                 missElement.textContent = miss;
-                alert(`You selected: ${selectedOption}\n\nIncorrect. The correct answer is: ${correctAnswer}`);
+                wrongElement.style.backgroundColor = "red";
             }
         });
 
@@ -68,6 +56,26 @@ function displayQuiz(questionData) {
     });
 }
 
+// Function to load a new quiz question
+async function loadNewQuestion() {
+    const questions = await fetchQuizData();
+    if (questions && questions.length > 0) {
+        // Get a random index within the range of questions array length
+        const randomIndex = Math.floor(Math.random() * questions.length);
+        // Display the randomly selected question
+        displayQuiz(questions[randomIndex]);
+    }
+}
+
+// Main function to initialize the quiz
+async function initializeQuiz() {
+    // Load the first question when the page loads
+    await loadNewQuestion();
+
+    // Add event listener to the "Next" button
+    const nextButton = document.querySelector('.btn--play');
+    nextButton.addEventListener('click', loadNewQuestion);
+}
 
 // Call the initialize function when the page loads
 document.addEventListener('DOMContentLoaded', initializeQuiz);

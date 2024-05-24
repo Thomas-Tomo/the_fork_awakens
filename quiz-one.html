@@ -80,6 +80,15 @@
             margin-top: 20px;
             font-size: 1.2rem;
         }
+
+        #correct {
+            background-color: white;
+            padding: 5px;
+        }
+        #wrong {
+            background-color: white;
+            padding: 5px;
+        }
     </style>
 </head>
 
@@ -100,8 +109,9 @@
             </div>
         </div>
         <div id="score-container">
-            Correct: <span id="score">0</span>
-            Wrong: <span id="miss">0</span>
+            <span id="correct">Correct:<span id="score">0</span></span>
+            <span id="wrong">  Wrong:<span id="miss">0</span></span>
+            <button type="button" aria-label="Continue game" data-type="continue-game" class="btn btn-primary btn--play">Next</button>
         </div>
     </main>
     <footer>This is a footer</footer>
