@@ -1,41 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --main-color: #ffc107;
+  --secondary-color: #252525;
+  --third-color: #888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 2px;
+  line-height: 4rem;
+}
+
 main {
-    padding: 20px;
-  }
-  .flip-card {
-    background-color: transparent;
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  background-color: red;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  height: 100vh;
+}
+
+/* Header Styling */
+#header-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#header-team img {
+  width: 250px;
+  margin: 0 auto;
+}
+
+#header-team h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  width: 290px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  margin-bottom: 20px; /* Optional spacing between flip cards */
+}
+
+/* star background + warp effect  */
+#space {
+  transition: opacity 5s ease-out;
+  /* display: none; */
+}
+
+.stars-bg {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 320px) {
+  #header-team img {
     width: 200px;
-    height: 200px;
-    perspective: 1000px;
-    margin-bottom: 20px; /* Optional spacing between flip cards */
   }
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  #header-team {
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80%;
     align-items: center;
     justify-content: center;
+    gap: 1;
   }
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
+
+  #header-team img {
+    margin: 30px auto;
   }
-  .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
+
+  #header-team h2 {
+    font-size: 1.5rem;
+    padding: 40px;
   }
+
+  #header-team h2:last-child {
+    width: 290px;
+  }
+}
