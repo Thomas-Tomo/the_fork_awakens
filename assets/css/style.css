@@ -19,6 +19,10 @@ body {
   background-color: var(--secondary-color);
   color: var(--main-text);
   background: url('../images/starbg.jpg') center center/cover no-repeat;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 #header {
@@ -45,7 +49,7 @@ main {
 
 .container {
   width: 80%;
-  margin: 150px auto;
+  margin: 50px auto;
 }
 
 #movie-container {
@@ -242,8 +246,12 @@ p {
 
 footer {
   color: var(--secondary-color);
-  background-color: var(--main-text);
+  background-color: transparent;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
 }
 
 @media screen and (min-width: 768px) {
