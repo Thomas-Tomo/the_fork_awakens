@@ -63,4 +63,10 @@ start.onclick = function () {
   setTimeout(function () {
     movies.style.display = 'none';
   }, 1000); // match this with the duration of your transition
+
+  hideBg.style.opacity = '0';
+  // Start the animation to fade slowly
+  setTimeout(function () {
+    hideBg.style.display = 'none';
+  }, 1000); // match this with the duration of your transition
 };

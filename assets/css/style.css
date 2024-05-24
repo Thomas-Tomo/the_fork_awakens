@@ -18,10 +18,33 @@
 body {
   background-color: var(--secondary-color);
   color: var(--main-text);
-  /* background: url('../images/starbg.jpg') center; */
   height: 100vh;
 }
 
+/* star background + warp effect  */
+#space {
+  transition: opacity 5s ease-out;
+  /* display: none; */
+}
+
+.stars-bg {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Background image styling */
+#backgroundImg {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in;
+}
+
+/* Header Styling */
 #header {
   display: flex;
   flex-direction: column;
@@ -132,7 +155,7 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: rgba(37, 37, 37, 0.5);
+  background: rgba(37, 37, 37, 0.8);
   border-radius: 20px;
   padding: 30px;
   margin-top: 30px;
@@ -251,18 +274,6 @@ footer {
   font-size: 0.75rem;
 }
 
-/* star background + warp effect  */
-#space {
-  width: 100%;
-}
-.stars-bg {
-  margin: 0;
-  height: 100vh;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-
 @media screen and (min-width: 768px) {
   #header {
     flex-direction: row;
@@ -278,7 +289,7 @@ footer {
   }
 
   #header h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     padding: 40px;
   }
 

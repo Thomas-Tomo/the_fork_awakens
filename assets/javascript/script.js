@@ -59,6 +59,8 @@ const start = document.getElementById('startBtn');
 const movies = document.getElementById('movie-container');
 const quizFilms = document.getElementById('quiz-container');
 const home = document.getElementById('return-home');
+const removeBg = document.getElementById('space');
+const addBg = document.getElementById('backgroundImg');
 
 const audio1 = new Audio('assets/audio/force.mp3');
 
@@ -76,6 +78,17 @@ start.onclick = function () {
     // match this with the duration of your transition
     quizFilms.style.display = 'flex';
   }, 1000);
+
+  removeBg.style.opacity = '0';
+  // Start the animation to fade slowly
+  setTimeout(function () {
+    removeBg.style.display = 'none';
+  }, 5000); // match this with the duration of your transition
+  addBg.style.opacity = '1';
+  // Start the animation to fade slowly
+  setTimeout(function () {
+    addBg.style.display = 'block';
+  }, 500); // match this with the duration of your transition
   /// Play sound effect
   audio1.play();
 };
