@@ -84,6 +84,19 @@ main {
   box-shadow: 0 0 10px var(--main-text);
 }
 
+/* Light Side */
+#light-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: auto;
+  transition: opacity 1s ease-out;
+}
+
+#ligth-side {
+  color: azure;
+}
+
 /* Modal Styling */
 .modal {
   display: none;
