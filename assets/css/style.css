@@ -74,10 +74,12 @@ main {
   text-transform: uppercase;
   margin: 5px;
   font-size: 1rem;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 2px solid var(--main-text);
   color: var(--main-text);
   margin-bottom: 30px;
+  width: 90%;
+  margin: 30px auto;
   background: rgba(37, 37, 37, 0.6);
 }
 
@@ -259,6 +261,11 @@ footer {
     padding: 40px;
   }
 
+  /* buttons styling */
+  #movie-container .btn,
+  .aBtn {
+    width: 60%;
+  }
   /* Film choices styling */
   .btn-grid {
     display: flex;
