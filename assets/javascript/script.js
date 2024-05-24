@@ -157,3 +157,9 @@ start.onclick = function () {
   
 }
 
+
+// This is an event listener for the btn Team Page
+
+document.getElementById('teamBtn').addEventListener('click', function() {
+  window.location.href = 'team.html';
+});
