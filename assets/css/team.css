@@ -35,17 +35,23 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  /* height: 184px; */
 }
 
 #header-team img {
   width: 250px;
+  /* height: 184px; */
   margin: 0 auto;
+}
+
+#header-team a {
+  height: 184px;
 }
 
 #header-team h2 {
   font-size: 1.25rem;
   margin: 0;
-  width: 290px;
+  height: 100%;
 }
 
 .flip-card {
@@ -69,6 +75,7 @@ body {
   position: absolute;
   z-index: -1;
 }
+
 
 .flip-card-inner {
   position: relative;
