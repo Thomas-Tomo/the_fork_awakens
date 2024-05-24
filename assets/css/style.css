@@ -84,7 +84,8 @@ main {
 
 #movie-container .btn:hover,
 #return-home .btn:hover,
-.aBtn:hover {
+.aBtn:hover,
+#return-home button:hover {
   background-color: var(--main-text);
   color: var(--secondary-color);
   cursor: pointer;
