@@ -81,7 +81,15 @@ function displayQuiz(questionData) {
             }
 
             // Show the result
-            alert(resultMessage);
+            const dialog = document.getElementById("resultDialog"); 
+            const dialogText = document.getElementById("resultText"); 
+            const dialogClose = document.getElementById("resultClose"); 
+            dialogText.innerText = resultMessage;
+            dialog.show();
+
+            dialogClose.addEventListener('click', () => {
+                dialog.close()
+            })
         });
 
         answersElement.appendChild(answerElement);
