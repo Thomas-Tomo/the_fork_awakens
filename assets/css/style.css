@@ -51,9 +51,22 @@ main {
 #movie-container {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 70%;
   margin: auto;
   transition: opacity 1s ease-out;
+}
+
+.aBtn button {
+  font-size: 1rem;
+  display: flex;
+  margin: 0 auto;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--main-text);
 }
 
 #movie-container .btn,
@@ -72,25 +85,20 @@ main {
   text-decoration: none;
 }
 
-.aBtn button {
-  font-size: 1rem;
-  display: flex;
-  margin: 0 auto;
-  text-transform: uppercase;
-  background: none;
-  border: none;
-  color: var(--main-text);
-}
-
 #movie-container .btn:hover,
 #return-home .btn:hover,
-.aBtn:hover,
-#return-home button:hover {
+#return-home button:hover,
+.aBtn:hover {
   background-color: var(--main-text);
   color: var(--secondary-color);
   cursor: pointer;
   border: 3px solid var(--secondary-color);
   box-shadow: 0 0 10px var(--main-text);
+}
+
+.aBtn button:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
 }
 
 /* Film choices styling */
