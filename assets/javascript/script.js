@@ -79,3 +79,5 @@ start.onclick = function () {
   /// Play sound effect
   audio1.play();
 };
+
+const pickFilm = document.getElementById('');
