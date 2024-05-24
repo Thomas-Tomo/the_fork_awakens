@@ -31,9 +31,9 @@ for (let i = 0; i < stars; i++) {
 }
 
 // Get the modal
-var modal = document.getElementById('myModal');
-var btn = document.getElementById('rulesBtn');
-var span = document.getElementsByClassName('close')[0];
+const modal = document.getElementById('myModal');
+const btn = document.getElementById('rulesBtn');
+const span = document.getElementsByClassName('close')[0];
 
 const audio = new Audio('assets/audio/do_or_do_not.mp3');
 
@@ -54,9 +54,14 @@ window.onclick = function (event) {
   }
 };
 
-// Start button
+
+//Start button
 const start = document.getElementById('startBtn');
 const movies = document.getElementById('movie-container');
+const quizFilms = document.getElementById('quiz-container');
+const home = document.getElementById('return-home');
+
+const audio1 = new Audio('assets/audio/force.mp3');
 
 start.onclick = function () {
   movies.style.opacity = '0';
@@ -74,3 +79,13 @@ document.getElementById('teamBtn').addEventListener('click', function() {
   window.location.href = 'team.html';
 });
 
+  // match this with the duration of your transition
+  quizFilms.style.opacity = '1';
+  // Start the animation to fade slowly
+  setTimeout(function () {
+    // match this with the duration of your transition
+    quizFilms.style.display = 'flex';
+  }, 1000);
+  /// Play sound effect
+  audio1.play();
+};

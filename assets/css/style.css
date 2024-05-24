@@ -20,15 +20,6 @@ body {
   color: var(--main-text);
   background: url('../images/starbg.jpg') center center/cover no-repeat;
 }
-/* Styling for the background stars */
-
-/* .stars {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background-color: #f0f8ff;
-  z-index: 10;
-} */
 
 #header {
   display: flex;
@@ -79,7 +70,7 @@ main {
 }
 
 #movie-container button:hover,
-#question button:hover {
+#return-home button:hover {
   background-color: var(--main-text);
   color: var(--secondary-color);
   cursor: pointer;
@@ -92,9 +83,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  display: none;
+  transition: opacity 1s ease-in;
 }
 
-#question button {
+#return-home button {
   text-transform: uppercase;
   padding: 5px 10px;
   font-size: 0.7rem;
