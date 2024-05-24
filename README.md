@@ -1,49 +1,70 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome, Mick here
+# Classic <img src="./assets/images/star-wars-logo.svg" alt="star wars logo" width="100" height="50"> Quiz
 
+## Description
 
-This is Terry!
-This is Enda!
-This Bekry repo
-This is Thomas!
-This is Tulio!
-This is Mick!
-This is Liam!
-This is Martina!
+Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge of the Star Wars universe through a series of challenging and entertaining questions. Whether you're a casual fan or a die-hard enthusiast, this game is designed to engage and entertain you.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Game Flow
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+1. **Main Screen**
+   - The main screen has three buttons:
+     - **Start**: Begins the quiz.
+     - **Rules**: Displays the game rules.
+     - **Team**: Shows information about the development team.
+2. **Button Actions**
+   - **Start**:
+     - When the player clicks the "Start" button, the game transitions to the question theme selection screen.
+   - **Rules**:
+     - When the player clicks the "Rules" button, a modal displays the game rules. These rules explain how to play the game, how the scoring works, and any other relevant information.
+     - The player can close the modal to return to the main screen.
+   - **Team**:
+     - When the player clicks the "Team" button, the user is directed to the team page, with information about the development team. This includes names, and contact information.
+     - The player can click on the "return home" button to return to the main screen.
+3. **Question Theme Selection**
 
-## Codeanywhere Reminders
+   - After clicking "Start", the player is taken to a screen where they can choose between question themes based on three different Star Wars movies.
+   - Each theme corresponds to a specific movie from the Star Wars series.
+   - The player selects a movie theme by clicking on its movie poster.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+4. **Questionnaire**
 
-`python3 -m http.server`
+   - After selecting a movie theme, the player is presented with the first question related to that movie.
+   - The questionnaire consists of 10 questions.
+   - Each question is displayed with multiple choice answers.
+   - The player selects an answer by clicking on it.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+5. **Answer Evaluation**
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+   - Once an answer is selected, the game immediately evaluates whether it is correct or incorrect.
+   - The score is updated accordingly.
 
-`http_server`
+6. **Next Question**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+   - After score is updated, the game automatically transitions to the next question.
+   - This process repeats until all 10 questions have been answered.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+7. **End Screen**
+   - When all 10 questions have been answered, the player is presented with a modal.
+   - The modal indicates whether the player is on the light side or the dark side based on their performance:
+     - **Light Side**: If the player gets more correct answers than wrong answers.
+     - **Dark Side**: If the player gets more wrong answers than correct answers.
+   - The modal contains the player’s score.
+   - The player has the option to restart the quiz by clicking a "Restart" button, which takes them back to the start screen.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Tech Stack
 
-To log into the Heroku toolbelt CLI:
+The Star Wars Quiz Game is developed using the following tools and technologies:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- **HTML**: For structuring the content and layout of the web pages.
+- **CSS**: For styling the game and making it visually appealing.
+- **JavaScript**: For implementing the game logic and interactivity.
+- **Bootstrap**: For responsive design and pre-built UI components to ensure the game looks great on all devices.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## The Teams
 
----
+### Tulio Minini
 
-Happy coding!
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/t-minini)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tulio-minini/)
+[![portfolio](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://tuliominini.com/)
