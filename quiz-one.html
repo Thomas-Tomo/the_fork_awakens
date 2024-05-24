@@ -57,6 +57,21 @@
             background-color: var(--main-text);
             color: var(--secondary-color);
         }
+
+        #resultDialog{
+            z-index: 2;
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            margin: auto;
+            text-align: center;
+        }
+
+        #resultDialog::backdrop {
+            background: rgba(136, 136, 136, 0.8);
+            z-index: 2;
+        }
+        
     </style>
 </head>
 <body>
@@ -69,6 +84,10 @@
             <div class="answer">Option 4</div>
         </div>
     </div>
+    <dialog id="resultDialog">
+        <p id="resultText"></p>
+        <button class="answer" id="resultClose">Close</button>
+    </dialog>
     <script src="assets/javascript/quiz.js"></script>
 </body>
 </html>
