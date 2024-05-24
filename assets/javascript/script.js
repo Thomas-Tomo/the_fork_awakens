@@ -54,6 +54,7 @@ window.onclick = function (event) {
   }
 };
 
+
 //Start button
 const start = document.getElementById('startBtn');
 const movies = document.getElementById('movie-container');
@@ -67,7 +68,16 @@ start.onclick = function () {
   // Start the animation to fade slowly
   setTimeout(function () {
     movies.style.display = 'none';
-  }, 1000);
+  }, 1000); // match this with the duration of your transition
+};
+
+
+
+// This is an event listener for the btn Team Page
+
+document.getElementById('teamBtn').addEventListener('click', function() {
+  window.location.href = 'team.html';
+});
 
   // match this with the duration of your transition
   quizFilms.style.opacity = '1';
