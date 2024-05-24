@@ -63,3 +63,8 @@ body {
     background: rgba(136, 136, 136, 0.8);
     z-index: 2;
 }
+
+#result{
+    display: none;
+    text-align: center;
+}
