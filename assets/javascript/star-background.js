@@ -125,8 +125,9 @@ function drawStars() {
 
 // tulio updated
 const elements = document.querySelectorAll('#startBtn');
-elements.forEach(element => {
+elements.forEach((element) => {
   element.addEventListener('click', function () {
+    warp = warp === 1 ? 0 : 1;
     warp = 1; // Activate warp effect
     c.clearRect(0, 0, canvas.width, canvas.height);
     executeFrame();

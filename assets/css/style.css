@@ -5,6 +5,7 @@
   --secondary-color: #252525;
   --third-color: #888;
   --fourth-color: #000;
+  --bgButtons-shade: rgba(37, 37, 37, 0.8);
 }
 
 * {
@@ -64,7 +65,7 @@ main {
 
 .container {
   width: 80%;
-  margin: auto; /* tm updated  */
+  margin: 50px auto; /* tm updated  */
 }
 
 #movie-container {
@@ -99,7 +100,7 @@ main {
   margin-bottom: 30px;
   width: 90%;
   margin: 30px auto;
-  background: rgba(37, 37, 37, 0.6);
+  background: var(--bgButtons-shade);
 }
 
 #movie-container a {
@@ -155,7 +156,7 @@ main {
   border: 3px solid var(--main-text);
   border-radius: 20px;
   color: var(--main-color);
-  background: rgba(37, 37, 37, 0.6);
+  background: var(--bgButtons-shade);
   margin-bottom: 2rem;
 }
 
@@ -170,14 +171,14 @@ main {
 
 .btn-grid {
   display: flex;
-  /* gap: 40px; */
+  gap: 10px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: rgba(183, 183, 183, 0.4);
+  background: var(--bgButtons-shade);
   border-radius: 20px;
   padding: 30px;
-  /* margin-top: 30px; */
+  margin-top: 10px;
 }
 
 .btnImg {
@@ -190,7 +191,7 @@ main {
 .posters-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .btn-grid h1 {
@@ -385,7 +386,7 @@ footer {
   }
 
   /* tm added  */
-.posters-container {
-  flex-direction: row;
-}
+  .posters-container {
+    flex-direction: row;
+  }
 }
