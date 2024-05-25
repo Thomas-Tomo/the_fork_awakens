@@ -317,11 +317,10 @@ footer {
 @media screen and (min-width: 768px) {
   #header {
     flex-direction: row;
-    margin: 0 auto;
+    margin: 30px auto;
     width: 80%;
     align-items: center;
     justify-content: center;
-    gap: 1;
   }
 
   #header img {

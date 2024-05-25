@@ -1,35 +1,5 @@
 'use strict';
 
-// // This is amount of divs/ stars being created in the background
-// const stars = 350;
-// // Function to generate random x & y coordinates for the stars
-// function addStars() {
-//   // Loop through the number of stars specified
-//   for (let i = 0; i < stars; i++) {
-//     // Generate a random x & y coordinate within the window's inner width and height
-//     const x = Math.floor(Math.random() * window.innerWidth);
-//     const y = Math.floor(Math.random() * window.innerHeight);
-//     // Return an array containing the x & y coordinates
-//     return [x, y];
-//   }
-// }
-// // Loop through the number of stars specified
-// for (let i = 0; i < stars; i++) {
-//   // Create a new div element to represent a star
-//   const star = document.createElement('div');
-//   // Set the class name of the star to 'stars'
-//   star.className = 'stars';
-//   // Get the x and y coordinates for the star from the addStars function
-//   let xy = addStars();
-//   // Set the left and top styles of the star to the calculated coordinates
-//   star.style.right = xy[0] + 'px';
-//   star.style.left = xy[0] + 'px';
-//   star.style.top = xy[1] + 'px';
-
-//   // Add the star to the document body
-//   document.body.append(star);
-// }
-
 // Get the modal
 const modal = document.getElementById('myModal');
 const btn = document.getElementById('rulesBtn');
@@ -62,7 +32,7 @@ const home = document.getElementById('return-home');
 const removeBg = document.getElementById('space');
 const addBg = document.getElementById('backgroundImg');
 
-const audio1 = new Audio('assets/audio/force.mp3');
+const audio1 = new Audio('assets/audio/hyperspace-jump.wav');
 
 start.onclick = function () {
   movies.style.opacity = '0';
@@ -84,11 +54,5 @@ start.onclick = function () {
   setTimeout(function () {
     removeBg.style.display = 'none';
   }, 5000); // match this with the duration of your transition
-  // addBg.style.opacity = '1';
-  // // Start the animation to fade slowly
-  // setTimeout(function () {
-  //   addBg.style.display = 'flex';
-  // }, 500); // match this with the duration of your transition
-  // /// Play sound effect
   audio1.play();
 };
