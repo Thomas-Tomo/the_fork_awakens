@@ -75,9 +75,3 @@ jedi.forEach(function (element) {
     laughing.play();
   });
 });
-
-music2.onclick = function (event) {
-  event.preventDefault(); // Prevent the link from being followed
-  theme2.play();
-  window.location.href = this.href; // Navigate to the link after the audio has started playing
-};
