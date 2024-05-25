@@ -1,7 +1,6 @@
 // Global variables
-let timerId;
 let questionCount = 0;
-let skipCount = 0; // Variable to track the number of skips
+let questionIndex = 0;
 const maxQuestions = 10;
 const maxSkips = 5;
 
@@ -29,9 +28,6 @@ function displayQuiz(questionData) {
   // Clear previous answers
   answersElement.innerHTML = '';
 
-  // Clear previous timer
-  clearTimeout(timerId);
-
   // Add the answers to the page
   questionData.options.forEach((option, index) => {
     const answerElement = document.createElement('div');
@@ -41,25 +37,19 @@ function displayQuiz(questionData) {
 
     // Add click event listener
     const handleAnswerClick = () => {
-      // Clear the timer when an answer is selected
-      clearTimeout(timerId);
-
-      const selectedOption = option;
-      const correctAnswer = questionData.answer;
-
       // Disable all answer buttons
       const allAnswers = document.querySelectorAll('.answer');
       allAnswers.forEach((answer) => {
         answer.style.pointerEvents = 'none';
-        if (answer.textContent === correctAnswer) {
+        if (answer.textContent === questionData.answer) {
           answer.style.backgroundColor = 'green';
-        } else if (answer.textContent === selectedOption) {
+        } else if (answer.textContent === option) {
           answer.style.backgroundColor = 'red';
         }
       });
 
       // Check if the selected option is correct
-      if (selectedOption === correctAnswer) {
+      if (option === questionData.answer) {
         // Update score by one if correct
         let score = parseInt(scoreElement.textContent);
         score++;
@@ -77,44 +67,28 @@ function displayQuiz(questionData) {
       compareScoreAndMiss();
 
       // Set a timer to move to the next question after 2 seconds
-      // setTimeout(() => {
-      //   loadNewQuestion();
-      // }, 2000);
+      setTimeout(() => {
+        // Reset background color
+        correctElement.style.backgroundColor = 'transparent';
+        wrongElement.style.backgroundColor = 'transparent';
+        // Highlight the correct answer before moving to the next question
+        const correctAnswer = questionData.answer;
+        const allAnswers = document.querySelectorAll('.answer');
+        allAnswers.forEach((answer) => {
+          answer.style.pointerEvents = 'auto';
+          if (answer.textContent === correctAnswer) {
+            answer.style.backgroundColor = 'green';
+          }
+        });
+        // Load the next question
+        loadNewQuestion();
+      }, 2000);
     };
 
     answerElement.addEventListener('click', handleAnswerClick);
 
     answersElement.appendChild(answerElement);
   });
-
-  // Set a timer to auto move to the next question after 8 seconds
-  // timerId = setTimeout(() => {
-  //   // Highlight the correct answer before moving to the next question
-  //   const correctAnswer = questionData.answer;
-  //   const allAnswers = document.querySelectorAll('.answer');
-  //   allAnswers.forEach((answer) => {
-  //     answer.style.pointerEvents = 'none';
-  //     if (answer.textContent === correctAnswer) {
-  //       answer.style.backgroundColor = 'green';
-  //     }
-  //   });
-
-  //   // Increment the miss count if no answer was selected
-  //   let miss = parseInt(missElement.textContent);
-  //   miss++;
-  //   missElement.textContent = miss;
-
-  //   // Change the background color of the wrong element to red
-  //   wrongElement.style.backgroundColor = 'red';
-
-  //   // Update body background color
-  //   compareScoreAndMiss();
-
-  //   // Set a timer to move to the next question after 2 seconds
-  //   setTimeout(() => {
-  //     loadNewQuestion();
-  //   }, 2000);
-  // }, 8000);
 }
 
 async function loadNewQuestion() {
@@ -127,11 +101,15 @@ async function loadNewQuestion() {
   const questions = await fetchQuizData();
   if (questions && questions.length > 0) {
     // Get a random index within the range of questions array length
-    const randomIndex = Math.floor(Math.random() * questions.length);
+    let questionIndex = Math.floor(Math.random() * questions.length);
+    const questionData = questions[questionIndex];
     // Display the randomly selected question
-    displayQuiz(questions[randomIndex]);
+    displayQuiz(questionData);
     questionCount++; // Increment question count only when a question is displayed
     console.log(`Question count: ${questionCount}`); // Debugging log
+
+    // Remove the selected question from the array
+    questions.splice(questionIndex, 1);
   }
 }
 
@@ -166,30 +144,12 @@ async function initializeQuiz() {
   // Load the first question when the page loads
   await loadNewQuestion();
 
-  // Add event listener to the "Skip" button
-  const skipButton = document.querySelector('.btn-play');
-  skipButton.addEventListener('click', () => {
-    if (skipCount < maxSkips) {
-      // Check if the maximum skips limit has not been reached
-      clearTimeout(timerId); // Clear the timer when the Skip button is clicked
-      console.log('Skip button clicked'); // Debugging log
-      loadNewQuestion();
-      compareScoreAndMiss(); // Ensure background color is updated when loading a new question
-      skipCount++; // Increment the skip count
-      console.log(`Skip count: ${skipCount}`); // Debugging log
-      questionCount--; // Decrement question count to not consider skipped question
-      console.log(`Question count after skip: ${questionCount}`); // Debugging log
-    } else {
-      console.log('Max skips reached'); // Debugging log
-    }
-  });
-
   // Add event listener to the "New Game" button in the modal
   const newGameButton = document.getElementById('newGameButton');
   newGameButton.addEventListener('click', async () => {
     // Reset game variables
     questionCount = 0;
-    skipCount = 0;
+    questionIndex = 0;
     document.getElementById('score').textContent = '0';
     document.getElementById('miss').textContent = '0';
     compareScoreAndMiss(); // Reset background color
@@ -218,10 +178,10 @@ document.addEventListener('DOMContentLoaded', initializeQuiz);
 
 // Songs for different films - TERRY ADD CODE HERE
 // First film
-// function playAudio() {
-//   const theme1 = new Audio('assets/audio/star-wars-theme-song.wav');
-//   theme1.play();
-// }
+function playAudio() {
+  const theme1 = new Audio('assets/audio/star-wars-theme-song.wav');
+  theme1.play();
+}
 //Second film
 function playAudio2() {
   const theme2 = new Audio('assets/audio/imperial_march.wav');
@@ -230,6 +190,6 @@ function playAudio2() {
 
 // Third film
 function playAudio3() {
-  const theme3 = new Audio('');
+  const theme3 = new Audio('assets/audio/phantom-menace.wav');
   theme3.play();
 }
