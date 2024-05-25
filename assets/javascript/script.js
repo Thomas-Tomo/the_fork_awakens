@@ -29,7 +29,6 @@ const start = document.getElementById('startBtn');
 const movies = document.getElementById('movie-container');
 const quizFilms = document.getElementById('quiz-container');
 
-
 const audio1 = new Audio('assets/audio/hyperspace-jump.wav');
 
 start.onclick = function () {
@@ -46,7 +45,7 @@ start.onclick = function () {
     // match this with the duration of your transition
     quizFilms.style.display = 'flex';
   }, 1000);
-  
+
   audio1.play();
 };
 
@@ -76,3 +75,9 @@ jedi.forEach(function (element) {
     laughing.play();
   });
 });
+
+music2.onclick = function (event) {
+  event.preventDefault(); // Prevent the link from being followed
+  theme2.play();
+  window.location.href = this.href; // Navigate to the link after the audio has started playing
+};
