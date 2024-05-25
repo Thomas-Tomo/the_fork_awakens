@@ -5,6 +5,8 @@
   --secondary-color: #252525;
   --third-color: #888;
   --background-fade: #b7b7b766;
+  --fourth-color: #000;
+  --bgButtons-shade: rgba(37, 37, 37, 0.8);
 }
 
 * {
@@ -38,13 +40,13 @@ main {
   align-items: center;
   flex-direction: column;
   border-radius: 20px;
-  background-color: var(--background-fade);
+  background-color: var(--bgButtons-shade);
   /* margin-bottom: 2rem; */
 }
 
 /* page title  */
 main h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   margin: 0;
   padding: 2rem 0 2rem 0;
@@ -112,7 +114,8 @@ main h1 {
   border-radius: 20px;
   color: var(--main-color);
   background: rgba(37, 37, 37, 0.6);
-  margin-bottom: 2rem;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .navbar a:hover {
@@ -176,7 +179,7 @@ main h1 {
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  background-color: var(--secondary-color);
+  background-color: var(--fourth-color);
 }
 
 .social-links {
@@ -236,7 +239,7 @@ main h1 {
   .cards-container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
   }
 
   /* flip cards */
