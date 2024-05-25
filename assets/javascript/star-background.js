@@ -39,6 +39,7 @@ let i;
 // Animation flag
 let animate = true;
 
+
 // Initialize the stars and start the animation loop
 initializeStars();
 
@@ -131,7 +132,7 @@ elements.forEach((element) => {
     c.clearRect(0, 0, canvas.width, canvas.height);
     executeFrame();
     // Set a timeout to reset warp to 0 after 2 seconds
-    setTimeout(function () {
+    setTimeout(function() {
       warp = 0; // Reset warp effect after 3 seconds
     }, 3000);
   });

@@ -28,7 +28,7 @@ window.onclick = function (event) {
 const start = document.getElementById('startBtn');
 const movies = document.getElementById('movie-container');
 const quizFilms = document.getElementById('quiz-container');
-// const removeBg = document.getElementById('space');
+
 
 const audio1 = new Audio('assets/audio/hyperspace-jump.wav');
 
@@ -46,12 +46,7 @@ start.onclick = function () {
     // match this with the duration of your transition
     quizFilms.style.display = 'flex';
   }, 1000);
-
-  // removeBg.style.opacity = '0';
-  // // Start the animation to fade slowly
-  // setTimeout(function () {
-  //   removeBg.style.display = 'none';
-  // }, 5000); // match this with the duration of your transition
+  
   audio1.play();
 };
 
