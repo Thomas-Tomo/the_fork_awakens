@@ -47,7 +47,7 @@ main h1 {
   font-size: 1.8rem;
   text-transform: uppercase;
   margin: 0;
-  padding: 1rem 0 1rem 0;
+  padding: 2rem 0 2rem 0;
 }
 
 /* star background + warp effect  */
@@ -155,8 +155,13 @@ main h1 {
 }
 
 .flip-card-back {
+  width: 100%;
   color: white;
   transform: rotateY(180deg);
+}
+
+.flip-card-back h3 {
+  font-size: 1.2rem;
 }
 
 .flip-card-front,
