@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 2rem;
+  padding: 1rem 2rem 2rem;
   background-color: var(--secondary-color);
 }
 
@@ -39,7 +39,7 @@ main {
   flex-direction: column;
   border-radius: 20px;
   background-color: var(--background-fade);
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 /* page title  */
@@ -205,6 +205,7 @@ main h1 {
 
   main {
     width: 700px;
+    padding: 30px;
   }
 
   #header-team {
@@ -228,14 +229,14 @@ main h1 {
 
   /* page title  */
   main h1 {
-    padding: 1rem 0 0 0;
+    padding: 0;
+    padding-bottom: 2rem;
   }
 
   .cards-container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 1rem;
+    justify-content:space-around;
   }
 
   /* flip cards */
