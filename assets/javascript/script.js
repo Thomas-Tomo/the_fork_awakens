@@ -84,11 +84,11 @@ start.onclick = function () {
   setTimeout(function () {
     removeBg.style.display = 'none';
   }, 5000); // match this with the duration of your transition
-  addBg.style.opacity = '1';
-  // Start the animation to fade slowly
-  setTimeout(function () {
-    addBg.style.display = 'flex';
-  }, 500); // match this with the duration of your transition
-  /// Play sound effect
+  // addBg.style.opacity = '1';
+  // // Start the animation to fade slowly
+  // setTimeout(function () {
+  //   addBg.style.display = 'flex';
+  // }, 500); // match this with the duration of your transition
+  // /// Play sound effect
   audio1.play();
 };
