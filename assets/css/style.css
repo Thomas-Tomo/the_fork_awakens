@@ -65,7 +65,7 @@ main {
 
 .container {
   width: 80%;
-  margin: 50px auto; /* tm updated  */
+  margin: 50px auto;
 }
 
 #movie-container {
@@ -187,30 +187,27 @@ main {
   border: none;
 }
 
-/* tm added  */
 .posters-container {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.btn-grid h1 {
-  font-size: 1.8rem;
+.btn-grid h2 {
+  font-size: 1.5rem;
   text-transform: uppercase;
-  margin: 0; /* tm added  */
-  /* padding: 2rem 0 0 0; */
-  text-align: center; /* tm added  */
+  margin: 0;
+  text-align: center;
   padding-bottom: 2rem;
 }
 
 .btnImg img {
   display: flex;
-  height: 350px;
-  width: 250px;
+  height: 280px;
+  width: 180px;
   cursor: pointer;
   box-shadow: 0 0 20px rgba(255, 193, 7, 0.8);
   border-radius: 10px;
-  /* rotateY: 360deg of images */
   transition: transform 2s ease-in-out;
 }
 
@@ -268,10 +265,9 @@ h4 {
   position: relative;
   margin: 5% auto;
   padding: 20px;
-  border: 1px solid var(--third-color);
+  border-radius: 20px;
   width: 70%;
   background-color: var(--secondary-color);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
@@ -367,15 +363,6 @@ footer {
   #movie-container .btn,
   .aBtn {
     width: 60%;
-  }
-
-  /* Film choices styling */
-  .btn-grid {
-    /* display: flex; */
-    /* gap: 50px; */
-    /* flex-direction: row; */
-    /* margin-bottom: 50px; */
-    /* padding: 30px;  */
   }
 
   .btnImg img {
