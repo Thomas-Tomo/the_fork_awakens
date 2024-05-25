@@ -33,7 +33,7 @@ Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge 
 - Colours were selected using the coolors color palette generator.
 - An image incorporating [enter feature] was used as the background<br><br>
 
-![Coolors Palette](/assets/images/starwars-colors.png)
+![Coolors Palette](/assets/images/SWcolors.png)
 
 <hr>
 
