@@ -3,13 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz Game</title>
+    <title>Classic Star Wars Quiz</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png" />
+
+      <!-- Google Fonts -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+
+     <!-- CSS Styles -->
     <link rel="stylesheet" href="assets/css/quiz.css" />
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
@@ -17,17 +37,18 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script> -->
   </head>
 
   <body onload="playAudio()">
     <header id="header">
       <h2>Classic</h2>
-      <img src="assets/images/star_wars_logo.png" alt="Star_Wars_Logo" />
+      <img src="assets/images/star-wars-logo.svg" alt="Star_Wars_Logo" />
       <h2>Quiz!</h2>
     </header>
     <main>
       <div id="quiz-container">
+        <h2>Question</h2>
         <div id="question" class="question">Question Here</div>
         <div id="answers" class="answers">
           <div class="answer">Option 1</div>
@@ -37,19 +58,16 @@
         </div>
       </div>
       <div id="score-container">
-        <span id="correct">Correct:<span id="score">0</span></span>
-        <span id="wrong"> Wrong:<span id="miss">0</span></span>
-        <button
-          type="button"
-          aria-label="Continue game"
-          data-type="continue-game"
-          class="btn-play">
-          Skip
-        </button>
+        <div class="correct-wrapper">
+          <span id="correct">Correct</span>
+          <span id="score">0</span>
+        </div>
+        <div class="wrong-wrapper">
+          <span id="wrong">Wrong</span>
+          <span id="miss">0</span>
+        </div>
       </div>
     </main>
-    <footer>This is a footer</footer>
-
     <!-- Game Over Modal -->
     <div
       class="modal fade"
