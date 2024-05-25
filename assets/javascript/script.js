@@ -56,3 +56,20 @@ start.onclick = function () {
   }, 5000); // match this with the duration of your transition
   audio1.play();
 };
+
+// Hover sound effect for ESB film
+// converts the HTMLCollection to an array, so we can use forEach on it
+const esb = Array.from(document.getElementsByClassName('esb'));
+// Create an audio element
+const father = new Audio('assets/audio/father.wav');
+// To paly the audio
+esb.forEach(function (element) {
+  element.addEventListener('mouseover', function () {
+    father.play();
+  });
+  // Optional: reset the audio to the start
+  element.addEventListener('mouseout', function () {
+    father.pause();
+    father.currentTime = 0;
+  });
+});
