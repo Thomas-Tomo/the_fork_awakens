@@ -77,9 +77,9 @@ function displayQuiz(questionData) {
       compareScoreAndMiss();
 
       // Set a timer to move to the next question after 2 seconds
-      setTimeout(() => {
-        loadNewQuestion();
-      }, 2000);
+      // setTimeout(() => {
+      //   loadNewQuestion();
+      // }, 2000);
     };
 
     answerElement.addEventListener('click', handleAnswerClick);
@@ -88,33 +88,33 @@ function displayQuiz(questionData) {
   });
 
   // Set a timer to auto move to the next question after 8 seconds
-  timerId = setTimeout(() => {
-    // Highlight the correct answer before moving to the next question
-    const correctAnswer = questionData.answer;
-    const allAnswers = document.querySelectorAll('.answer');
-    allAnswers.forEach((answer) => {
-      answer.style.pointerEvents = 'none';
-      if (answer.textContent === correctAnswer) {
-        answer.style.backgroundColor = 'green';
-      }
-    });
+  // timerId = setTimeout(() => {
+  //   // Highlight the correct answer before moving to the next question
+  //   const correctAnswer = questionData.answer;
+  //   const allAnswers = document.querySelectorAll('.answer');
+  //   allAnswers.forEach((answer) => {
+  //     answer.style.pointerEvents = 'none';
+  //     if (answer.textContent === correctAnswer) {
+  //       answer.style.backgroundColor = 'green';
+  //     }
+  //   });
 
-    // Increment the miss count if no answer was selected
-    let miss = parseInt(missElement.textContent);
-    miss++;
-    missElement.textContent = miss;
+  //   // Increment the miss count if no answer was selected
+  //   let miss = parseInt(missElement.textContent);
+  //   miss++;
+  //   missElement.textContent = miss;
 
-    // Change the background color of the wrong element to red
-    wrongElement.style.backgroundColor = 'red';
+  //   // Change the background color of the wrong element to red
+  //   wrongElement.style.backgroundColor = 'red';
 
-    // Update body background color
-    compareScoreAndMiss();
+  //   // Update body background color
+  //   compareScoreAndMiss();
 
-    // Set a timer to move to the next question after 2 seconds
-    setTimeout(() => {
-      loadNewQuestion();
-    }, 2000);
-  }, 8000);
+  //   // Set a timer to move to the next question after 2 seconds
+  //   setTimeout(() => {
+  //     loadNewQuestion();
+  //   }, 2000);
+  // }, 8000);
 }
 
 async function loadNewQuestion() {
@@ -218,10 +218,10 @@ document.addEventListener('DOMContentLoaded', initializeQuiz);
 
 // Songs for different films - TERRY ADD CODE HERE
 // First film
-function playAudio() {
-  const theme1 = new Audio('assets/audio/star-wars-theme-song.wav');
-  theme1.play();
-}
+// function playAudio() {
+//   const theme1 = new Audio('assets/audio/star-wars-theme-song.wav');
+//   theme1.play();
+// }
 //Second film
 function playAudio2() {
   const theme2 = new Audio('assets/audio/imperial_march.wav');
