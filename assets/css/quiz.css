@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
     --main-text: #ffc107;
-    --secondary-color: #252525;
+    --secondary-color: #111010;
 }
 
 * {
@@ -13,23 +15,40 @@
 }
 
 body {
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     color: var(--main-text);
-    background: url('../images/starbg.jpg') center center/cover no-repeat;
+    background: none;
+    /* background: url('./assets/images/starbg.jpg') center center/cover no-repeat; */
 }
 
-#quiz-container {
+#header h2 {
+    font-size: 1.25rem;
+    color: var(--main-text);
+  }
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 70vh;
+    width: 80%;
+    margin: auto;
+}
+
+#quiz-container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
 }
 
 .question {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     text-align: center;
+    color: var(--main-text);
 }
 
 .answer {
@@ -50,21 +69,57 @@ body {
     color: var(--secondary-color);
 }
 
-#resultDialog {
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    margin: auto;
+#score-container {
     text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
 }
 
-#resultDialog::backdrop {
-    background: rgba(136, 136, 136, 0.8);
-    z-index: 2;
+#correct {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--main-text);
+    color: var(--main-text);
+    background: rgba(37, 37, 37, 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+#wrong {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--main-text);
+    color: var(--main-text);
+    background: rgba(37, 37, 37, 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-#result{
-    display: none;
+.btn-play {
     text-align: center;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--main-text);
+    color: var(--main-text);
+    background: rgba(37, 37, 37, 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-play:hover {
+    background-color: var(--main-text);
+    color: var(--secondary-color);
+}
+
+.modal-content {
+    font-size: 1.25rem;
+    background-color: blue;
+    color: #ffc107;
 }
