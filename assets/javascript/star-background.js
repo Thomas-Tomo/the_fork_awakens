@@ -39,6 +39,7 @@ let i;
 // Animation flag
 let animate = true;
 
+
 // Initialize the stars and start the animation loop
 initializeStars();
 
@@ -122,12 +123,17 @@ function drawStars() {
   }
 }
 
+// tulio updated
 const elements = document.querySelectorAll('#startBtn');
 elements.forEach(element => {
   element.addEventListener('click', function () {
-    warp = warp === 1 ? 0 : 1;
+    warp = 1; // Activate warp effect
     c.clearRect(0, 0, canvas.width, canvas.height);
     executeFrame();
+    // Set a timeout to reset warp to 0 after 2 seconds
+    setTimeout(function() {
+      warp = 0; // Reset warp effect after 3 seconds
+    }, 3000);
   });
 });
 
