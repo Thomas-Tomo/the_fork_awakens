@@ -12,6 +12,7 @@ Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge 
    * [Colours](#colours)
    * [Typography](#typography)
    * [Wireframes](#wireframes)
+   * [Audio](#audio)
 - [**Features**](#features)
   * [Footer](#footer)
   * [Home Page](#home-page)
@@ -62,6 +63,13 @@ Wireframes for different views are linked here:
 
 ![Desktop Wireframe](#)
 ![Desktop Wireframe](#)
+
+<hr>
+
+### **Audio**
+Audio files are integrated throughout the site to add interactivity and depth using these sites:
+- [Voicy](https://www.voicy.network/)
+- [The Sound Archive](https://www.thesoundarchive.com/star-wars.asp)
 
 <hr>
 
