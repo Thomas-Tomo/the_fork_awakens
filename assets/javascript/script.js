@@ -59,17 +59,26 @@ start.onclick = function () {
 
 // Hover sound effect for ESB film
 // converts the HTMLCollection to an array, so we can use forEach on it
+const newHope = Array.from(document.getElementsByClassName('hope'));
 const esb = Array.from(document.getElementsByClassName('esb'));
+const jedi = Array.from(document.getElementsByClassName('jedi'));
 // Create an audio element
-const father = new Audio('assets/audio/father.wav');
+const hope = new Audio('assets/audio/droids.mp3');
+const father = new Audio('assets/audio/father.mp3');
+const laughing = new Audio('assets/audio/laughing.wav');
 // To paly the audio
+newHope.forEach(function (element) {
+  element.addEventListener('mouseover', function () {
+    hope.play();
+  });
+});
 esb.forEach(function (element) {
   element.addEventListener('mouseover', function () {
     father.play();
   });
-  // Optional: reset the audio to the start
-  element.addEventListener('mouseout', function () {
-    father.pause();
-    father.currentTime = 0;
+});
+jedi.forEach(function (element) {
+  element.addEventListener('mouseover', function () {
+    laughing.play();
   });
 });
