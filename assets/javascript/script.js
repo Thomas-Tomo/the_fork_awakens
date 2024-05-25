@@ -28,9 +28,7 @@ window.onclick = function (event) {
 const start = document.getElementById('startBtn');
 const movies = document.getElementById('movie-container');
 const quizFilms = document.getElementById('quiz-container');
-const home = document.getElementById('return-home');
 const removeBg = document.getElementById('space');
-const addBg = document.getElementById('backgroundImg');
 
 const audio1 = new Audio('assets/audio/hyperspace-jump.wav');
 
@@ -66,7 +64,8 @@ const jedi = Array.from(document.getElementsByClassName('jedi'));
 const hope = new Audio('assets/audio/droids.mp3');
 const father = new Audio('assets/audio/father.mp3');
 const laughing = new Audio('assets/audio/laughing.wav');
-// To paly the audio
+
+// To paly the audios on hovers on the images
 newHope.forEach(function (element) {
   element.addEventListener('mouseover', function () {
     hope.play();
