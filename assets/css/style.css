@@ -23,16 +23,27 @@ body {
 
 /* star background + warp effect  */
 #space {
+  width: 100%;
+  height: 100%;
   transition: opacity 5s ease-out;
   /* display: none; */
 }
-
+/* 
 .stars-bg {
   margin: 0;
   height: 100vh;
   overflow: hidden;
   position: absolute;
   z-index: -1;
+} */
+
+.stars-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Header Styling */
@@ -277,6 +288,10 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
+  #header {
+    margin-top: 30px;
+  }
+
   #header img {
     width: 200px;
   }
