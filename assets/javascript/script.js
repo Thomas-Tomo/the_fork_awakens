@@ -28,7 +28,8 @@ window.onclick = function (event) {
 const start = document.getElementById('startBtn');
 const movies = document.getElementById('movie-container');
 const quizFilms = document.getElementById('quiz-container');
-const removeBg = document.getElementById('space');
+// const removeBg = document.getElementById('space');
+// tulio commented.
 
 const audio1 = new Audio('assets/audio/hyperspace-jump.wav');
 
