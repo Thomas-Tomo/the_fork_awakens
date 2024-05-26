@@ -185,6 +185,13 @@ main {
 }
 
 @media screen and (max-width: 525px) {
+  #movie-container .btn,
+  .aBtn {
+    max-width: 200px;
+  }
+  .aBtn button {
+    font-size: 0.8rem;
+  }
   .answer {
     font-size: 0.8rem;
   }
@@ -220,6 +227,12 @@ main {
   #wlText {
     font-size: 0.5rem;
     line-height: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header h2 {
+    display: none;
   }
 }
 
