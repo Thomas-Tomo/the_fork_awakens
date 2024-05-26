@@ -98,7 +98,11 @@ async function loadNewQuestion() {
     return;
   }
 
-  questions = await fetchQuizData();
+  // Only fetch new questions if we don't have any left
+  if (questions.length === 0) {
+    questions = await fetchQuizData();
+  }
+
   if (questions && questions.length > 0) {
     // Get a random index within the range of questions array length
     let questionIndex = Math.floor(Math.random() * questions.length);
