@@ -50,6 +50,7 @@ main h1 {
   text-transform: uppercase;
   margin: 0;
   padding: 2rem 0 2rem 0;
+  color: var(--third-color);
 }
 
 /* star background + warp effect  */
@@ -88,7 +89,6 @@ main h1 {
 #header-team h2 {
   font-size: 1.25rem;
   padding-top: 1rem;
-  text-transform: uppercase;
 }
 
 /* nav with return button and page title  */
@@ -166,7 +166,6 @@ main h1 {
 
 .flip-card-back h3 {
   font-size: 1.2rem;
-  text-transform: uppercase;
 }
 
 .flip-card-front,

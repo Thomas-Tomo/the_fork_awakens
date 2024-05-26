@@ -55,7 +55,6 @@ body {
 
 #header h2 {
   font-size: 1.25rem;
-  text-transform: uppercase;
 }
 
 main {
@@ -198,6 +197,7 @@ main {
   margin: 0;
   text-align: center;
   padding-bottom: 2rem;
+  color: var(--third-color);
 }
 
 .btnImg img {
@@ -264,7 +264,6 @@ h4 {
   text-align: center;
   font-size: 0.75rem;
   line-height: 2rem;
-  text-transform: uppercase;
 }
 
 .modal-content {
