@@ -60,11 +60,13 @@ Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge 
 ### **Wireframes**
 Wireframes for different views are linked here:
 
-![Mobile Wireframe](#)
-![Mobile Wireframe](#)
+![Desktop Wireframe](/assets/images/home-sw-wireframe.png)
+![Desktop Wireframe](/assets/images/start-sw-wireframe.png)
+![Desktop Wireframe](/assets/images/question-sw-wireframe.png)
+![Desktop Wireframe](/assets/images/rules-sw-wireframe.png)
+![Desktop Wireframe](/assets/images/dark-side-sw-wireframe.png)
+![Desktop Wireframe](/assets/images/team-sw-wireframe.png)
 
-![Desktop Wireframe](#)
-![Desktop Wireframe](#)
 
 <hr>
 
