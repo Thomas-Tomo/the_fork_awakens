@@ -294,6 +294,30 @@ h4 {
   animation-duration: 0.4s;
 }
 
+/* Mute button */
+
+#mute {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  padding: 0;
+  margin: 1svw;
+
+  background: none;
+  border: none;
+
+  max-width: clamp(2rem, 2.5svw, 4rem);
+
+  
+  z-index: 99;
+}
+
+#mute > img {
+  max-width: inherit;
+}
+
+
 /* Add Animation to drop in rules */
 @keyframes animatetop {
   from {
