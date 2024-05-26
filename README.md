@@ -81,7 +81,7 @@ Audio files are integrated throughout the site to add interactivity and depth us
 - Each member has a space to record their own 'Happy Hack'.
 - Links are provided for team members' Github and LinkedIn profiles.
 
-![Team Page](#)
+![Team Page](/assets/images/StarWars-teampage.png)
 
 <hr>
 
@@ -100,6 +100,32 @@ Audio files are integrated throughout the site to add interactivity and depth us
 * Resolution - [resolution here]
 
 <hr>
+
+
+## Deployment
+
+Requirements:
+1. Netlify Account: Ensure a Netlify account is set up and accessible.
+2. Repository Connection: Connect the GitHub repository of the project to Netlify for continuous deployment.
+3. Build Configuration: Specify the correct build settings, even if no build commands are needed for this static site.
+4. Testing: Test the deployment to ensure the website functions correctly on Netlify.
+
+Tasks:
+☑︎ Create or log into a Netlify account.
+☑︎ Connect the project’s GitHub repository to Netlify.
+☑︎ Configure the build settings in Netlify:
+   • Build command: None (since it's a static site).
+   • Publish directory: Set to the root directory (or the directory where your index.html file is located).
+☑︎ Configure a custom domain if applicable.
+☑︎ Deploy the site to Netlify.
+☐ Test the deployed site to ensure all features are working correctly.
+☐ Document the deployment process in the project's README file.
+
+Acceptance Criteria:
+• The Star Wars quiz website is successfully deployed and publicly accessible via Netlify.
+• The site is connected to the GitHub repository for continuous deployment.
+• The deployment is tested and verified to be fully functional.
+• The deployment process is documented in the project's README file.
 
 ## Game Flow
 
