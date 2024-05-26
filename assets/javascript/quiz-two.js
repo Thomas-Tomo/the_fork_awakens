@@ -2,7 +2,6 @@
 let questionCount = 0;
 let questionIndex = 0;
 const maxQuestions = 10;
-const maxSkips = 5;
 
 async function fetchQuizData() {
   try {
@@ -17,10 +16,12 @@ async function fetchQuizData() {
 function displayQuiz(questionData) {
   const questionElement = document.getElementById('question');
   const answersElement = document.getElementById('answers');
-  const scoreElement = document.getElementById('score');
-  const missElement = document.getElementById('miss');
   const correctElement = document.getElementById('correct');
+  const scoreElement = document.getElementById('score');
+  const correctScore = document.getElementsByClassName('correct-wrapper')[0];
+  const wrongScore = document.getElementsByClassName('wrong-wrapper')[0];
   const wrongElement = document.getElementById('wrong');
+  const missElement = document.getElementById('miss');
 
   // Set the question text
   questionElement.textContent = questionData.question;
@@ -54,23 +55,20 @@ function displayQuiz(questionData) {
         let score = parseInt(scoreElement.textContent);
         score++;
         scoreElement.textContent = score;
-        correctElement.style.backgroundColor = 'green';
+        correctScore.style.backgroundColor = 'green';
       } else {
         // Update miss if incorrect
         let miss = parseInt(missElement.textContent);
         miss++;
         missElement.textContent = miss;
-        wrongElement.style.backgroundColor = 'red';
+        wrongScore.style.backgroundColor = 'red';
       }
-
-      // Compare score and miss values to set body background color
-      // compareScoreAndMiss();
 
       // Set a timer to move to the next question after 2 seconds
       setTimeout(() => {
         // Reset background color
-        correctElement.style.backgroundColor = 'transparent';
-        wrongElement.style.backgroundColor = 'transparent';
+        correctScore.style.backgroundColor = '';
+        wrongScore.style.backgroundColor = '';
         // Highlight the correct answer before moving to the next question
         const correctAnswer = questionData.answer;
         const allAnswers = document.querySelectorAll('.answer');
@@ -113,18 +111,6 @@ async function loadNewQuestion() {
   }
 }
 
-// function compareScoreAndMiss() {
-//   const score = parseInt(document.getElementById('score').textContent);
-//   const miss = parseInt(document.getElementById('miss').textContent);
-//   const body = document.body;
-
-//   if (miss > score) {
-//     body.style.backgroundColor = 'black';
-//   } else {
-//     body.style.backgroundColor = 'white';
-//   }
-// }
-
 function showGameOver() {
   const score = parseInt(document.getElementById('score').textContent);
   const miss = parseInt(document.getElementById('miss').textContent);
@@ -134,12 +120,14 @@ function showGameOver() {
   document.getElementById('finalMiss').textContent = miss;
 
   // Show modal
-  const gameOverModal = new bootstrap.Modal(
-    document.getElementById('gameOverModal')
-  );
-  gameOverModal.show();
+  const gameOverModal = document.getElementById('quizModal');
+  gameOverModal.style.display = 'block';
 }
 
+function hideGameOver() {
+  const gameOverModal = document.getElementById('quizModal');
+  gameOverModal.style.display = 'none';
+}
 async function initializeQuiz() {
   // Load the first question when the page loads
   await loadNewQuestion();
@@ -158,20 +146,17 @@ async function initializeQuiz() {
     await loadNewQuestion();
 
     // Hide the game over modal
-    const gameOverModal = bootstrap.Modal.getInstance(
-      document.getElementById('gameOverModal')
-    );
-    gameOverModal.hide();
+    hideGameOver();
   });
 
-  // Add event listener to the "Return to home page" button in the modal
-  const returnHomePageButton = document.querySelector(
-    '#gameOverModal .modal-footer button[data-bs-dismiss="modal"]'
-  );
-  returnHomePageButton.addEventListener('click', () => {
-    // Redirect to the home page (index.html)
-    window.location.href = 'index.html';
-  });
+  // // Add event listener to the "Return to home page" button in the modal
+  // const returnHomePageButton = document.querySelector(
+  //   '#gameOverModal .modal-footer button[data-bs-dismiss="modal"]'
+  // );
+  // returnHomePageButton.addEventListener('click', () => {
+  //   // Redirect to the home page (index.html)
+  //   window.location.href = 'index.html';
+  // });
 }
 
 document.addEventListener('DOMContentLoaded', initializeQuiz);
