@@ -5,7 +5,7 @@ const maxQuestions = 10;
 
 async function fetchQuizData() {
   try {
-    const response = await fetch('movie-two.json');
+    const response = await fetch('movie-three.json');
     const data = await response.json();
     return data.questions;
   } catch (error) {
@@ -136,8 +136,19 @@ async function initializeQuiz() {
 document.addEventListener('DOMContentLoaded', initializeQuiz);
 
 // Songs for different films - TERRY ADD CODE HERE
+// First film
+function playAudio() {
+  const theme1 = new Audio('assets/audio/star-wars-theme-song.wav');
+  theme1.play();
+}
 //Second film
 function playAudio2() {
   const theme2 = new Audio('assets/audio/imperial_march.wav');
   theme2.play();
+}
+
+// Third film
+function playAudio3() {
+  const theme3 = new Audio('assets/audio/phantom-menace.wav');
+  theme3.play();
 }
