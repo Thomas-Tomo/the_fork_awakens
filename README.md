@@ -107,14 +107,22 @@ Audio files are integrated throughout the site to add interactivity and depth us
 
 ## Deployment and local development
 
-### GitHub Pages
+### Netlify Deployment:
 
-GitHub Pages used to deploy live version of the website.
-1. Log in to GitHub and locate [GitHub Repository The Force Awaken](https://github.com/MickKav/the_fork_awakens/)
-2. At the top of the Repository(not the main navigation) locate "Code" button on the menu.
-3. On the right hand side of the Code page find the "About" section.
-4. Under "About" find the link to the [Live Site](theforkawakens.netlify.app/).
-5. Click this link and the Live Site should render.
+1. **Log in to Netlify:** Navigate to the [Netlify website](https://www.netlify.com/) and log in to your account.
+
+2. **Create New Site:** Once logged in, click on the "New site from Git" button.
+
+3. **Connect to GitHub:** Choose GitHub as your Git provider and authorize Netlify to access your repositories.
+
+4. **Select Repository:** Select the repository for your website, in this case, "The Force Awaken."
+
+5. **Configure Settings:** Netlify will automatically detect your build settings, but you may need to adjust them if necessary.
+
+6. **Deploy Site:** Once configured, click on the "Deploy site" button. Netlify will start building and deploying your site automatically.
+
+7. **Live Site:** After the deployment process is complete, Netlify will provide you with a unique URL for your live site. You can access your live site by visiting this URL.
+
 
 ### Forking the GitHub Repository
 
