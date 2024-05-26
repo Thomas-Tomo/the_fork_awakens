@@ -150,7 +150,57 @@ main h1 {
   align-items: center;
   flex-direction: column;
   height: fit-content;
+  position: relative;
+  z-index: 1; /* Ensure buttons are clickable */
 }
+
+.cards-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200%;
+  height: 100%;
+  border-top: 15px solid transparent;
+  border-image: linear-gradient(to right, transparent 50%, #00ff00 80%, transparent 95%) 1;
+  border-image-slice: 1;
+  border-radius: 20px;
+  animation: lightsaberAnimation 2s linear alternate, hideLightsaber 0s 2s forwards;
+  z-index: -1; /* Push the pseudo-element behind the cards */
+}
+
+.cards-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200%;
+  height: 100%;
+  border-top: 15px solid transparent;
+  border-image: linear-gradient(to left, transparent 50%, #ff0000 80%, transparent 95%) 1;
+  border-image-slice: 1;
+  border-radius: 20px;
+  animation: lightsaberAnimation 2s linear alternate-reverse, hideLightsaber 0s 2s forwards;
+  z-index: -1; /* Push the pseudo-element behind the cards */
+}
+
+@keyframes lightsaberAnimation {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+@keyframes hideLightsaber {
+  to {
+    opacity: 0;
+  }
+}
+
 
 /* flip cards */
 .flip-card {
@@ -296,5 +346,64 @@ main h1 {
 @media screen and (min-width: 992px) {
   main {
     width: 900px;
+  }
+}
+
+/* Lightsaber animations */
+@media screen and (min-width: 768px) {
+  .cards-container::before,
+  .cards-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 100%;
+    border-top: 15px solid transparent;
+    border-image: linear-gradient(to right, transparent 50%, #00ff00 80%, transparent 95%) 1;
+    border-image-slice: 1;
+    border-radius: 20px;
+    animation: lightsaberAnimation 2s linear alternate, hideLightsaber 0s 2s forwards;
+    z-index: -1; /* Push the pseudo-element behind the cards */
+  }
+
+  .cards-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 100%;
+    border-top: 15px solid transparent;
+    border-image: linear-gradient(to left, transparent 50%, #ff0000 80%, transparent 95%) 1;
+    border-image-slice: 1;
+    border-radius: 20px;
+    animation: lightsaberAnimation 2s linear alternate-reverse, hideLightsaber 0s 2s forwards;
+    z-index: -1; /* Push the pseudo-element behind the cards */
+  }
+
+  @keyframes lightsaberAnimation {
+    0% {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) rotate(360deg);
+    }
+  }
+
+  @keyframes hideLightsaber {
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+/* Ensure lightsabers don't cause layout shifts on mobile */
+@media screen and (max-width: 767px) {
+  .cards-container::before,
+  .cards-container::after {
+    display: none; /* Hide lightsabers on smaller screens */
   }
 }
