@@ -136,19 +136,21 @@ async function initializeQuiz() {
 document.addEventListener('DOMContentLoaded', initializeQuiz);
 
 // Songs for different films - TERRY ADD CODE HERE
-// First film
-function playAudio() {
-  const theme1 = new Audio('assets/audio/star-wars-theme-song.wav');
-  theme1.play();
-}
-//Second film
-function playAudio2() {
-  const theme2 = new Audio('assets/audio/imperial_march.wav');
-  theme2.play();
-}
+
 
 // Third film
+const theme3 = new Audio('assets/audio/Third-Theme.wav');
+
 function playAudio3() {
-  const theme3 = new Audio('assets/audio/phantom-menace.wav');
   theme3.play();
+}
+
+function muteAudio() {
+  if (theme3.duration > 0 && !theme3.paused) {
+    theme3.pause();
+    document.getElementById("muteImg").src = "assets/images/volume-mute.png";
+  } else {
+    theme3.play();
+    document.getElementById("muteImg").src = "assets/images/volume-on.png";
+  }
 }

@@ -137,7 +137,18 @@ document.addEventListener('DOMContentLoaded', initializeQuiz);
 
 // Songs for different films - TERRY ADD CODE HERE
 //Second film
+const theme2 = new Audio('assets/audio/imperial_march.wav');
+
 function playAudio2() {
-  const theme2 = new Audio('assets/audio/imperial_march.wav');
   theme2.play();
+}
+
+function muteAudio() {
+  if (theme2.duration > 0 && !theme2.paused) {
+    theme2.pause();
+    document.getElementById("muteImg").src = "assets/images/volume-mute.png";
+  } else {
+    theme2.play();
+    document.getElementById("muteImg").src = "assets/images/volume-on.png";
+  }
 }
