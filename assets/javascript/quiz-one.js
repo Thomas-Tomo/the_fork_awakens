@@ -163,7 +163,18 @@ document.addEventListener('DOMContentLoaded', initializeQuiz);
 
 // Songs for different films - TERRY ADD CODE HERE
 // First film
+const theme1 = new Audio('assets/audio/star-wars-theme-song.wav');
+
 function playAudio() {
-  const theme1 = new Audio('assets/audio/star-wars-theme-song.wav');
   theme1.play();
+}
+
+function muteAudio() {
+  if (theme1.duration > 0 && !theme1.paused) {
+    theme1.pause();
+    document.getElementById("muteImg").src = "assets/images/volume-mute.png";
+  } else {
+    theme1.play();
+    document.getElementById("muteImg").src = "assets/images/volume-on.png";
+  }
 }
