@@ -88,6 +88,7 @@ main h1 {
 #header-team h2 {
   font-size: 1.25rem;
   padding-top: 1rem;
+  text-transform: uppercase;
 }
 
 /* nav with return button and page title  */
@@ -165,6 +166,7 @@ main h1 {
 
 .flip-card-back h3 {
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .flip-card-front,
@@ -240,13 +242,16 @@ main h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: unset;
+    row-gap: 1rem;
+    column-gap: 1.6rem;
   }
 
   /* flip cards */
   .flip-card {
     width: 190px;
     height: 190px;
-    margin-bottom: 20px;
+    margin-bottom: unset;
   }
 
   .flip-card:last-child {
@@ -258,11 +263,16 @@ main h1 {
   }
 
   .flip-card-back h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding-top: 1rem;
   }
 
   .social-links {
-    width: 70%;
+    width: 60%;
+  }
+
+  .social-links img {
+    height: 40px;
   }
 }
 
