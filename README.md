@@ -34,7 +34,7 @@ Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge 
 - Colours were selected using the coolors color palette generator.
 - An image incorporating [enter feature] was used as the background<br><br>
 
-![Coolors Palette](/assets/images/SWcolors.png)
+![Coolors Palette](/assets/images/colour-palette.png)
 
 <hr>
 
@@ -183,12 +183,12 @@ The Star Wars Quiz Game is developed using the following tools and technologies:
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TerryLoc)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/terryloughran/)
 
-### Martina
+### Martina Toffoletti
 
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/martinamicaela)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/martina-toffoletti/)
 
-### Liam
+### Liam Goddard
 
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/caleom)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)

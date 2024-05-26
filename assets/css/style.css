@@ -55,6 +55,7 @@ body {
 
 #header h2 {
   font-size: 1.25rem;
+  text-transform: uppercase;
 }
 
 main {
@@ -92,13 +93,11 @@ main {
 #movie-container .btn,
 .aBtn {
   text-transform: uppercase;
-  margin: 5px;
   font-size: 1rem;
   border-radius: 20px;
   border: 3px solid var(--main-text);
   color: var(--main-text);
-  margin-bottom: 30px;
-  width: 90%;
+  width: 100%;
   margin: 30px auto;
   background: var(--bgButtons-shade);
 }
@@ -254,11 +253,18 @@ main {
 h4 {
   color: var(--third-color);
   text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-content h4 {
+  margin-top: 2rem;
 }
 
 .modal-content p {
   text-align: center;
   font-size: 0.75rem;
+  line-height: 2rem;
+  text-transform: uppercase;
 }
 
 .modal-content {
@@ -375,5 +381,9 @@ footer {
   /* tm added  */
   .posters-container {
     flex-direction: row;
+  }
+
+  .modal-content {
+    padding: 30px;
   }
 }
