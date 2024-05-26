@@ -291,17 +291,17 @@ h4 {
   width: 70%;
   background-color: var(--secondary-color);
   animation-name: animatetop;
-  animation-duration: 0.4s;
+  animation-duration: 1s;
 }
 
 /* Add Animation to drop in rules */
 @keyframes animatetop {
   from {
-    top: -300px;
+    top: 100%; /* Start from below */
     opacity: 0;
   }
   to {
-    top: 0;
+    top: 0; /* End in place */
     opacity: 1;
   }
 }
