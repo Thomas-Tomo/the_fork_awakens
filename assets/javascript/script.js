@@ -29,7 +29,7 @@ const start = document.getElementById('startBtn');
 const movies = document.getElementById('movie-container');
 const quizFilms = document.getElementById('quiz-container');
 
-const audio1 = new Audio('assets/audio/hyperspace-jump.wav');
+const audio1 = new Audio('assets/audio/hyperspace-jump9sec.wav');
 
 start.onclick = function () {
   movies.style.opacity = '0';

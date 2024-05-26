@@ -1,5 +1,6 @@
+# STAR WARS Classic  Quiz
 
-# Classic <img src="./assets/images/star-wars-logo.svg" alt="star wars logo" width="100" height="50"> Quiz
+# <img src="./assets/images/star-wars-logo.svg" alt="star wars logo" width="100" height="50">
 
 ## Description
 
