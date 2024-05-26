@@ -115,9 +115,27 @@ function showGameOver() {
   const score = parseInt(document.getElementById('score').textContent);
   const miss = parseInt(document.getElementById('miss').textContent);
 
+  const winMusic = new Audio('assets/audio/force_be_with_you.mp3');
+  const loseMusic = new Audio('assets/audio/darkside.mp3');
+
   // Update modal content
   document.getElementById('finalScore').textContent = score;
   document.getElementById('finalMiss').textContent = miss;
+
+  // Choose image and text based on score
+  const resultImage = document.getElementById('winLose');
+  const resultText = document.getElementById('wlText');
+  if (score >= 5) {
+    resultImage.src = 'assets/images/luke.webp';
+    resultText.textContent = 'Congratulations! May the Force be with you.';
+    winMusic.play();
+  } else {
+    resultImage.src = 'assets/images/vader.webp';
+    resultText.textContent = 'Welcome to the dark side.';
+    // Set text color to dark gray;
+    resultText.style.color = '#8888';
+    loseMusic.play();
+  }
 
   // Show modal
   const gameOverModal = document.getElementById('quizModal');
@@ -136,19 +154,20 @@ async function initializeQuiz() {
 document.addEventListener('DOMContentLoaded', initializeQuiz);
 
 // Songs for different films - TERRY ADD CODE HERE
-// First film
-function playAudio() {
-  const theme1 = new Audio('assets/audio/star-wars-theme-song.wav');
-  theme1.play();
-}
-//Second film
-function playAudio2() {
-  const theme2 = new Audio('assets/audio/imperial_march.wav');
-  theme2.play();
-}
 
 // Third film
+const theme3 = new Audio('assets/audio/rebel-alliance_theme.wav');
+
 function playAudio3() {
-  const theme3 = new Audio('assets/audio/phantom-menace.wav');
   theme3.play();
+}
+
+function muteAudio() {
+  if (theme3.duration > 0 && !theme3.paused) {
+    theme3.pause();
+    document.getElementById('muteImg').src = 'assets/images/volume-mute.png';
+  } else {
+    theme3.play();
+    document.getElementById('muteImg').src = 'assets/images/volume-on.png';
+  }
 }

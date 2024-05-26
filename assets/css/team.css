@@ -32,6 +32,23 @@ body {
   background-color: var(--secondary-color);
 }
 
+/* Travel animation for flip cards */
+@keyframes travelFromBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(1000px) rotateX(360deg) rotateY(360deg); /* Start from below and rotate */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) rotateX(0) rotateY(0); /* End in place */
+  }
+}
+
+/* Apply travel animation to flip cards */
+.travel-from-bottom {
+  animation: travelFromBottom 2s ease-out; /* Adjust duration as needed */
+}
+
 /* content box  */
 main {
   z-index: 2;

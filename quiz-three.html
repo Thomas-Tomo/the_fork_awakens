@@ -69,13 +69,16 @@
         <div class="modal-content">
           <h2>Game Over</h2>
           <p>final score: <span id="finalScore">0</span></p>
-          <div class="winlose"></div>
-          <h5 class="wlText"></h5>
+          <img id="winLose" src="" alt="" />
+          <h5 id="wlText"></h5>
           <p>You missed: <span id="finalMiss">0</span> questions</p>
 
           <a href="index.html"><button class="aBtn">Home</button></a>
         </div>
       </div>
+      <button onclick="muteAudio()" id="mute">
+        <img id="muteImg" src="assets/images/volume-on.png" alt="Volume on" />
+      </button>
     </main>
 
     <script src="assets/javascript/script.js"></script>

@@ -26,6 +26,8 @@
       href="assets/favicon/favicon-16x16.png" />
   </head>
   <body onload="playAudio()">
+    
+
     <div class="stars-bg">
       <canvas id="space" class="canvas"></canvas>
     </div>
@@ -36,6 +38,7 @@
         <img src="assets/images/star-wars-logo.svg" alt="Star_Wars_Logo" />
       </a>
       <h2 id="titleQuiz">Quiz!</h2>
+      
     </header>
     <main>
       <a class="aBtn" href="index.html"
@@ -76,6 +79,9 @@
           <a href="index.html"><button class="aBtn">Home</button></a>
         </div>
       </div>
+      <button onclick="muteAudio()" id="mute">
+      <img id="muteImg" src="assets/images/volume-on.png" alt="Volume on">
+    </button>
     </main>
 
     <script src="assets/javascript/script.js"></script>
