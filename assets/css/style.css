@@ -63,6 +63,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-top: 10rem;
 }
 
 #header img {
@@ -421,5 +422,12 @@ footer {
 
   .modal-content {
     padding: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+ 
+  #header {
+    padding-top: 20px;
   }
 }
