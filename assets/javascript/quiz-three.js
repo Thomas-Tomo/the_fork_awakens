@@ -110,8 +110,7 @@ async function loadNewQuestion() {
     // Display the randomly selected question
     displayQuiz(questionData);
     questionCount++; // Increment question count only when a question is displayed
-    console.log(`Question count: ${questionCount}`); // Debugging log
-
+    
     // Remove the selected question from the array
     questions.splice(questionIndex, 1);
   }
