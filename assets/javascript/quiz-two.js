@@ -1,7 +1,7 @@
 // Global variables
 let questionCount = 0;
 let questionIndex = 0;
-const maxQuestions = 10;
+const maxQuestions = 1;
 
 async function fetchQuizData() {
   try {
@@ -131,32 +131,6 @@ function hideGameOver() {
 async function initializeQuiz() {
   // Load the first question when the page loads
   await loadNewQuestion();
-
-  // Add event listener to the "New Game" button in the modal
-  const newGameButton = document.getElementById('newGameButton');
-  newGameButton.addEventListener('click', async () => {
-    // Reset game variables
-    questionCount = 0;
-    questionIndex = 0;
-    document.getElementById('score').textContent = '0';
-    document.getElementById('miss').textContent = '0';
-    compareScoreAndMiss(); // Reset background color
-
-    // Load the first question of the new game
-    await loadNewQuestion();
-
-    // Hide the game over modal
-    hideGameOver();
-  });
-
-  // // Add event listener to the "Return to home page" button in the modal
-  // const returnHomePageButton = document.querySelector(
-  //   '#gameOverModal .modal-footer button[data-bs-dismiss="modal"]'
-  // );
-  // returnHomePageButton.addEventListener('click', () => {
-  //   // Redirect to the home page (index.html)
-  //   window.location.href = 'index.html';
-  // });
 }
 
 document.addEventListener('DOMContentLoaded', initializeQuiz);

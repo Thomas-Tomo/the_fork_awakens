@@ -111,29 +111,43 @@ main {
   backdrop-filter: blur(5px);
 }
 
-.modal-content h2,
-h4 {
+.modal-content h2 {
   color: var(--third-color);
   text-align: center;
   text-transform: uppercase;
+  font-size: 1.75rem;
+  margin: 30px 0;
 }
 
 .modal-content p {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: 2rem;
   text-transform: uppercase;
 }
 
 .modal-content {
   position: relative;
-  margin: 5% auto;
+  margin: 50px auto;
   padding: 20px;
   border-radius: 20px;
   width: 70%;
   background-color: var(--secondary-color);
   animation-name: animatetop;
   animation-duration: 0.4s;
+}
+
+.modal-content a {
+  text-decoration: none;
+}
+
+.aBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  width: 100%;
+  background: rgba(136, 136, 136, 0.5);
 }
 
 /* Add Animation to drop in rules */
@@ -179,5 +193,24 @@ h4 {
   }
   .modal-content p {
     font-size: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .answers {
+    display: block;
+  }
+  .answers {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .answers > div {
+    display: flex;
+    flex-basis: calc(50% - 100px);
+    justify-content: center;
+    flex-direction: column;
   }
 }
