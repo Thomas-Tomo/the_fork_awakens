@@ -119,10 +119,36 @@ function showGameOver() {
   document.getElementById('finalScore').textContent = score;
   document.getElementById('finalMiss').textContent = miss;
 
+  // Choose image and text based on score
+  const resultImage = document.getElementById('winLose');
+  const resultText = document.getElementById('wlText');
+  if (score >= 1) {
+    resultImage.src = 'assets/images/luke.webp';
+    resultText.textContent = 'Congratulations! May the Force be with you.';
+  } else {
+    resultImage.src = 'assets/images/vader.webp';
+    resultText.textContent = 'Welcome to the dark side.';
+    resultText.style.color = '#8888';
+    // Set text color to black;
+  }
+
   // Show modal
   const gameOverModal = document.getElementById('quizModal');
   gameOverModal.style.display = 'block';
 }
+
+// function showGameOver() {
+//   const score = parseInt(document.getElementById('score').textContent);
+//   const miss = parseInt(document.getElementById('miss').textContent);
+
+//   // Update modal content
+//   document.getElementById('finalScore').textContent = score;
+//   document.getElementById('finalMiss').textContent = miss;
+
+//   // Show modal
+//   const gameOverModal = document.getElementById('quizModal');
+//   gameOverModal.style.display = 'block';
+// }
 
 function hideGameOver() {
   const gameOverModal = document.getElementById('quizModal');
