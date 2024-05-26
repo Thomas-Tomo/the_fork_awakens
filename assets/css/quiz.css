@@ -58,6 +58,7 @@ main {
   background: rgba(136, 136, 136, 0.5);
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  line-height: 2rem;
 }
 
 .answer:hover {
@@ -68,9 +69,6 @@ main {
 }
 
 .score-container {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   width: 80%;
   text-align: center;
   margin-top: 0 auto;
