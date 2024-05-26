@@ -17,6 +17,11 @@
   line-height: 3rem;
 }
 
+a:visited{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
 body {
   background-color: var(--secondary-color);
   color: var(--main-text);
@@ -315,6 +320,11 @@ h4 {
 
 #mute > img {
   max-width: inherit;
+}
+
+#highscores {
+  display: flex;
+  justify-content: center;
 }
 
 /* Add Animation to drop in rules */
