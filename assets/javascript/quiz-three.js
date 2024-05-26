@@ -89,6 +89,8 @@ function displayQuiz(questionData) {
   });
 }
 
+let questions = [];
+
 async function loadNewQuestion() {
   // Check if the max number of questions has been reached
   if (questionCount >= maxQuestions) {
@@ -96,7 +98,11 @@ async function loadNewQuestion() {
     return;
   }
 
-  const questions = await fetchQuizData();
+  // Only fetch new questions if we don't have any left
+  if (questions.length === 0) {
+    questions = await fetchQuizData();
+  }
+
   if (questions && questions.length > 0) {
     // Get a random index within the range of questions array length
     let questionIndex = Math.floor(Math.random() * questions.length);
