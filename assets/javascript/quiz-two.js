@@ -64,7 +64,7 @@ function displayQuiz(questionData) {
       }
 
       // Compare score and miss values to set body background color
-      compareScoreAndMiss();
+      // compareScoreAndMiss();
 
       // Set a timer to move to the next question after 2 seconds
       setTimeout(() => {
