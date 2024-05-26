@@ -69,11 +69,14 @@ main {
 }
 
 .score-container {
-  width: 80%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
   margin-top: 0 auto;
   font-size: 1.2rem;
   margin-top: 10px;
+  gap: 15px;
+  margin: 30px auto;
 }
 
 .correct-wrapper,
@@ -82,15 +85,19 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   font-size: 1rem;
   border-radius: 20px;
-  border: 3px solid var(--main-text);
-  background: rgba(136, 136, 136, 0.5);
+  background-color: var(--secondary-color);
+  border: var(--fourth-color) 3px solid;
+  width: 60%;
+  box-shadow: 1px 1px 10px var(--fourth-color);
 }
 
 .correct-wrapper span,
 .wrong-wrapper span {
   margin: 0 0.5rem;
+  text-shadow: 2px 2px 5px var(--fourth-color);
 }
 
 #quizModal {
@@ -232,5 +239,11 @@ main {
     flex-basis: calc(50% - 100px);
     justify-content: center;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 60%;
   }
 }
