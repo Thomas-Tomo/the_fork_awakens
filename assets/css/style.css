@@ -39,6 +39,23 @@ body {
   overflow: hidden;
 }
 
+/* Travel animation for home page */
+
+@keyframes travelFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(1000px); /* Start from below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End in place */
+  }
+}
+
+.travel-from-bottom {
+  animation: travelFromBottom 2s ease-out; /* Adjust duration as needed */
+}
+
 /* Header Styling */
 #header {
   display: flex;
