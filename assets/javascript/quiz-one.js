@@ -89,6 +89,8 @@ function displayQuiz(questionData) {
   });
 }
 
+let questions = [];
+
 async function loadNewQuestion() {
   // Check if the max number of questions has been reached
   if (questionCount >= maxQuestions) {
@@ -96,7 +98,7 @@ async function loadNewQuestion() {
     return;
   }
 
-  const questions = await fetchQuizData();
+  questions = await fetchQuizData();
   if (questions && questions.length > 0) {
     // Get a random index within the range of questions array length
     let questionIndex = Math.floor(Math.random() * questions.length);
@@ -115,6 +117,9 @@ function showGameOver() {
   const score = parseInt(document.getElementById('score').textContent);
   const miss = parseInt(document.getElementById('miss').textContent);
 
+  const winMusic = new Audio('assets/audio/force_be_with_you.mp3');
+  const loseMusic = new Audio('assets/audio/darkside.mp3');
+
   // Update modal content
   document.getElementById('finalScore').textContent = score;
   document.getElementById('finalMiss').textContent = miss;
@@ -122,33 +127,22 @@ function showGameOver() {
   // Choose image and text based on score
   const resultImage = document.getElementById('winLose');
   const resultText = document.getElementById('wlText');
-  if (score >= 1) {
+  if (score >= 5) {
     resultImage.src = 'assets/images/luke.webp';
     resultText.textContent = 'Congratulations! May the Force be with you.';
+    winMusic.play();
   } else {
     resultImage.src = 'assets/images/vader.webp';
     resultText.textContent = 'Welcome to the dark side.';
+    // Set text color to dark gray;
     resultText.style.color = '#8888';
-    // Set text color to black;
+    loseMusic.play();
   }
 
   // Show modal
   const gameOverModal = document.getElementById('quizModal');
   gameOverModal.style.display = 'block';
 }
-
-// function showGameOver() {
-//   const score = parseInt(document.getElementById('score').textContent);
-//   const miss = parseInt(document.getElementById('miss').textContent);
-
-//   // Update modal content
-//   document.getElementById('finalScore').textContent = score;
-//   document.getElementById('finalMiss').textContent = miss;
-
-//   // Show modal
-//   const gameOverModal = document.getElementById('quizModal');
-//   gameOverModal.style.display = 'block';
-// }
 
 function hideGameOver() {
   const gameOverModal = document.getElementById('quizModal');
@@ -172,9 +166,9 @@ function playAudio() {
 function muteAudio() {
   if (theme1.duration > 0 && !theme1.paused) {
     theme1.pause();
-    document.getElementById("muteImg").src = "assets/images/volume-mute.png";
+    document.getElementById('muteImg').src = 'assets/images/volume-mute.png';
   } else {
     theme1.play();
-    document.getElementById("muteImg").src = "assets/images/volume-on.png";
+    document.getElementById('muteImg').src = 'assets/images/volume-on.png';
   }
 }

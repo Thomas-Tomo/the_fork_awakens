@@ -89,6 +89,8 @@ function displayQuiz(questionData) {
   });
 }
 
+let questions = [];
+
 async function loadNewQuestion() {
   // Check if the max number of questions has been reached
   if (questionCount >= maxQuestions) {
@@ -96,7 +98,7 @@ async function loadNewQuestion() {
     return;
   }
 
-  const questions = await fetchQuizData();
+  questions = await fetchQuizData();
   if (questions && questions.length > 0) {
     // Get a random index within the range of questions array length
     let questionIndex = Math.floor(Math.random() * questions.length);
@@ -115,9 +117,27 @@ function showGameOver() {
   const score = parseInt(document.getElementById('score').textContent);
   const miss = parseInt(document.getElementById('miss').textContent);
 
+  const winMusic = new Audio('assets/audio/force_be_with_you.mp3');
+  const loseMusic = new Audio('assets/audio/darkside.mp3');
+
   // Update modal content
   document.getElementById('finalScore').textContent = score;
   document.getElementById('finalMiss').textContent = miss;
+
+  // Choose image and text based on score
+  const resultImage = document.getElementById('winLose');
+  const resultText = document.getElementById('wlText');
+  if (score >= 5) {
+    resultImage.src = 'assets/images/luke.webp';
+    resultText.textContent = 'Congratulations! May the Force be with you.';
+    winMusic.play();
+  } else {
+    resultImage.src = 'assets/images/vader.webp';
+    resultText.textContent = 'Welcome to the dark side.';
+    // Set text color to dark gray;
+    resultText.style.color = '#8888';
+    loseMusic.play();
+  }
 
   // Show modal
   const gameOverModal = document.getElementById('quizModal');
@@ -136,6 +156,24 @@ async function initializeQuiz() {
 document.addEventListener('DOMContentLoaded', initializeQuiz);
 
 // Songs for different films - TERRY ADD CODE HERE
+// First film
+const theme1 = new Audio('assets/audio/star-wars-theme-song.wav');
+
+function playAudio() {
+  theme1.play();
+}
+
+function muteAudio() {
+  if (theme1.duration > 0 && !theme1.paused) {
+    theme1.pause();
+    document.getElementById('muteImg').src = 'assets/images/volume-mute.png';
+  } else {
+    theme1.play();
+    document.getElementById('muteImg').src = 'assets/images/volume-on.png';
+  }
+}
+
+// Songs for different films - TERRY ADD CODE HERE
 //Second film
 const theme2 = new Audio('assets/audio/imperial_march.wav');
 
@@ -146,9 +184,9 @@ function playAudio2() {
 function muteAudio() {
   if (theme2.duration > 0 && !theme2.paused) {
     theme2.pause();
-    document.getElementById("muteImg").src = "assets/images/volume-mute.png";
+    document.getElementById('muteImg').src = 'assets/images/volume-mute.png';
   } else {
     theme2.play();
-    document.getElementById("muteImg").src = "assets/images/volume-on.png";
+    document.getElementById('muteImg').src = 'assets/images/volume-on.png';
   }
 }
