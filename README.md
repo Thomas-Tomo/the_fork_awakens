@@ -101,31 +101,36 @@ Audio files are integrated throughout the site to add interactivity and depth us
 
 <hr>
 
+## Deployment and local development
 
-## Deployment
+### GitHub Pages
 
-Requirements:
-1. Netlify Account: Ensure a Netlify account is set up and accessible.
-2. Repository Connection: Connect the GitHub repository of the project to Netlify for continuous deployment.
-3. Build Configuration: Specify the correct build settings, even if no build commands are needed for this static site.
-4. Testing: Test the deployment to ensure the website functions correctly on Netlify.
+GitHub Pages used to deploy live version of the website.
+1. Log in to GitHub and locate [GitHub Repository The Force Awaken](https://github.com/MickKav/the_fork_awakens/)
+2. At the top of the Repository(not the main navigation) locate "Code" button on the menu.
+3. On the right hand side of the Code page find the "About" section.
+4. Under "About" find the link to the [Live Site](theforkawakens.netlify.app/).
+5. Click this link and the Live Site should render.
 
-Tasks:
-☑︎ Create or log into a Netlify account.
-☑︎ Connect the project’s GitHub repository to Netlify.
-☑︎ Configure the build settings in Netlify:
-   • Build command: None (since it's a static site).
-   • Publish directory: Set to the root directory (or the directory where your index.html file is located).
-☑︎ Configure a custom domain if applicable.
-☑︎ Deploy the site to Netlify.
-☐ Test the deployed site to ensure all features are working correctly.
-☐ Document the deployment process in the project's README file.
+### Forking the GitHub Repository
 
-Acceptance Criteria:
-• The Star Wars quiz website is successfully deployed and publicly accessible via Netlify.
-• The site is connected to the GitHub repository for continuous deployment.
-• The deployment is tested and verified to be fully functional.
-• The deployment process is documented in the project's README file.
+By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
+
+1. Log in to Netlify and locate and connect [GitHub Repository The Fork Awakens](https://github.com/MickKav/the_fork_awakens/)
+2. At the top of the Repository(under the main navigation) locate "Fork" button.
+3. Now you should have a copy of the original repository in your Netlify account.
+
+### Local Clone
+
+1. Log in to Netlify and locate [GitHub Repository The Fork Awakens](https://github.com/MickKav/the_fork_awakens/)
+2. Under the repository name click "Clone or download"
+3. Click on the code button, select clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone` and then paste The URL copied in the step 3.
+7. Press Enter and your local clone will be created.
+
+<hr>
 
 ## Game Flow
 
