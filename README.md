@@ -81,19 +81,16 @@ Audio files are integrated throughout the site to add interactivity and depth us
 
 ### **Team Page**
 - The team page displays cards for each member.
-- Team member main roles in the project are provided.
-- Each member has a space to record their own 'Happy Hack'.
 - Links are provided for team members' Github and LinkedIn profiles.
 
 ![Team Page](/assets/images/StarWars-teampage.png)
 
 <hr>
 
-## **TESTING**
-
-- Testing and results can be found [here](add testing link here)
+## Testing
+- Please see  [TESTING.md](testing.md) for all the detailed testing performed.
 - Manual tests were carried out throughout the process.
-- Responsiveness has been checked and adjusted in Chrome Dev Tools and the site has been viewed on mobiles and an mac without issues.
+- Responsiveness has been checked and adjusted in Chrome Dev Tools and the site has been viewed on mobiles and on mac without issues.
 
 <hr>
 
@@ -151,6 +148,7 @@ By forking the repository, we make a copy of the original repository on our GitH
      - **Start**: Begins the quiz.
      - **Rules**: Displays the game rules.
      - **Team**: Shows information about the development team.
+     - **Results**: Shows results for each of the three quizzes
 2. **Button Actions**
    - **Start**:
      - When the player clicks the "Start" button, the game transitions to the question theme selection screen.
@@ -189,14 +187,14 @@ By forking the repository, we make a copy of the original repository on our GitH
      - **Light Side**: If the player gets more correct answers than wrong answers.
      - **Dark Side**: If the player gets more wrong answers than correct answers.
    - The modal contains the player’s score.
-   - The player has the option to restart the quiz by clicking a "Restart" button, which takes them back to the start screen.
+   - The player has the option to return to the home page.
 
 ## Tech Stack
 
 The Star Wars Quiz Game is developed using the following tools and technologies:
 
 - **HTML**: For structuring the content and layout of the web pages.
-- **CSS**: For styling the game and making it visually appealing.
+- **CSS**: For styling the website and making it visually appealing.
 - **JavaScript**: For implementing the game logic and interactivity.
 - **Bootstrap**: For responsive design and pre-built UI components to ensure the game looks great on all devices.
 
