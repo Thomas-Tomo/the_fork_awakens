@@ -152,3 +152,34 @@ function muteAudio() {
     document.getElementById("muteImg").src = "assets/images/volume-on.png";
   }
 }
+
+// code to save score for results
+
+function saveScore() {
+  let name = document.getElementById("name").value
+  let score = document.getElementById("finalScore").innerText
+
+  const quizResult = {
+        name: name,
+        score: score
+  };
+  
+  // Retrieve the existing array of objects from local storage.
+  let existingResult = JSON.parse(localStorage.getItem("quiz2"));
+
+  // If the array doesn't exist yet, create it.
+  if (!existingResult) {
+      existingResult = [];
+  }
+
+  // Push quizResult into the existingArray.
+  existingResult.push(quizResult);
+
+  localStorage.setItem("quiz2", JSON.stringify(existingResult));
+
+  // hide the text box
+  document.getElementById("name").style.display.none
+  document.getElementById("finalScore").style.display.none
+
+  document.getElementById("scoreSave").innerText="Score saved!"
+}

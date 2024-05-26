@@ -149,6 +149,11 @@ main {
   background: rgba(136, 136, 136, 0.5);
 }
 
+.scoreSave {
+  display: flex;
+  justify-content: center;
+}
+
 /* Add Animation to drop in rules */
 @keyframes animatetop {
   from {
@@ -176,6 +181,8 @@ main {
   margin-bottom: 10px;
 }
 
+
+/* Media Queries */
 @media screen and (max-width: 425px) {
   .answer {
     font-size: 0.8rem;
