@@ -5,6 +5,8 @@
 
 Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge of the Star Wars universe through a series of challenging and entertaining questions. Whether you're a casual fan or a die-hard enthusiast, this game is designed to engage and entertain you.
 
+![Am I responsive](/assets/images/am-i-responsive.PNG)
+
 ## **TABLE OF CONTENTS**
 
 - [**Team Goal**](#the-team)
