@@ -85,6 +85,18 @@ Contrast checks were carried out.  Errors were found, but the checker appears to
 ![Contrast](/static/docs/lighthouse_team_contrast.jpg)
 
 
+  <table>
+  <tr>
+    <th>Features</th>
+    <th>Bugs/Issues</th>
+  </tr>
+  <tr>
+    <td>LINKS: Start button</td>
+    <td>Not Detected</td>
+  </tr>
+  </table>
+
+
 ## **Final Review**
 
 The testing procedures have been executed, meeting all specified criteria. Results have been thoroughly documented, and any identified issues have been addressed. Post-testing, the website has been confirmed to be fully functional and accessible.
