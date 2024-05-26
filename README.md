@@ -1,5 +1,6 @@
+# STAR WARS Classic  Quiz
 
-# Classic <img src="./assets/images/star-wars-logo.svg" alt="star wars logo" width="100" height="50"> Quiz
+# <img src="./assets/images/star-wars-logo.svg" alt="star wars logo" width="100" height="50">
 
 ## Description
 
@@ -41,12 +42,13 @@ Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge 
 <hr>
 
 ### **Typography**
-- All fonts were sourced through [Google fonts](https://fonts.google.com/).
+- All fonts were sourced through [CDN fonts](https://www.cdnfonts.com/star-wars.font) & 
+   [Google Fonts](https://fonts.google.com/specimen/Press+Start+2P?query=star).
 - Fonts were selected for their srelation to Star Wars and 8bit styles.
 - Press Start 2P & cursive were selected.
 
-![Fonts](#)
-![Title Font](#)
+![Fonts](/assets/images/typography-main-font.png)
+![Title Font](/assets/images/typography-title-font.png)
 
 <hr>
 
@@ -60,11 +62,13 @@ Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge 
 ### **Wireframes**
 Wireframes for different views are linked here:
 
-![Mobile Wireframe](#)
-![Mobile Wireframe](#)
+![Desktop Wireframe](/assets/images/home-sw-wireframe.png)
+![Desktop Wireframe](/assets/images/start-sw-wireframe.png)
+![Desktop Wireframe](/assets/images/question-sw-wireframe.png)
+![Desktop Wireframe](/assets/images/rules-sw-wireframe.png)
+![Desktop Wireframe](/assets/images/dark-side-sw-wireframe.png)
+![Desktop Wireframe](/assets/images/team-sw-wireframe.png)
 
-![Desktop Wireframe](#)
-![Desktop Wireframe](#)
 
 <hr>
 

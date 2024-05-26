@@ -69,11 +69,14 @@ main {
 }
 
 .score-container {
-  width: 80%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
   margin-top: 0 auto;
   font-size: 1.2rem;
   margin-top: 10px;
+  gap: 15px;
+  margin: 30px auto;
 }
 
 .correct-wrapper,
@@ -82,15 +85,19 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   font-size: 1rem;
   border-radius: 20px;
-  border: 3px solid var(--main-text);
-  background: rgba(136, 136, 136, 0.5);
+  background-color: var(--secondary-color);
+  border: var(--fourth-color) 3px solid;
+  width: 60%;
+  box-shadow: 1px 1px 10px var(--fourth-color);
 }
 
 .correct-wrapper span,
 .wrong-wrapper span {
   margin: 0 0.5rem;
+  text-shadow: 2px 2px 5px var(--fourth-color);
 }
 
 #quizModal {
@@ -168,22 +175,30 @@ main {
 
 #winLose {
   margin: 10px auto;
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
   display: flex;
   border-radius: 20px;
+  box-shadow: 0 0 10px var(--main-text);
 }
 
 #wlText {
   text-align: center;
   font-size: 1.2rem;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin: 15px 0;
 }
 
 
 /* Media Queries */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 525px) {
+  #movie-container .btn,
+  .aBtn {
+    max-width: 200px;
+  }
+  .aBtn button {
+    font-size: 0.8rem;
+  }
   .answer {
     font-size: 0.8rem;
   }
@@ -213,7 +228,18 @@ main {
     line-height: 1.5rem;
   }
   .modal-content p {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+
+  #wlText {
+    font-size: 0.5rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header h2 {
+    display: none;
   }
 }
 
@@ -236,5 +262,22 @@ main {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+  }
 
+  .modal-content {
+    width: 60%;
+  }
+}
 
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 60%;
+  }
+
+  .modal-content {
+    width: 40%;
+  }
+}

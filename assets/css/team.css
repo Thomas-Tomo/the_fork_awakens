@@ -32,6 +32,23 @@ body {
   background-color: var(--secondary-color);
 }
 
+/* Travel animation for flip cards */
+@keyframes travelFromBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(1000px) rotateX(360deg) rotateY(360deg); /* Start from below and rotate */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) rotateX(0) rotateY(0); /* End in place */
+  }
+}
+
+/* Apply travel animation to flip cards */
+.travel-from-bottom {
+  animation: travelFromBottom 2s ease-out; /* Adjust duration as needed */
+}
+
 /* content box  */
 main {
   z-index: 2;
@@ -70,25 +87,22 @@ main h1 {
 }
 
 /* Header Styling */
-#header-team {
-  z-index: 2;
+#header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 1rem;
+  padding-top: 10rem;
 }
 
-#header-team img {
-  width: 200px;
-  padding: 0.5rem 0;
+#header img {
+  width: 250px;
   margin: 0 auto;
 }
 
-#header-team h2 {
-  font-size: 1.25rem;
-  padding-top: 1rem;
+#header h2 {
+  font-size: 1rem;
 }
 
 /* nav with return button and page title  */
@@ -133,7 +147,57 @@ main h1 {
   align-items: center;
   flex-direction: column;
   height: fit-content;
+  position: relative;
+  z-index: 1; /* Ensure buttons are clickable */
 }
+
+.cards-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200%;
+  height: 100%;
+  border-top: 15px solid transparent;
+  border-image: linear-gradient(to right, transparent 50%, #00ff00 80%, transparent 95%) 1;
+  border-image-slice: 1;
+  border-radius: 20px;
+  animation: lightsaberAnimation 2s linear alternate, hideLightsaber 0s 2s forwards;
+  z-index: -1; /* Push the pseudo-element behind the cards */
+}
+
+.cards-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200%;
+  height: 100%;
+  border-top: 15px solid transparent;
+  border-image: linear-gradient(to left, transparent 50%, #ff0000 80%, transparent 95%) 1;
+  border-image-slice: 1;
+  border-radius: 20px;
+  animation: lightsaberAnimation 2s linear alternate-reverse, hideLightsaber 0s 2s forwards;
+  z-index: -1; /* Push the pseudo-element behind the cards */
+}
+
+@keyframes lightsaberAnimation {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+@keyframes hideLightsaber {
+  to {
+    opacity: 0;
+  }
+}
+
 
 /* flip cards */
 .flip-card {
@@ -194,11 +258,11 @@ main h1 {
   height: 50px;
 }
 
-@media screen and (min-width: 320px) {
+/* @media screen and (min-width: 320px) {
   #header img {
     width: 200px;
   }
-}
+} */
 
 /* tablet screen size and above */
 @media screen and (min-width: 768px) {
@@ -212,7 +276,7 @@ main h1 {
     padding: 30px;
   }
 
-  #header-team {
+  /* #header-team {
     width: 80%;
     margin: 0 auto;
     flex-direction: row;
@@ -229,13 +293,13 @@ main h1 {
 
   #header-team h2:last-child {
     width: 290px;
-  }
+  } */
 
   /* page title  */
-  main h1 {
+  /* main h1 {
     padding: 0;
     padding-bottom: 2rem;
-  }
+  } */
 
   .cards-container {
     flex-direction: row;
@@ -279,5 +343,103 @@ main h1 {
 @media screen and (min-width: 992px) {
   main {
     width: 900px;
+  }
+}
+
+/* Lightsaber animations */
+@media screen and (min-width: 768px) {
+  .cards-container::before,
+  .cards-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 100%;
+    border-top: 15px solid transparent;
+    border-image: linear-gradient(to right, transparent 50%, #00ff00 80%, transparent 95%) 1;
+    border-image-slice: 1;
+    border-radius: 20px;
+    animation: lightsaberAnimation 2s linear alternate, hideLightsaber 0s 2s forwards;
+    z-index: -1; /* Push the pseudo-element behind the cards */
+  }
+
+  .cards-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 100%;
+    border-top: 15px solid transparent;
+    border-image: linear-gradient(to left, transparent 50%, #ff0000 80%, transparent 95%) 1;
+    border-image-slice: 1;
+    border-radius: 20px;
+    animation: lightsaberAnimation 2s linear alternate-reverse, hideLightsaber 0s 2s forwards;
+    z-index: -1; /* Push the pseudo-element behind the cards */
+  }
+
+  @keyframes lightsaberAnimation {
+    0% {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) rotate(360deg);
+    }
+  }
+
+  @keyframes hideLightsaber {
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+/* Ensure lightsabers don't cause layout shifts on mobile */
+@media screen and (max-width: 767px) {
+  .cards-container::before,
+  .cards-container::after {
+    display: none; /* Hide lightsabers on smaller screens */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #header {
+    margin-top: 40px;
+  }
+
+  #header img {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    margin: 40px auto;
+    margin-bottom: 0;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #header img {
+    margin: 0 auto;
+    width: 275px;
+    margin-top: 30px;
+  }
+
+  #header h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+ 
+  #header {
+    padding-top: 20px;
   }
 }

@@ -312,12 +312,12 @@
       "id": "029",
       "question": "Who is the last character to die in \"Return of the Jedi\"?",
       "options": [
-        "Darth Vader",
+        "Anakin Skywalker",
         "Emperor Palpatine",
-        "Yoda",
+        "Darth Vader",
         "Jabba the Hutt"
       ],
-      "answer": "Darth Vader"
+      "answer": "Anakin Skywalker"
     },
     {
       "id": "030",

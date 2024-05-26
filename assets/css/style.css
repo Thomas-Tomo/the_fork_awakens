@@ -68,6 +68,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-top: 10rem;
 }
 
 #header img {
@@ -76,7 +77,7 @@ body {
 }
 
 #header h2 {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 main {
@@ -87,7 +88,7 @@ main {
 
 .container {
   width: 80%;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 #movie-container {
@@ -314,7 +315,6 @@ h4 {
 
   max-width: clamp(2rem, 2.5svw, 4rem);
 
-  
   z-index: 99;
 }
 
@@ -326,7 +326,6 @@ h4 {
   display: flex;
   justify-content: center;
 }
-
 
 /* Add Animation to drop in rules */
 @keyframes animatetop {
@@ -367,11 +366,11 @@ footer {
 
 @media screen and (max-width: 425px) {
   #header {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   #header img {
-    width: 200px;
+    width: 220px;
   }
 
   .modal-content h2 {
@@ -394,8 +393,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   #header {
-    flex-direction: row;
-    margin: 30px auto;
+    margin: 40px auto;
     margin-bottom: 0;
     width: 80%;
     align-items: center;
@@ -403,16 +401,15 @@ footer {
   }
 
   #header img {
-    margin: 30px auto;
+    margin: 0 auto;
+    width: 275px;
+    margin-top: 30px;
   }
 
   #header h2 {
+    text-align: center;
     font-size: 1.5rem;
-    padding: 40px;
-  }
-
-  #titleQuiz {
-    width: 290px;
+    padding: 30px;
   }
 
   /* buttons styling */
@@ -435,5 +432,12 @@ footer {
 
   .modal-content {
     padding: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+ 
+  #header {
+    padding-top: 20px;
   }
 }
