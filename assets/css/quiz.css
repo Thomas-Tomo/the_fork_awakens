@@ -100,10 +100,6 @@ main {
   text-shadow: 2px 2px 5px var(--fourth-color);
 }
 
-#quizModal {
-  display: none;
-}
-
 /* Modal Styling */
 #quizModal {
   position: fixed;
@@ -242,8 +238,22 @@ main {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .modal-content {
+    width: 60%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 60%;
+  }
+
+  .modal-content {
+    width: 40%;
   }
 }
