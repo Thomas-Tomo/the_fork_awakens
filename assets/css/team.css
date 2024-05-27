@@ -28,19 +28,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 2rem 2rem;
+  padding: 0 2rem 2rem 2rem;
   background-color: var(--secondary-color);
 }
 
 /* Travel animation for flip cards */
 @keyframes travelFromBottom {
   0% {
-      opacity: 0;
-      transform: translateY(1000px) rotateX(360deg) rotateY(360deg); /* Start from below and rotate */
+    opacity: 0;
+    transform: translateY(1000px) rotateX(360deg) rotateY(360deg); /* Start from below and rotate */
   }
   100% {
-      opacity: 1;
-      transform: translateY(0) rotateX(0) rotateY(0); /* End in place */
+    opacity: 1;
+    transform: translateY(0) rotateX(0) rotateY(0); /* End in place */
   }
 }
 
@@ -58,7 +58,6 @@ main {
   flex-direction: column;
   border-radius: 20px;
   background-color: var(--bgButtons-shade);
-  /* margin-bottom: 2rem; */
 }
 
 /* page title  */
@@ -87,35 +86,39 @@ main h1 {
 }
 
 /* Header Styling */
-#header {
+#header-team {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 10rem;
+  margin: 70px auto 0;
 }
 
-#header img {
-  width: 250px;
+#header-team img {
+  width: 240px;
   margin: 0 auto;
 }
 
-#header h2 {
-  font-size: 1rem;
+#header-team h2 {
+  font-size: 1.3rem;
+  padding-top: 1rem;
+  margin-bottom: 0;
 }
 
-/* nav with return button and page title  */
-.navbar {
+/* return button container */
+.return-btn {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0 1rem;
   z-index: 2;
 }
 
 /* return home button  */
-.navbar a {
+.return-btn a {
   width: 230px;
   height: 50px;
   display: flex;
@@ -133,7 +136,7 @@ main h1 {
   margin-top: 50px;
 }
 
-.navbar a:hover {
+.return-btn a:hover {
   color: var(--secondary-color);
   cursor: pointer;
   background: var(--main-color);
@@ -160,10 +163,17 @@ main h1 {
   width: 200%;
   height: 100%;
   border-top: 15px solid transparent;
-  border-image: linear-gradient(to right, transparent 50%, #00ff00 80%, transparent 95%) 1;
+  border-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #00ff00 80%,
+      transparent 95%
+    )
+    1;
   border-image-slice: 1;
   border-radius: 20px;
-  animation: lightsaberAnimation 2s linear alternate, hideLightsaber 0s 2s forwards;
+  animation: lightsaberAnimation 2s linear alternate,
+    hideLightsaber 0s 2s forwards;
   z-index: -1; /* Push the pseudo-element behind the cards */
 }
 
@@ -176,10 +186,17 @@ main h1 {
   width: 200%;
   height: 100%;
   border-top: 15px solid transparent;
-  border-image: linear-gradient(to left, transparent 50%, #ff0000 80%, transparent 95%) 1;
+  border-image: linear-gradient(
+      to left,
+      transparent 50%,
+      #ff0000 80%,
+      transparent 95%
+    )
+    1;
   border-image-slice: 1;
   border-radius: 20px;
-  animation: lightsaberAnimation 2s linear alternate-reverse, hideLightsaber 0s 2s forwards;
+  animation: lightsaberAnimation 2s linear alternate-reverse,
+    hideLightsaber 0s 2s forwards;
   z-index: -1; /* Push the pseudo-element behind the cards */
 }
 
@@ -197,7 +214,6 @@ main h1 {
     opacity: 0;
   }
 }
-
 
 /* flip cards */
 .flip-card {
@@ -258,11 +274,15 @@ main h1 {
   height: 50px;
 }
 
-/* @media screen and (min-width: 320px) {
+.social-repo {
+justify-content: center;
+}
+
+@media screen and (min-width: 320px) {
   #header img {
     width: 200px;
   }
-} */
+}
 
 /* tablet screen size and above */
 @media screen and (min-width: 768px) {
@@ -276,24 +296,23 @@ main h1 {
     padding: 30px;
   }
 
-  /* #header-team {
-    width: 80%;
-    margin: 0 auto;
-    flex-direction: row;
+  #header-team {
+    margin: 70px auto;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
   }
 
   #header-team img {
-    margin: 30px auto;
+    margin: 0 auto;
+    width: 275px;
   }
 
   #header-team h2 {
+    text-align: center;
     font-size: 1.5rem;
-    padding: 40px;
+    padding-bottom: 30px;
   }
-
-  #header-team h2:last-child {
-    width: 290px;
-  } */
 
   /* page title  */
   /* main h1 {
@@ -337,6 +356,12 @@ main h1 {
   .social-links img {
     height: 40px;
   }
+
+  /* return home button  */
+  .return-btn a {
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
 }
 
 /* medium screen size and above */
@@ -358,10 +383,17 @@ main h1 {
     width: 200%;
     height: 100%;
     border-top: 15px solid transparent;
-    border-image: linear-gradient(to right, transparent 50%, #00ff00 80%, transparent 95%) 1;
+    border-image: linear-gradient(
+        to right,
+        transparent 50%,
+        #00ff00 80%,
+        transparent 95%
+      )
+      1;
     border-image-slice: 1;
     border-radius: 20px;
-    animation: lightsaberAnimation 2s linear alternate, hideLightsaber 0s 2s forwards;
+    animation: lightsaberAnimation 2s linear alternate,
+      hideLightsaber 0s 2s forwards;
     z-index: -1; /* Push the pseudo-element behind the cards */
   }
 
@@ -374,10 +406,17 @@ main h1 {
     width: 200%;
     height: 100%;
     border-top: 15px solid transparent;
-    border-image: linear-gradient(to left, transparent 50%, #ff0000 80%, transparent 95%) 1;
+    border-image: linear-gradient(
+        to left,
+        transparent 50%,
+        #ff0000 80%,
+        transparent 95%
+      )
+      1;
     border-image-slice: 1;
     border-radius: 20px;
-    animation: lightsaberAnimation 2s linear alternate-reverse, hideLightsaber 0s 2s forwards;
+    animation: lightsaberAnimation 2s linear alternate-reverse,
+      hideLightsaber 0s 2s forwards;
     z-index: -1; /* Push the pseudo-element behind the cards */
   }
 
@@ -402,44 +441,5 @@ main h1 {
   .cards-container::before,
   .cards-container::after {
     display: none; /* Hide lightsabers on smaller screens */
-  }
-}
-
-@media screen and (max-width: 425px) {
-  #header {
-    margin-top: 40px;
-  }
-
-  #header img {
-    width: 220px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #header {
-    margin: 40px auto;
-    margin-bottom: 0;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #header img {
-    margin: 0 auto;
-    width: 275px;
-    margin-top: 30px;
-  }
-
-  #header h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 30px;
-  }
-}
-
-@media screen and (max-width: 700px) {
- 
-  #header {
-    padding-top: 20px;
   }
 }
