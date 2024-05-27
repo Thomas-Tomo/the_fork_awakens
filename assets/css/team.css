@@ -103,7 +103,7 @@ main h1 {
 
 #header-team h2 {
   font-size: 1.3rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
   margin-bottom: 0;
 }
 
@@ -132,8 +132,8 @@ main h1 {
   border-radius: 20px;
   color: var(--main-color);
   background: rgba(37, 37, 37, 0.6);
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 32px;
+  margin-top: 32px;
 }
 
 .return-btn a:hover {
@@ -151,7 +151,7 @@ main h1 {
   flex-direction: column;
   height: fit-content;
   position: relative;
-  z-index: 1; /* Ensure buttons are clickable */
+  z-index: 1;
 }
 
 .cards-container::before {
@@ -315,10 +315,10 @@ justify-content: center;
   }
 
   /* page title  */
-  /* main h1 {
+  main h1 {
     padding: 0;
     padding-bottom: 2rem;
-  } */
+  }
 
   .cards-container {
     flex-direction: row;

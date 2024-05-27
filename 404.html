@@ -24,6 +24,18 @@
       href="assets/favicon/favicon-16x16.png"
     />
     <style>
+      main {
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        width: 60%;
+        /* background-color: red; */
+      }
+
+      .h1-gray {
+        color: #888;
+      }
       @keyframes travelFromBottom {
         0% {
           opacity: 0;
@@ -62,15 +74,18 @@
       /></a>
       <h2 id="titleQuiz">Classic Quiz</h2>
     </header>
-
     <main>
       <section class="container">
         <div id="movie-container">
-          <div id="return-home" class="travel-from-bottom" style="display: flex; justify-content: center;">
+          <div
+            id="return-home"
+            class="travel-from-bottom"
+            style="display: flex; justify-content: center"
+          >
             <a href="index.html">Return Home</a>
           </div>
           <h1
-            class="travel-from-bottom"
+            class="travel-from-bottom h1-gray"
             style="text-align: center; font-size: 24px; margin-top: 10px"
           >
             These Aren't the Pages You're Looking For
@@ -86,7 +101,6 @@
         </div>
       </section>
     </main>
-
     <script src="assets/javascript/script.js"></script>
     <script src="assets/javascript/star-background.js"></script>
   </body>

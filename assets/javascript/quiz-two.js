@@ -132,11 +132,11 @@ function showGameOver() {
   const resultText = document.getElementById('wlText');
   if (score >= 5) {
     resultImage.src = 'assets/images/luke.webp';
-    resultText.textContent = 'Congratulations! May the Force be with you.';
+    resultText.textContent = 'Well done! May the Force be with you';
     winMusic.play();
   } else {
     resultImage.src = 'assets/images/vader.webp';
-    resultText.textContent = 'Welcome to the dark side.';
+    resultText.textContent = 'Welcome to the dark side';
     // Set text color to dark gray;
     resultText.style.color = '#8888';
     loseMusic.play();

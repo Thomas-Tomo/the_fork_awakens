@@ -131,12 +131,12 @@ function showGameOver() {
   const resultImage = document.getElementById('winLose');
   const resultText = document.getElementById('wlText');
   if (score >= 5) {
-    resultImage.src = 'assets/images/luke.webp';
-    resultText.textContent = 'Congratulations! May the Force be with you.';
+    resultImage.src = 'assets/images/light-side.jpg';
+    resultText.textContent = 'Well done! May the Force be with you';
     winMusic.play();
   } else {
-    resultImage.src = 'assets/images/vader.webp';
-    resultText.textContent = 'Welcome to the dark side.';
+    resultImage.src = 'assets/images/dark-side.jpeg';
+    resultText.textContent = 'Welcome to the dark side';
     // Set text color to dark gray;
     resultText.style.color = '#8888';
     loseMusic.play();
@@ -179,30 +179,30 @@ function muteAudio() {
 // code to save score for results
 
 function saveScore() {
-  let name = document.getElementById("name").value
-  let score = document.getElementById("finalScore").innerText
+  let name = document.getElementById('name').value;
+  let score = document.getElementById('finalScore').innerText;
 
   const quizResult = {
-        name: name,
-        score: score
+    name: name,
+    score: score,
   };
-  
+
   // Retrieve the existing array of objects from local storage.
-  let existingResult = JSON.parse(localStorage.getItem("quiz1"));
+  let existingResult = JSON.parse(localStorage.getItem('quiz1'));
 
   // If the array doesn't exist yet, create it.
   if (!existingResult) {
-      existingResult = [];
+    existingResult = [];
   }
 
   // Push quizResult into the existingArray.
   existingResult.push(quizResult);
 
-  localStorage.setItem("quiz1", JSON.stringify(existingResult));
+  localStorage.setItem('quiz1', JSON.stringify(existingResult));
 
   // hide the text box
-  document.getElementById("name").style.display.none
-  document.getElementById("finalScore").style.display.none
+  document.getElementById('name').style.display.none;
+  document.getElementById('finalScore').style.display.none;
 
-  document.getElementById("scoreSave").innerText="Score saved!"
+  document.getElementById('scoreSave').innerText = 'Score saved!';
 }
