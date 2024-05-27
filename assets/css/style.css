@@ -17,9 +17,9 @@
   line-height: 3rem;
 }
 
-a:visited{
-    text-decoration: none;
-    color: var(--main-color);
+a:visited {
+  text-decoration: none;
+  color: var(--main-color);
 }
 
 body {
@@ -152,6 +152,34 @@ main {
   transition: opacity 1s ease-in;
   animation: fadeIn 1s ease-in forwards;
   padding: 0 2rem;
+}
+
+/* return btn results page */
+.return-btn-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.return-btn-container a {
+  width: 230px;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 3px solid var(--main-text);
+  border-radius: 20px;
+  color: var(--main-color);
+  background: rgba(37, 37, 37, 0.6);
+  margin-bottom: 32px;
+  margin-top: 32px;
 }
 
 @keyframes fadeIn {
@@ -311,9 +339,7 @@ h4 {
   margin: 1svw;
   background: none;
   border: none;
-
   max-width: clamp(2rem, 2.5svw, 4rem);
-
   z-index: 99;
 }
 
@@ -321,25 +347,54 @@ h4 {
   max-width: inherit;
 }
 
+/* results page */
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 20px 0;
+}
 
-/* Scores */
+.results-bg {
+  max-width: 395px;
+  border-radius: 20px;
+  background-color: var(--bgButtons-shade);
+}
+
+.results-bg h2 {
+  color: var(--third-color);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+
+
+/* result page scores */
 #highscores {
+  width: 100%;
   display: flex;
   justify-content: center;
+  width: 100%;
+  padding-bottom: 2rem;
 }
 
 table {
-  width: 100%;
   text-align: center;
   border-collapse: collapse;
 }
-table td, table th {
-  border: 3px solid #FFC107;
-  padding: 0  5px 0 5px;
-  border-radius: 3px;
+
+table td,
+table th {
+  border: 3px solid #ffc107;
+  padding: 8px;
 }
+
 table thead {
-    border-bottom: 2px solid #FFC107;
+  border-bottom: 2px solid #ffc107;
 }
 
 /* Add Animation to drop in rules */
@@ -435,5 +490,10 @@ table thead {
 
   .modal-content {
     padding: 30px;
+  }
+
+  .results-bg {
+    max-width: 500px;
+  
   }
 }

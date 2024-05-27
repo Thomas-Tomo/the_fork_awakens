@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Results</title>
+    <title>Star Wars Classic Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Favicon -->
@@ -39,10 +39,14 @@
       <h2 id="titleQuiz">Classic Quiz</h2>
     </header>
     <main>
-      <section class="container">
-        <div id="movie-container"><a class="aBtn travel-from-bottom" href="index.html">
-            <button type="button">Return Home</button>
+      <section class="container travel-from-bottom results-container">
+        <div class="return-btn-container travel-from-bottom" >
+          <a href="index.html">
+            Return Home
           </a>
+        </div>
+        <div id="movie-container" style="padding-top: 0;" class="results-bg travel-from-bottom">
+          <h2 class="travel-from-bottom">Results</h2>
           <button type="button" class="btn travel-from-bottom" id="quiz1Results" onclick="printResult('quiz1')">Quiz 1 Results</button>
           <button type="button" class="btn travel-from-bottom" id="quiz2Results" onclick="printResult('quiz2')">Quiz 2 Results</button>
           <button type="button" class="btn travel-from-bottom" id="quiz3Results" onclick="printResult('quiz3')">Quiz 3 Results</button>
@@ -50,14 +54,6 @@
         </div>
         
       </section>
-      <!-- Modal HTML -->
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-        </div>
-      </div>
-    </main>
-    <footer>This is a footer</footer>
-
     <script src="assets/javascript/script.js"></script>
     <script src="assets/javascript/star-background.js"></script>
   </body>
