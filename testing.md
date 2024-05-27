@@ -15,10 +15,11 @@
 All HTML code has been run through the [W3C - HTML](https://validator.w3.org/) validator.  The only errors appear to be confusion over the use of Django.
 
 #### **Index.html**
+ We have validated our base html. Even though there is some errors on the buttons, we don't want to touch our button and modify the styles of our page.
 ![HTML Base Page](/static/docs/w3c_about_team.jpg)
 
 #### **Game.html**
-![HTML Game Page](/static/docs/w3c_base_html.jpg)
+![HTML Game Page](/assests/docs/game_html.jpg)
 
 #### **Quiz-one.html**
 ![HTML Quiz-One Page](/static/docs/w3c_base_html.jpg)
@@ -30,6 +31,8 @@ All HTML code has been run through the [W3C - HTML](https://validator.w3.org/) v
 #### **Team.html**
 ![HTML Team Page](/static/docs/w3c_base_html.jpg)
 
+#### **Result.html**
+![HTML Team Page](/assests/docs/results_html.jpg)
 
 <hr>
 
