@@ -30,22 +30,22 @@
       <canvas id="space" class="canvas"></canvas>
     </div>
 
-    <header id="header" class="travel-from-bottom">
-      <h2>Classic</h2>
+     <header id="header" class="travel-from-bottom">
       <a href="index.html"
         ><img
           src="assets/images/star-wars-logo.svg"
           alt="star wars logo in yellow and black"
       /></a>
-      <h2 id="titleQuiz">Quiz</h2>
+      <h2 id="titleQuiz">Classic Quiz</h2>
     </header>
     <main>
       <section class="container">
-        <div id="movie-container">
+        <div id="movie-container"><a class="aBtn travel-from-bottom" href="index.html">
+            <button type="button">Return Home</button>
+          </a>
           <button type="button" class="btn travel-from-bottom" id="quiz1Results" onclick="printResult('quiz1')">Quiz 1 Results</button>
           <button type="button" class="btn travel-from-bottom" id="quiz2Results" onclick="printResult('quiz2')">Quiz 2 Results</button>
           <button type="button" class="btn travel-from-bottom" id="quiz3Results" onclick="printResult('quiz3')">Quiz 3 Results</button>
-          <button type="button" class="btn travel-from-bottom"><a href="index.html">return home</a></button>
           <table id="highscores"></table>
         </div>
         

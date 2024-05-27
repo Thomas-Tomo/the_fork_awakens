@@ -1,7 +1,7 @@
 // Global variables
 let questionCount = 0;
 let questionIndex = 0;
-const maxQuestions = 10;
+const maxQuestions = 1;
 
 async function fetchQuizData() {
   try {

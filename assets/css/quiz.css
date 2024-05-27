@@ -16,6 +16,23 @@ main {
   text-decoration: none;
 }
 
+ input {
+  border: none;
+  border-radius: 20px;
+  max-width: 90%;
+  padding-left: 20px;
+  color: var(--main-text);
+  background-color: var(--third-color);
+  font-size: 1rem;
+}
+input::placeholder {
+  color: var(--secondary-color);
+}
+input:focus {
+  outline: none;
+  border-color: var(--main-text);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -159,6 +176,10 @@ main {
 .scoreSave {
   display: flex;
   justify-content: center;
+}
+
+.scoreSave > button{
+  margin-left: 10px;
 }
 
 /* Add Animation to drop in rules */

@@ -68,7 +68,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 10rem;
+  padding-top: 3svh;
 }
 
 #header img {
@@ -322,9 +322,25 @@ h4 {
   max-width: inherit;
 }
 
+
+/* Scores */
 #highscores {
   display: flex;
   justify-content: center;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 3px solid #FFC107;
+  padding: 0  5px 0 5px;
+  border-radius: 3px;
+}
+table thead {
+    border-bottom: 2px solid #FFC107;
 }
 
 /* Add Animation to drop in rules */
@@ -394,7 +410,7 @@ footer {
 @media screen and (min-width: 768px) {
   #header {
     margin: 40px auto;
-    margin-bottom: 0;
+    margin-bottom: 40px;
     width: 80%;
     align-items: center;
     justify-content: center;
@@ -409,7 +425,7 @@ footer {
   #header h2 {
     text-align: center;
     font-size: 1.5rem;
-    padding: 30px;
+    padding-bottom: 30px;
   }
 
   /* buttons styling */
