@@ -45,7 +45,6 @@ body {
 }
 
 /* Travel animation for home page */
-
 @keyframes travelFromBottom {
   0% {
     opacity: 0;
@@ -63,21 +62,22 @@ body {
 
 /* Header Styling */
 #header {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 10rem;
+  margin: 70px auto 0;
 }
 
 #header img {
-  width: 250px;
+  width: 240px;
   margin: 0 auto;
 }
 
 #header h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 main {
@@ -86,32 +86,20 @@ main {
   position: relative;
 }
 
+/* content container for home page and choose a movie */
 .container {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
 }
 
+/* buttons home page */
 #movie-container {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
-  margin: auto;
+  width: 100%;
   transition: opacity 1s ease-out;
 }
 
-.aBtn button {
-  font-size: 1rem;
-  display: flex;
-  margin: 0 auto;
-  text-transform: uppercase;
-  background: none;
-  border: none;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  color: var(--main-text);
-}
-
+/* buttons home page */
 #movie-container .btn,
 .aBtn {
   text-transform: uppercase;
@@ -119,15 +107,12 @@ main {
   border-radius: 20px;
   border: 3px solid var(--main-text);
   color: var(--main-text);
-  width: 100%;
+  width: 300px;
   margin: 30px auto;
   background: var(--bgButtons-shade);
 }
 
-#movie-container a {
-  text-decoration: none;
-}
-
+/* buttons home page */
 #movie-container .btn:hover,
 #return-home .btn:hover,
 #return-home button:hover,
@@ -139,6 +124,18 @@ main {
   box-shadow: 0 0 10px var(--main-text);
 }
 
+/* team button home page */
+.aBtn button {
+  font-size: 1rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  color: var(--main-text);
+  width: 100%;
+}
+
+/* team button home page */
 .aBtn button:hover {
   color: var(--secondary-color);
   cursor: pointer;
@@ -152,6 +149,7 @@ main {
   display: none;
   transition: opacity 1s ease-in;
   animation: fadeIn 1s ease-in forwards;
+  padding: 0 2rem;
 }
 
 @keyframes fadeIn {
@@ -163,7 +161,7 @@ main {
   }
 }
 
-/* return btn tm */
+/* return button */
 #return-home a {
   width: 230px;
   height: 50px;
@@ -179,9 +177,10 @@ main {
   color: var(--main-color);
   background: var(--bgButtons-shade);
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-/* return btn tm */
+/* return button */
 #return-home a:hover {
   color: var(--secondary-color);
   cursor: pointer;
@@ -199,13 +198,15 @@ main {
   background: var(--bgButtons-shade);
   border-radius: 20px;
   padding: 30px;
-  margin-top: 10px;
 }
 
-.btnImg {
-  border-radius: 10px;
-  background-color: transparent;
-  border: none;
+.btn-grid h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 1rem;
+  color: var(--third-color);
 }
 
 .posters-container {
@@ -214,13 +215,10 @@ main {
   gap: 3rem;
 }
 
-.btn-grid h2 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  margin: 0;
-  text-align: center;
-  padding-bottom: 2rem;
-  color: var(--third-color);
+.btnImg {
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
 }
 
 .btnImg img {
@@ -240,6 +238,7 @@ main {
 .btnImg .jedi {
   box-shadow: 0 0 20px rgba(46, 4, 255, 0.6);
 }
+
 /* hover activation for images */
 .btnImg img:hover {
   transform: rotateY(360deg);
@@ -301,15 +300,12 @@ h4 {
 }
 
 /* Mute button */
-
 #mute {
   position: fixed;
   bottom: 0;
   left: 0;
-
   padding: 0;
   margin: 1svw;
-
   background: none;
   border: none;
 
@@ -355,16 +351,8 @@ h4 {
   font-size: 35px;
 }
 
-footer {
-  color: var(--secondary-color);
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.75rem;
-}
-
-@media screen and (max-width: 425px) {
+/* IS THIS CODE BEING USED? */
+/* @media screen and (max-width: 425px) {
   #header {
     margin-top: 40px;
   }
@@ -389,13 +377,12 @@ footer {
     font-size: 0.5rem;
     line-height: 1rem;
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   #header {
-    margin: 40px auto;
+    margin: 70px auto;
     margin-bottom: 0;
-    width: 80%;
     align-items: center;
     justify-content: center;
   }
@@ -403,19 +390,18 @@ footer {
   #header img {
     margin: 0 auto;
     width: 275px;
-    margin-top: 30px;
   }
 
   #header h2 {
     text-align: center;
     font-size: 1.5rem;
-    padding: 30px;
+    padding-bottom: 30px;
   }
 
   /* buttons styling */
   #movie-container .btn,
   .aBtn {
-    width: 60%;
+    width: 450px;
   }
 
   .btnImg img {
@@ -425,7 +411,6 @@ footer {
     cursor: pointer;
   }
 
-  /* tm added  */
   .posters-container {
     flex-direction: row;
   }
