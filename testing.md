@@ -206,6 +206,39 @@ Contrast checks were carried out.  Errors were found, but the checker appears to
   </table>
 
 
+  <table>
+  <tr>
+    <th>Responsiveness</th>
+    <th>Bugs/Issues</th>
+  </tr>
+  <tr>
+    <td>Desktop size </td>
+    <td> It is responsive</td>
+    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+  </tr>
+   <tr>
+    <td>Laptop size </td>
+    <td> It is responsive</td>
+    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+  </tr>
+   <tr>
+    <td> Tablet size </td>
+    <td> It is responsive</td>
+    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+  </tr>
+ <tr>
+    <td> Larger phone size </td>
+    <td> It is responsive</td>
+    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+  </tr>
+  <tr>
+    <td> Average phone size </td>
+    <td> It is responsive</td>
+    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+  </tr>
+  </table>
+
+
 
 ## **Final Review**
 
