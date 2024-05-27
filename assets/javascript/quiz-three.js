@@ -183,6 +183,12 @@ function saveScore() {
   let name = document.getElementById("name").value
   let score = document.getElementById("finalScore").innerText
 
+  console.log(name)
+
+  if (name == "") {
+    name = "Guest"
+  }
+
   const quizResult = {
         name: name,
         score: score

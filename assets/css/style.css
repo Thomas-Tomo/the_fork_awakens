@@ -318,9 +318,25 @@ h4 {
   max-width: inherit;
 }
 
+
+/* Scores */
 #highscores {
   display: flex;
   justify-content: center;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 3px solid #FFC107;
+  padding: 0  5px 0 5px;
+  border-radius: 3px;
+}
+table thead {
+    border-bottom: 2px solid #FFC107;
 }
 
 /* Add Animation to drop in rules */
@@ -395,7 +411,7 @@ h4 {
   #header h2 {
     text-align: center;
     font-size: 1.5rem;
-    padding-bottom: 30px;
+    padding: 30px;
   }
 
   /* buttons styling */
