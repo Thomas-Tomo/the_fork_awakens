@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <div class="stars-bg">
+      <canvas id="space" class="canvas"></canvas>
+    </div>
+
+     <header id="header" class="travel-from-bottom">
+      <a href="index.html"
+        ><img
+          src="assets/images/star-wars-logo.svg"
+          alt="star wars logo in yellow and black"
+      /></a>
+      <h2 id="titleQuiz">Classic Quiz</h2>
+    </header>
+    <main>
+      <section class="container">
+        <div id="movie-container"><a class="aBtn travel-from-bottom" href="index.html">
+            <button type="button">Return Home</button>
+          </a>
+          <button type="button" class="btn travel-from-bottom" id="quiz1Results" onclick="printResult('quiz1')">Quiz 1 Results</button>
+          <button type="button" class="btn travel-from-bottom" id="quiz2Results" onclick="printResult('quiz2')">Quiz 2 Results</button>
+          <button type="button" class="btn travel-from-bottom" id="quiz3Results" onclick="printResult('quiz3')">Quiz 3 Results</button>
+          <table id="highscores"></table>
+        </div>
+        
+      </section>
+      <!-- Modal HTML -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+        </div>
+      </div>
+    </main>
+    <footer>This is a footer</footer>
+
+    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/star-background.js"></script>
+  </body>
+</html>
