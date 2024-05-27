@@ -147,16 +147,64 @@ Contrast checks were carried out.  Errors were found, but the checker appears to
     <td>LINKS: start Button </td>
     <td>Not Detected</td>
   </tr>
-
-
-
-
-
-
-
-
-
   </table>
+
+<table>
+  <tr>
+    <th>QUiz</th>
+    <th>Bugs/Issues</th>
+  </tr>
+  <tr>
+    <td>Red color if the answer was incorrect </td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>Green color if the answer was correct</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>when selection an an option while hoovering the backgrounds changes to yellow </td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>with every wrong answer the wrong score turns red and adds a number to it </td>
+    <td>Not Detected</td>
+  </tr>
+ <tr>
+    <td>with every right answer the right score turns green and adds a number to it</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>Sounds effect when starting the game</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>Button for silencing the sound effects </td>
+    <td>Not Detected</td>
+  </tr>
+  </tr>
+   <tr>
+    <td>Game Over card appearing at the end of the game</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>Game Over final results</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>Enter name input text field</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>Save button</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>Home Button</td>
+    <td>Not Detected</td>
+  </tr>
+  </table>
+
 
 
 ## **Final Review**
