@@ -79,11 +79,59 @@ Audio files are integrated throughout the site to add interactivity and depth us
 
 <hr>
 
-### **Team Page**
-- The team page displays cards for each member.
-- Links are provided for team members' Github and LinkedIn profiles.
+## Features
 
-![Team Page](/assets/images/StarWars-teampage.png)
+* Home Page
+    * Displays start, rules, team and results buttons.
+    * Once the start is pressed user is warped to the quiz selection
+    * Rules button displays rules
+    * Team button redirects to team page
+    * Results page redirects to results page
+
+![Home Page](#)
+
+* Rules
+   * These are the rules of the quiz
+
+![Rules](#)
+
+* Team Page
+   * The team page displays cards for each member.
+   * Links are provided for team members Github and LinkedIn profiles.
+   * One card contains the project repository
+
+![Team Page](#)
+
+* Results Page
+   * Displays button for each quiz result
+
+![Results Page](#)
+
+* Quiz Selection
+   * After start button is pressed user selects one of the three movies to play a quiz based on them
+   * The movies cards flip and there is a sound
+
+![Quiz Selection](#)
+
+* Quiz gameplay
+   * User gets to answer ten questions which will determine the score that the user gets 
+   * If more than 5 user is on the light side, if less user is on the dark side
+   * There is a score counter and correct color for an answer
+   * Soundtrack plays in the background, there is a mute button
+
+![Quiz gameplay](#)
+
+* Quiz finish
+   * Modal pop out that shows the final score
+   * User can enter the name to save the score
+
+![Quiz finish](#)
+
+* 404 custom page
+   * If there is an invalid URL user is taken to the 404 error page
+
+![404 custom page](#)
+
 
 <hr>
 
