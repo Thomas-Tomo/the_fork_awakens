@@ -1,7 +1,7 @@
 // Global variables
 let questionCount = 0;
 let questionIndex = 0;
-const maxQuestions = 1;
+const maxQuestions = 10;
 
 async function fetchQuizData() {
   try {
@@ -182,6 +182,12 @@ function muteAudio() {
 function saveScore() {
   let name = document.getElementById("name").value
   let score = document.getElementById("finalScore").innerText
+
+  console.log(name)
+
+  if (name == "") {
+    name = "Guest"
+  }
 
   const quizResult = {
         name: name,
