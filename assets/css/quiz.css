@@ -242,6 +242,17 @@ input:focus {
   margin: 15px 0;
 }
 
+/* tablet screen size and above */
+@media screen and (min-width: 768px) {
+  .answers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    width: 760px;
+  }
+}
+
 /* Media Queries */
 @media screen and (max-width: 525px) {
   /* #movie-container .btn,
@@ -296,7 +307,7 @@ input:focus {
 } */
 
 @media screen and (min-width: 650px) {
-  .answers {
+  /* .answers {
     display: block;
   }
 
@@ -314,25 +325,25 @@ input:focus {
     flex-basis: calc(50% - 100px);
     justify-content: center;
     flex-direction: column;
-  }
+  } */
 }
 
 @media screen and (min-width: 1024px) {
-  .container {
+  /* .container {
     width: 80%;
   }
 
   .modal-content {
     width: 60%;
-  }
+  } */
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  /* .container {
     width: 60%;
   }
 
   .modal-content {
     width: 40%;
-  }
+  } */
 }

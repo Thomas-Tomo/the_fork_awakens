@@ -278,21 +278,10 @@
       "options": [
         "\"May the Force be with you.\"",
         "\"You're all clear, kid.\"",
-        "\"Remember, the Force will be with you, always.\"",
+        "\"Remember, I love you, always.\"",
         "\"Thank you.\""
       ],
       "answer": "\"Thank you.\""
-    },
-    {
-      "id": "034",
-      "question": "What does Leia call Han just before they part ways before the Battle of Yavin?",
-      "options": [
-        "Scruffy-looking nerf herder",
-        "Scoundrel",
-        "Stuck-up, half-witted, scruffy-looking nerf herder",
-        "Alderaanian smuggler"
-      ],
-      "answer": "Scoundrel"
     },
     {
       "id": "035",
@@ -319,9 +308,9 @@
         "The Falcon",
         "The Ship of Legends",
         "The Piece of Junk",
-        "The fastest hunk of junk in the galaxy"
+        "Fastest hunk of junk in the galaxy"
       ],
-      "answer": "The fastest hunk of junk in the galaxy"
+      "answer": "Fastest hunk of junk in the galaxy"
     },
     {
       "id": "039",

@@ -191,6 +191,7 @@ main {
   box-shadow: 0 0 10px var(--main-text);
 }
 
+/* posters container  */
 .btn-grid {
   display: flex;
   gap: 10px;
