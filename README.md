@@ -123,7 +123,9 @@ Audio files are integrated throughout the site to add interactivity and depth us
   - After start button is pressed user selects one of the three movies to play a quiz based on them
   - The movies cards flip and there is a sound
 
-![Quiz Selection](#)
+|                                      Desktop                                      |                                         Mobile                                          |
+| :-------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
+| <img src="assets/images/Home:start%20desktop.png" alt="Home/ start" width="400"/> | <img src="assets/images/Home:start%20mobile.png" alt="Home/ start mobile" width="200"/> |
 
 - Quiz gameplay
   - User gets to answer ten questions which will determine the score that the user gets
@@ -131,13 +133,17 @@ Audio files are integrated throughout the site to add interactivity and depth us
   - There is a score counter and correct color for an answer
   - Soundtrack plays in the background, there is a mute button
 
-![Quiz gameplay](#)
+|                              Desktop                               |                                  Mobile                                  |
+| :----------------------------------------------------------------: | :----------------------------------------------------------------------: |
+| <img src="assets/images/quiz desktop.png" alt="quiz" width="400"/> | <img src="assets/images/quiz mobile.png" alt="quiz mobile" width="200"/> |
 
 - Quiz finish
   - Modal pop out that shows the final score
   - User can enter the name to save the score
 
-![Quiz finish](#)
+|                                   Desktop                                    |                                       Mobile                                       |
+| :--------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
+| <img src="assets/images/quiz final desktop.png" alt="quiz end" width="400"/> | <img src="assets/images/quiz final mobile.png" alt="quiz end mobile" width="200"/> |
 
 - 404 custom page
   - If there is an invalid URL user is taken to the 404 error page
