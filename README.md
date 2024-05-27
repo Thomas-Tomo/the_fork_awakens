@@ -1,4 +1,4 @@
-# STAR WARS Classic  Quiz
+# STAR WARS Classic Quiz
 
 # <img src="./assets/images/star-wars-logo.svg" alt="star wars logo" width="100" height="50">
 
@@ -12,16 +12,16 @@ Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge 
 
 - [**Team Goal**](#the-team)
 - [**Design**](#design)
-   * [Colours](#colours)
-   * [Typography](#typography)
-   * [Wireframes](#wireframes)
-   * [Audio](#audio)
+  - [Colours](#colours)
+  - [Typography](#typography)
+  - [Wireframes](#wireframes)
+  - [Audio](#audio)
 - [**Features**](#features)
-  * [Footer](#footer)
-  * [Home Page](#home-page)
-  * [Team Page](#team-page)
-  * [Game Flow](#game-flow)
-  * [Tech Stack](#tech-stack)
+  - [Footer](#footer)
+  - [Home Page](#home-page)
+  - [Team Page](#team-page)
+  - [Game Flow](#game-flow)
+  - [Tech Stack](#tech-stack)
 - [**Testing**](#testing)
 - [**Bugs**](#bugs)
 - [**Credits**](#credits)
@@ -32,6 +32,7 @@ Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge 
 ## **Design**
 
 ### **Colours**
+
 - Research led to most commonly found colours related to Star Wars.
 - We selected a palette of complimentary colours with a galactic theme.
 - Colours were selected using the coolors color palette generator.
@@ -42,8 +43,9 @@ Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge 
 <hr>
 
 ### **Typography**
-- All fonts were sourced through [CDN fonts](https://www.cdnfonts.com/star-wars.font) & 
-   [Google Fonts](https://fonts.google.com/specimen/Press+Start+2P?query=star).
+
+- All fonts were sourced through [CDN fonts](https://www.cdnfonts.com/star-wars.font) &
+  [Google Fonts](https://fonts.google.com/specimen/Press+Start+2P?query=star).
 - Fonts were selected for their srelation to Star Wars and 8bit styles.
 - Press Start 2P & cursive were selected.
 
@@ -53,6 +55,7 @@ Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge 
 <hr>
 
 ### **Media**
+
 - [Figma](https://figma.com/) was used for the design of wireframes.
 - [Fontawesome](https://fontawesome.com/) was used for the icons on various buttons.
 - [Pexels](https://www.pexels.com/) was used to source the background image.
@@ -60,6 +63,7 @@ Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge 
 <hr>
 
 ### **Wireframes**
+
 Wireframes for different views are linked here:
 
 ![Desktop Wireframe](/assets/images/home-sw-wireframe.png)
@@ -69,11 +73,12 @@ Wireframes for different views are linked here:
 ![Desktop Wireframe](/assets/images/dark-side-sw-wireframe.png)
 ![Desktop Wireframe](/assets/images/team-sw-wireframe.png)
 
-
 <hr>
 
 ### **Audio**
+
 Audio files are integrated throughout the site to add interactivity and depth using these sites:
+
 - [Voicy](https://www.voicy.network/)
 - [The Sound Archive](https://www.thesoundarchive.com/star-wars.asp)
 
@@ -81,62 +86,69 @@ Audio files are integrated throughout the site to add interactivity and depth us
 
 ## Features
 
-* Home Page
-    * Displays start, rules, team and results buttons.
-    * Once the start is pressed user is warped to the quiz selection
-    * Rules button displays rules
-    * Team button redirects to team page
-    * Results page redirects to results page
+- Home Page
+  - Displays start, rules, team and results buttons.
+  - Once the start is pressed user is warped to the quiz selection
+  - Rules button displays rules
+  - Team button redirects to team page
+  - Results page redirects to results page
 
-![Home Page](#)
+|                                      Desktop                                      |                                         Mobile                                          |
+| :-------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
+| <img src="assets/images/Home%20page%20desktop.png" alt="Home Page" width="400"/>  |    <img src="assets/images/Home%20page%20mobile.png" alt="Home mobile" width="200"/>    |
+| <img src="assets/images/Home:start%20desktop.png" alt="Home/ start" width="400"/> | <img src="assets/images/Home:start%20mobile.png" alt="Home/ start mobile" width="200"/> |
 
-* Rules
-   * These are the rules of the quiz
+- Rules
+  - These are the rules of the quiz
 
-![Rules](#)
+|                               Desktop                                |                               Mobile                                |
+| :------------------------------------------------------------------: | :-----------------------------------------------------------------: |
+| <img src="assets/images/rules desktop.png" alt="Rules" width="400"/> | <img src="assets/images/rules mobile.png" alt="Rules" width="200"/> |
 
-* Team Page
-   * The team page displays cards for each member.
-   * Links are provided for team members Github and LinkedIn profiles.
-   * One card contains the project repository
+- Team Page
+  - The team page displays cards for each member.
+  - Links are provided for team members Github and LinkedIn profiles.
+  - One card contains the project repository
 
-![Team Page](#)
+|                              Desktop                               |                              Mobile                               |
+| :----------------------------------------------------------------: | :---------------------------------------------------------------: |
+| <img src="assets/images/Team desktop.png" alt="Team" width="400"/> | <img src="assets/images/Team mobile.png" alt="team" width="200"/> |
 
-* Results Page
-   * Displays button for each quiz result
+- Results Page
+  - Displays button for each quiz result
 
 ![Results Page](#)
 
-* Quiz Selection
-   * After start button is pressed user selects one of the three movies to play a quiz based on them
-   * The movies cards flip and there is a sound
+- Quiz Selection
+  - After start button is pressed user selects one of the three movies to play a quiz based on them
+  - The movies cards flip and there is a sound
 
 ![Quiz Selection](#)
 
-* Quiz gameplay
-   * User gets to answer ten questions which will determine the score that the user gets 
-   * If more than 5 user is on the light side, if less user is on the dark side
-   * There is a score counter and correct color for an answer
-   * Soundtrack plays in the background, there is a mute button
+- Quiz gameplay
+  - User gets to answer ten questions which will determine the score that the user gets
+  - If more than 5 user is on the light side, if less user is on the dark side
+  - There is a score counter and correct color for an answer
+  - Soundtrack plays in the background, there is a mute button
 
 ![Quiz gameplay](#)
 
-* Quiz finish
-   * Modal pop out that shows the final score
-   * User can enter the name to save the score
+- Quiz finish
+  - Modal pop out that shows the final score
+  - User can enter the name to save the score
 
 ![Quiz finish](#)
 
-* 404 custom page
-   * If there is an invalid URL user is taken to the 404 error page
+- 404 custom page
+  - If there is an invalid URL user is taken to the 404 error page
 
 ![404 custom page](#)
-
 
 <hr>
 
 ## Testing
-- Please see  [TESTING.md](testing.md) for all the detailed testing performed.
+
+- Please see [TESTING.md](testing.md) for all the detailed testing performed.
 - Manual tests were carried out throughout the process.
 - Responsiveness has been checked and adjusted in Chrome Dev Tools and the site has been viewed on mobiles and on mac without issues.
 
@@ -144,9 +156,9 @@ Audio files are integrated throughout the site to add interactivity and depth us
 
 ## **Bugs**
 
-* Issue - [name issues here]
-* Cause - [name causes here]
-* Resolution - [resolution here]
+- Issue - [name issues here]
+- Cause - [name causes here]
+- Resolution - [resolution here]
 
 <hr>
 
@@ -167,7 +179,6 @@ Audio files are integrated throughout the site to add interactivity and depth us
 6. **Deploy Site:** Once configured, click on the "Deploy site" button. Netlify will start building and deploying your site automatically.
 
 7. **Live Site:** After the deployment process is complete, Netlify will provide you with a unique URL for your live site. You can access your live site by visiting this URL.
-
 
 ### Forking the GitHub Repository
 
@@ -268,7 +279,6 @@ The Star Wars Quiz Game is developed using the following tools and technologies:
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Thomas-Tomo)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thomasdomitrovic/)
 
-
 ### Terry Loughran
 
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TerryLoc)
@@ -283,4 +293,3 @@ The Star Wars Quiz Game is developed using the following tools and technologies:
 
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/caleom)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
-
