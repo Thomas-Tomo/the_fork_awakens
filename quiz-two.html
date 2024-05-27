@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
     <title>Star Wars Classic Quiz</title>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/quiz.css" />
+    <link rel="stylesheet" href="assets/css/style.css" >
+    <link rel="stylesheet" href="assets/css/quiz.css" >
 
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="assets/favicon/apple-touch-icon.png"
-    />
+    >
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="assets/favicon/favicon-32x32.png"
-    />
+    >
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="assets/favicon/favicon-16x16.png"
-    />
+    >
   </head>
   <body onload="playAudio2()">
     <div class="stars-bg">
@@ -38,7 +38,7 @@
         ><img
           src="assets/images/star-wars-logo.svg"
           alt="star wars logo in yellow and black"
-      /></a>
+      ></a>
       <h2 id="titleQuiz">Classic Quiz</h2>
     </header>
     <main>
@@ -71,8 +71,8 @@
       <div id="quizModal" class="quiz-modal">
         <div class="modal-content">
           <h2>Game Over</h2>
-          <h5 id="wlText"></h5>
-          <img id="winLose" src="" alt="" />
+          <h5 id="wlText">Win or Lose</h5>
+          <img id="winLose" src="" alt="" >
           <div class="score-container-modal">
             <div class="correct-container">
               <p>Correct</p>
@@ -89,7 +89,7 @@
               id="name"
               maxlength="20"
               placeholder="Enter Name"
-            /><button
+            ><button
               id="saveScore"
               class="aBtn back-home-btn-modal"
               onclick="saveScore()"
@@ -103,7 +103,7 @@
         </div>
       </div>
       <button onclick="muteAudio()" id="mute">
-        <img id="muteImg" src="assets/images/volume-on.png" alt="Volume on" />
+        <img id="muteImg" src="assets/images/volume-on.png" alt="Volume on" >
       </button>
     </main>
 
