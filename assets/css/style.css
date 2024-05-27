@@ -328,6 +328,7 @@ h4 {
   background-color: var(--secondary-color);
   animation-name: animatetop;
   animation-duration: 1s;
+  z-index: 100;
 }
 
 /* Mute button */

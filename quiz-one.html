@@ -74,30 +74,41 @@
       <div id="quizModal" class="quiz-modal">
         <div class="modal-content">
           <h2>Game Over</h2>
-          <p>final score: <span id="finalScore">0</span></p>
-          <img id="winLose" src="" alt="" />
           <h5 id="wlText"></h5>
-          <p>You missed: <span id="finalMiss">0</span> questions</p>
-
+          <img id="winLose" src="" alt="" />
+          <div class="score-container-modal">
+            <div class="correct-container">
+              <p>Correct</p>
+              <span id="finalScore">0</span>
+            </div>
+            <div class="wrong-container">
+              <p>Wrong</p>
+              <span id="finalMiss">0</span>
+            </div>
+          </div>
           <div id="scoreSave" class="scoreSave">
             <input
               type="text"
               id="name"
               maxlength="20"
-              placeholder="Enter Name:"
-            /><button id="saveScore" class="aBtn" onclick="saveScore()">
+              placeholder="Enter Name"
+            /><button
+              id="saveScore"
+              class="aBtn back-home-btn-modal"
+              onclick="saveScore()"
+            >
               Save
             </button>
           </div>
-
-          <a href="index.html"><button class="aBtn">Home</button></a>
+          <div class="return-btn-container">
+            <a href="index.html">Home</a>
+          </div>
         </div>
       </div>
       <button onclick="muteAudio()" id="mute">
         <img id="muteImg" src="assets/images/volume-on.png" alt="Volume on" />
       </button>
     </main>
-
     <script src="assets/javascript/script.js"></script>
     <script src="assets/javascript/star-background.js"></script>
     <script src="assets/javascript/quiz-one.js"></script>

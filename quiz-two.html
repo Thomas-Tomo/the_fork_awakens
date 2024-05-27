@@ -13,17 +13,20 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png" />
+      href="assets/favicon/apple-touch-icon.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/favicon/favicon-32x32.png" />
+      href="assets/favicon/favicon-32x32.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/favicon/favicon-16x16.png" />
+      href="assets/favicon/favicon-16x16.png"
+    />
   </head>
   <body onload="playAudio2()">
     <div class="stars-bg">
@@ -64,21 +67,39 @@
           </div>
         </div>
       </section>
-
       <!-- Modal -->
       <div id="quizModal" class="quiz-modal">
         <div class="modal-content">
           <h2>Game Over</h2>
-          <p>final score: <span id="finalScore">0</span></p>
-          <img id="winLose" src="" alt="" />
           <h5 id="wlText"></h5>
-          <p>You missed: <span id="finalMiss">0</span> questions</p>
-
-           <div id="scoreSave" class="scoreSave">
-            <input type="text" id="name" maxlength="20" placeholder="Enter Name:"><button id="saveScore" class="aBtn" onclick="saveScore()">Save</button>
+          <img id="winLose" src="" alt="" />
+          <div class="score-container-modal">
+            <div class="correct-container">
+              <p>Correct</p>
+              <span id="finalScore">0</span>
+            </div>
+            <div class="wrong-container">
+              <p>Wrong</p>
+              <span id="finalMiss">0</span>
+            </div>
           </div>
-
-          <a href="index.html"><button class="aBtn">Home</button></a>
+          <div id="scoreSave" class="scoreSave">
+            <input
+              type="text"
+              id="name"
+              maxlength="20"
+              placeholder="Enter Name"
+            /><button
+              id="saveScore"
+              class="aBtn back-home-btn-modal"
+              onclick="saveScore()"
+            >
+              Save
+            </button>
+          </div>
+          <div class="return-btn-container">
+            <a href="index.html">Home</a>
+          </div>
         </div>
       </div>
       <button onclick="muteAudio()" id="mute">
