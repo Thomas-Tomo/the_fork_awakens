@@ -81,19 +81,16 @@ Audio files are integrated throughout the site to add interactivity and depth us
 
 ### **Team Page**
 - The team page displays cards for each member.
-- Team member main roles in the project are provided.
-- Each member has a space to record their own 'Happy Hack'.
 - Links are provided for team members' Github and LinkedIn profiles.
 
 ![Team Page](/assets/images/StarWars-teampage.png)
 
 <hr>
 
-## **TESTING**
-
-- Testing and results can be found [here](add testing link here)
+## Testing
+- Please see  [TESTING.md](testing.md) for all the detailed testing performed.
 - Manual tests were carried out throughout the process.
-- Responsiveness has been checked and adjusted in Chrome Dev Tools and the site has been viewed on mobiles and an mac without issues.
+- Responsiveness has been checked and adjusted in Chrome Dev Tools and the site has been viewed on mobiles and on mac without issues.
 
 <hr>
 
@@ -107,14 +104,22 @@ Audio files are integrated throughout the site to add interactivity and depth us
 
 ## Deployment and local development
 
-### GitHub Pages
+### Netlify Deployment:
 
-GitHub Pages used to deploy live version of the website.
-1. Log in to GitHub and locate [GitHub Repository The Force Awaken](https://github.com/MickKav/the_fork_awakens/)
-2. At the top of the Repository(not the main navigation) locate "Code" button on the menu.
-3. On the right hand side of the Code page find the "About" section.
-4. Under "About" find the link to the [Live Site](theforkawakens.netlify.app/).
-5. Click this link and the Live Site should render.
+1. **Log in to Netlify:** Navigate to the [Netlify website](https://www.netlify.com/) and log in to your account.
+
+2. **Create New Site:** Once logged in, click on the "New site from Git" button.
+
+3. **Connect to GitHub:** Choose GitHub as your Git provider and authorize Netlify to access your repositories.
+
+4. **Select Repository:** Select the repository for your website, in this case, "The Force Awaken."
+
+5. **Configure Settings:** Netlify will automatically detect your build settings, but you may need to adjust them if necessary.
+
+6. **Deploy Site:** Once configured, click on the "Deploy site" button. Netlify will start building and deploying your site automatically.
+
+7. **Live Site:** After the deployment process is complete, Netlify will provide you with a unique URL for your live site. You can access your live site by visiting this URL.
+
 
 ### Forking the GitHub Repository
 
@@ -143,6 +148,7 @@ By forking the repository, we make a copy of the original repository on our GitH
      - **Start**: Begins the quiz.
      - **Rules**: Displays the game rules.
      - **Team**: Shows information about the development team.
+     - **Results**: Shows results for each of the three quizzes
 2. **Button Actions**
    - **Start**:
      - When the player clicks the "Start" button, the game transitions to the question theme selection screen.
@@ -181,14 +187,14 @@ By forking the repository, we make a copy of the original repository on our GitH
      - **Light Side**: If the player gets more correct answers than wrong answers.
      - **Dark Side**: If the player gets more wrong answers than correct answers.
    - The modal contains the player’s score.
-   - The player has the option to restart the quiz by clicking a "Restart" button, which takes them back to the start screen.
+   - The player has the option to return to the home page.
 
 ## Tech Stack
 
 The Star Wars Quiz Game is developed using the following tools and technologies:
 
 - **HTML**: For structuring the content and layout of the web pages.
-- **CSS**: For styling the game and making it visually appealing.
+- **CSS**: For styling the website and making it visually appealing.
 - **JavaScript**: For implementing the game logic and interactivity.
 - **Bootstrap**: For responsive design and pre-built UI components to ensure the game looks great on all devices.
 
