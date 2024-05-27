@@ -156,6 +156,11 @@ main {
   background: rgba(136, 136, 136, 0.5);
 }
 
+.scoreSave {
+  display: flex;
+  justify-content: center;
+}
+
 /* Add Animation to drop in rules */
 @keyframes animatetop {
   from {
@@ -184,6 +189,8 @@ main {
   margin: 15px 0;
 }
 
+
+/* Media Queries */
 @media screen and (max-width: 525px) {
   #movie-container .btn,
   .aBtn {

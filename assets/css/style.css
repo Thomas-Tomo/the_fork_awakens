@@ -17,6 +17,11 @@
   line-height: 3rem;
 }
 
+a:visited{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
 body {
   background-color: var(--secondary-color);
   color: var(--main-text);
@@ -313,6 +318,11 @@ h4 {
   max-width: inherit;
 }
 
+#highscores {
+  display: flex;
+  justify-content: center;
+}
+
 /* Add Animation to drop in rules */
 @keyframes animatetop {
   from {
@@ -407,5 +417,12 @@ h4 {
 
   .modal-content {
     padding: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+ 
+  #header {
+    padding-top: 20px;
   }
 }

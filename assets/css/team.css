@@ -87,25 +87,22 @@ main h1 {
 }
 
 /* Header Styling */
-#header-team {
-  z-index: 2;
+#header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 1rem;
+  padding-top: 10rem;
 }
 
-#header-team img {
-  width: 200px;
-  padding: 0.5rem 0;
+#header img {
+  width: 250px;
   margin: 0 auto;
 }
 
-#header-team h2 {
-  font-size: 1.25rem;
-  padding-top: 1rem;
+#header h2 {
+  font-size: 1rem;
 }
 
 /* nav with return button and page title  */
@@ -261,11 +258,11 @@ main h1 {
   height: 50px;
 }
 
-@media screen and (min-width: 320px) {
+/* @media screen and (min-width: 320px) {
   #header img {
     width: 200px;
   }
-}
+} */
 
 /* tablet screen size and above */
 @media screen and (min-width: 768px) {
@@ -279,7 +276,7 @@ main h1 {
     padding: 30px;
   }
 
-  #header-team {
+  /* #header-team {
     width: 80%;
     margin: 0 auto;
     flex-direction: row;
@@ -296,13 +293,13 @@ main h1 {
 
   #header-team h2:last-child {
     width: 290px;
-  }
+  } */
 
   /* page title  */
-  main h1 {
+  /* main h1 {
     padding: 0;
     padding-bottom: 2rem;
-  }
+  } */
 
   .cards-container {
     flex-direction: row;
@@ -405,5 +402,44 @@ main h1 {
   .cards-container::before,
   .cards-container::after {
     display: none; /* Hide lightsabers on smaller screens */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #header {
+    margin-top: 40px;
+  }
+
+  #header img {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    margin: 40px auto;
+    margin-bottom: 0;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #header img {
+    margin: 0 auto;
+    width: 275px;
+    margin-top: 30px;
+  }
+
+  #header h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+ 
+  #header {
+    padding-top: 20px;
   }
 }
