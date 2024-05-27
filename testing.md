@@ -1,52 +1,24 @@
 # **Classic Stars Wars Testing Documentation**
 
 ## **Table of contents**
- - [**HTML Validation**](#html-validation)
- - [**CSS Validation**](#css-validation)
- - [**JavaScript Validation**](#javascript-validation)
- - [**Lighthouse**](#lighthouse)
- - [**Manual Testing**](#manual-testing)
- - [**Final Review**](#final-review)
 
+- [**HTML Validation**](#html-validation)
+- [**CSS Validation**](#css-validation)
+- [**JavaScript Validation**](#javascript-validation)
+- [**Lighthouse**](#lighthouse)
+- [**Manual Testing**](#manual-testing)
+- [**Final Review**](#final-review)
 <hr>
 
 ## **HTML Validation**
 
-All HTML code has been run through the [W3C - HTML](https://validator.w3.org/) validator.  The only errors appear to be confusion over the use of Django.
-
-#### **Index.html**
-![HTML Base Page](/static/docs/w3c_about_team.jpg)
-
-#### **Game.html**
-![HTML Game Page](/static/docs/w3c_base_html.jpg)
-
-#### **Quiz-one.html**
-![HTML Quiz-One Page](/static/docs/w3c_base_html.jpg)
-
-
-#### **Results.html**
-![HTML Results Page](/static/docs/w3c_base_html.jpg)
-
-#### **Team.html**
-![HTML Team Page](/static/docs/w3c_base_html.jpg)
-
+All HTML code has been run through the [W3C - HTML](https://validator.w3.org/) validator. The only errors appear to be confusion over the use of Django.
 
 <hr>
 
 ## **CSS Validation**
 
-All CSS code has been run through the [W3C - CSS](https://jigsaw.w3.org/css-validator/) validator.  There was a minor error with text-wrap in style.css, although it does function as intended.
-
-
-#### **Quiz.css**
-![CSS Validator Style.css](/static/docs/w3c_css_style_css.jpg)
-
-#### **Style.css**
-![CSS Validator Style.css](/static/docs/w3c_css_style_css.jpg)
-
-#### **Team.css**
-
-![CSS Validator Style.css](/static/docs/w3c_css_random_post_css.jpg)
+All CSS code has been run through the [W3C - CSS](https://jigsaw.w3.org/css-validator/) validator. There was a minor error with text-wrap in style.css, although it does function as intended.
 
 <hr>
 
@@ -54,36 +26,19 @@ All CSS code has been run through the [W3C - CSS](https://jigsaw.w3.org/css-vali
 
 We will use browser developer tools to fix console errors, detect memory leaks, and verify key functions like the "score counter." Additionally, manual testing will check functionality, user scenarios, and cross-browser performance to ensure reliability.
 
-#### **game-script.js**
-![game-script.js](/static/docs/python_testing_admin_py.jpg)
-
-#### **quiz.js**
-![quiz.js](/static/docs/python_testing_apps_py.jpg)
-
-#### **star-background.js**
-![star-background.js](/static/docs/python_testing_forms_py.jpg)
-
 <hr>
 
 ## **Lighthouse**
+
 - The lighthouse score results can be found below.
 
-![Lighthouse](/static/docs/lighthouse.jpg)
-
-![Lighthouse](/static/docs/lighthouse_add_hack.jpg)
-
-![Lighthouse](/static/docs/lighthouse_allhacks.jpg)
-
-![Lighthouse](/static/docs/lighthouse_index.jpg)
+<img src="assets/images/lighthouse.png" alt="Lighthouse" width="300"/>
 
 <hr>
 
 ## **Manual Testing**
 
-Contrast checks were carried out.  Errors were found, but the checker appears to get confused about which background the text is being checked against.
-
-![Contrast](/static/docs/lighthouse_team_contrast.jpg)
-
+Contrast checks were carried out. Errors were found, but the checker appears to get confused about which background the text is being checked against.
 
   <table>
   <tr>
@@ -147,11 +102,12 @@ Contrast checks were carried out.  Errors were found, but the checker appears to
     <td>LINKS: start Button </td>
     <td>Not Detected</td>
   </tr>
-  </table>
 
+  </table>
+  <br>
 <table>
   <tr>
-    <th>QUiz</th>
+    <th>Quiz</th>
     <th>Bugs/Issues</th>
   </tr>
   <tr>
@@ -204,41 +160,6 @@ Contrast checks were carried out.  Errors were found, but the checker appears to
     <td>Not Detected</td>
   </tr>
   </table>
-
-
-  <table>
-  <tr>
-    <th>Responsiveness</th>
-    <th>Bugs/Issues</th>
-  </tr>
-  <tr>
-    <td>Desktop size </td>
-    <td> It is responsive</td>
-    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
-  </tr>
-   <tr>
-    <td>Laptop size </td>
-    <td> It is responsive</td>
-    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
-  </tr>
-   <tr>
-    <td> Tablet size </td>
-    <td> It is responsive</td>
-    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
-  </tr>
- <tr>
-    <td> Larger phone size </td>
-    <td> It is responsive</td>
-    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
-  </tr>
-  <tr>
-    <td> Average phone size </td>
-    <td> It is responsive</td>
-    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
-  </tr>
-  </table>
-
-
 
 ## **Final Review**
 

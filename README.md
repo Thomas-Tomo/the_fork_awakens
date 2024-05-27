@@ -6,7 +6,7 @@
 
 Welcome to the Classic Star Wars Quiz! This web-based game tests your knowledge of the Star Wars universe through a series of challenging and entertaining questions. Whether you're a casual fan or a die-hard enthusiast, this game is designed to engage and entertain you.
 
-![Am I responsive](/assets/images/am-i-responsive.PNG)
+![Am I responsive](/assets/images/responive%20site.png)
 
 ## **TABLE OF CONTENTS**
 
@@ -93,10 +93,9 @@ Audio files are integrated throughout the site to add interactivity and depth us
   - Team button redirects to team page
   - Results page redirects to results page
 
-|                                      Desktop                                      |                                         Mobile                                          |
-| :-------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
-| <img src="assets/images/Home%20page%20desktop.png" alt="Home Page" width="400"/>  |    <img src="assets/images/Home%20page%20mobile.png" alt="Home mobile" width="200"/>    |
-| <img src="assets/images/Home:start%20desktop.png" alt="Home/ start" width="400"/> | <img src="assets/images/Home:start%20mobile.png" alt="Home/ start mobile" width="200"/> |
+|                                     Desktop                                      |                                      Mobile                                       |
+| :------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
+| <img src="assets/images/Home%20page%20desktop.png" alt="Home Page" width="400"/> | <img src="assets/images/Home%20page%20mobile.png" alt="Home mobile" width="200"/> |
 
 - Rules
   - These are the rules of the quiz
@@ -117,7 +116,10 @@ Audio files are integrated throughout the site to add interactivity and depth us
 - Results Page
   - Displays button for each quiz result
 
-![Results Page](#)
+|                                    Desktop                                    |                                           Mobile                                            |
+| :---------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+|  <img src="assets/images/results films.png" alt="result films" width="400"/>  | <img src="assets/images/results films mobile.png" alt="results films mobile" width="200"/>  |
+| <img src="assets/images/results scores.png" alt="result scores" width="400"/> | <img src="assets/images/results scores mobile.png" alt="result scores mobile" width="200"/> |
 
 - Quiz Selection
   - After start button is pressed user selects one of the three movies to play a quiz based on them
@@ -148,25 +150,17 @@ Audio files are integrated throughout the site to add interactivity and depth us
 - 404 custom page
   - If there is an invalid URL user is taken to the 404 error page
 
-![404 custom page](#)
+|                                 Desktop                                  |                                 Mobile                                 |
+| :----------------------------------------------------------------------: | :--------------------------------------------------------------------: |
+| <img src="assets/images/404 desktop.png" alt="404 desktop" width="400"/> | <img src="assets/images/404 mobile.png" alt="404 mobile" width="200"/> |
 
-<hr>
+<br>
 
 ## Testing
 
 - Please see [TESTING.md](testing.md) for all the detailed testing performed.
 - Manual tests were carried out throughout the process.
 - Responsiveness has been checked and adjusted in Chrome Dev Tools and the site has been viewed on mobiles and on mac without issues.
-
-<hr>
-
-## **Bugs**
-
-- Issue - [name issues here]
-- Cause - [name causes here]
-- Resolution - [resolution here]
-
-<hr>
 
 ## Deployment and local development
 
