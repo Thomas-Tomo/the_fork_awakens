@@ -94,6 +94,68 @@ Contrast checks were carried out.  Errors were found, but the checker appears to
     <td>LINKS: Start button</td>
     <td>Not Detected</td>
   </tr>
+   <tr>
+    <td>LINKS: Rules Button</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>LINKS: Teams button</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>LINKS: Git Hub button</td>
+    <td>Not Detected</td>
+  </tr>
+ <tr>
+    <td>LINKS: LinkedIn button</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>LINKS: Repository button</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>LINKS: Return Home button</td>
+    <td>Not Detected</td>
+  </tr>
+  </tr>
+   <tr>
+    <td>LINKS: StarWars Home button</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>LINKS: Results button</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>LINKS: Quiz 1 Results button</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>LINKS: Quiz 2 Results button</td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>LINKS: Quiz 3 Results Button</td>
+    <td>Not Detected</td>
+  </tr>
+  <tr>
+    <td>LINKS: start Button </td>
+    <td>Not Detected</td>
+  </tr>
+   <tr>
+    <td>LINKS: start Button </td>
+    <td>Not Detected</td>
+  </tr>
+
+
+
+
+
+
+
+
+
   </table>
 
 
